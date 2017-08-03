@@ -1,4 +1,4 @@
-##Mapping Data 
+## Mapping Data 
 
 With this exercise, you will learn introductory skills involved in using QGIS to map existing spatial datasets. After the completion of this set of three Mapping Data exercises, you should have…
 
@@ -68,7 +68,6 @@ When your style settings are finished, **click** `OK` to exit the properties men
 ![style](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/06_PopulatedPlaces.png)
 
 **Save** your QGIS project by selecting `Project` > `Save`. Name your project MappingData_Population.qgs and save it in the Tutorials/Exercises folder. QGIS projects are saved as .qgs files. It is important to note that the data layers are not saved with it the map project but are rather linked to the project.
-
 
 # Part II
 
@@ -327,7 +326,8 @@ Finally use one of the export options circled in blue above to save the map comp
 ![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/Mapping_WorldPopulation.png)
 
 ### Deliverables: 
-**due Tuesday, September 12**
+**due Tuesday, September 12, 2017**
+For Tuesday, print out your finished map composition (in color, on 8.5 x 11 paper)
 
 Include your answer to the following question you answered on your own:
 * How many countries contain cities with greater than 7 million inhabitants?
@@ -337,14 +337,3 @@ Include your answer to the following question you answered on your own:
 ______________________________________________________________________________________________________________
 
 Tutorial written by Dare Brawley, for *Mapping for the Urban Humanities*, a intensive workshop for Columbia University faculty taught in Summer 2017 by the [Center for Spatial Research](http://c4sr.columbia.edu). More information about the course is available [here](http://c4sr.columbia.edu/courses/mapping-urban-humanities-summer-bootcamp).
-
-
-______________________________________________________________________________________________________________
-
-Tutorial written by Dare Brawley, for *Mapping for the Urban Humanities*, a intensive workshop for Columbia University faculty taught in Summer 2017 by the [Center for Spatial Research](http://c4sr.columbia.edu). More information about the course is available [here](http://c4sr.columbia.edu/courses/mapping-urban-humanities-summer-bootcamp).
-
-
-
-
-
-
