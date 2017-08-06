@@ -1,5 +1,7 @@
 ## Reading List
 
+Compiled by Dare A. Brawley for Mapping for the Urban Humanities.
+
 #### Critical Approaches in GIS
 
 **Critical Approaches in Geography**
