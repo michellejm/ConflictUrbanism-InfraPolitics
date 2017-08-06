@@ -326,8 +326,9 @@ Finally use one of the export options circled in blue above to save the map comp
 ![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/Mapping_WorldPopulation.png)
 
 ### Deliverables: 
+
 **due Tuesday, September 12, 2017**
-For Tuesday, print out your finished map composition (in color, on 8.5 x 11 paper)
+For Tuesday, email your finished map composition (as a pdf or jpeg) to Michelle at mam2518@columbia.edu
 
 Include your answer to the following question you answered on your own:
 * How many countries contain cities with greater than 7 million inhabitants?
