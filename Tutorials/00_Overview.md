@@ -37,10 +37,10 @@ Transform one map into a webmap
 
 ### Week 7 | Oct 24
 Styling Static Maps
-Basic mapping principles of designing a good map, from color to layout
+* Basic mapping principles of designing a good map, from color to layout
 
 
 ### Week 8 | Oct 31
 HTML Template
-Learn how to use the CSR template and basics of how the internet reads webpages
+* Learn how to use the CSR template and basics of how the internet reads webpages
 
