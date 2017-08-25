@@ -38,7 +38,7 @@ Use the zoom in tool ![blank](https://github.com/CenterForSpatialResearch/Mappin
 Now you will access the georeferencing tools and match the scanned map to the OSM map.  
 
 Under the Raster menu, select Georeferencer>Georeferencer:
-![blank](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData01/GeoRef8.png)
+![blank](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef24.png)
 
 The Georeferencer screen will open:
 ![blank](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData01/GeoRef9.png)
