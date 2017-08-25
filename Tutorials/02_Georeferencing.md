@@ -4,11 +4,11 @@
 
 #### Premise
 
-In this exercise, you will explore some of the georeferencing tools available in QGIS and use them to georeference a 1902 map of the Bronx. You will learn how to use GIS tools to georectify raster datasets.  You will use the georeferenced map for the next exercise where you will digitize vector features from the map infomation. 
+In this exercise, you will explore some of the georeferencing tools available in QGIS and use them to georeference a 1909 map of Mumbai. You will learn how to use GIS tools to georectify raster datasets.  You will use the georeferenced map for the next exercise where you will digitize vector features from the map infomation. 
 
 #### Notes on the data: 
 
-The map you will be using for this exercise is Mumbai from YEAR (then Bombay). This is a public domain map, so we can use it freely. The wikimedia record for the map can be found [here](https://commons.wikimedia.org/wiki/File:Bombay_1909.jpg). We are using the highest resolution available (RESOLUTION)
+The map you will be using for this exercise is Mumbai from 1909 (then Bombay). This is a public domain map, so we can use it freely. The wikimedia record for the map can be found [here](https://commons.wikimedia.org/wiki/File:Bombay_1909.jpg). We are using the highest resolution available (1,571 × 2,104 pixels).
 
 You are going to use [OpenStreetMap](https://www.openstreetmap.org/about) (OSM)  as reference data for the georeferencing process.  OSM provides a free, open-source map of the world from public domain and volunteered data.
 
@@ -50,7 +50,7 @@ Click on the Add Raster button ![blank](https://github.com/CenterForSpatialResea
 It will appear in the georeferencer window:
 ![blank](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef10.png)
 
-This map is from the years just after the 1896 plague, and while the infrastructure (and even some of the land) have changed, we an still navigate our way around using the docks, the bays, and some major roads.
+This map is from the years just after the 1896 plague, and while the infrastructure (and even some of the land) have changed, we an still navigate our way around using the docks, bays, and some major roads.
 
 Historical maps can be difficult to georeference, and this sheet poses a number of complications. The map projection is unclear and there are no ground control points or coordinates specified. Because of this, you will georeference by matching physical features represented on the map with their current counterparts (and their known coordinates). However, most of the features in this map have changed or no longer exist (or were never actually built in the first place). Thus, you will need to be very careful to choose locations that you are confident match up well with their contemporary counterparts. Fortunately, some things (such as docks in the East, and some structures have not changes). 
 
@@ -60,8 +60,8 @@ One candidate is the Prince's Dock in Bombay Harbor which continues to exist lar
 Identify as precise a location as possible (a corner of the dock will work nicely) and click on it in the georeferencing window using the add point tool ![blank](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData01/GeoRef17.png) When you do so, the Enter map coordinates window appears:
 ![blank](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData01/GeoRef14.png)
 
-If you knew the coordinates of this location, you could now add them manually, but since you do not, you must select them from the OSM data in the main QGIS window.  Click on the ![blank](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData01/GeoRef15.png) button to see the QGIS workspace.  
-You may want to use the QGIS zoom tools to zoom in very closely to the conservatory.
+If we knew the coordinates of this location, we could now add them manually, but since we do not, we must select them from the OSM data in the main QGIS window.  Click on the ![blank](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData01/GeoRef15.png) button to see the QGIS workspace.  
+You may want to use the QGIS zoom tools to zoom in very close to the dock.
 ![blank](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef12.png)
 
 Once you do so, you will need to reactivate the add button tool ![blank](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData01/GeoRef17.png) by maximizing the georeferencing window and clicking the ![blank](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MakingData01/GeoRef18.png) button again.  Once you select the same location on the workspace window, you will automatically be brought back to the georeferencing window where the assigned coordinates will be imputed.  
