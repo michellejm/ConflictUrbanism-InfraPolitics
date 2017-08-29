@@ -1,6 +1,5 @@
-## Making Data and Storytelling
+## Digital Storytelling with Maps
 
-### Digitizing Features from a georeferenced map 
 
 #### Premise
 
