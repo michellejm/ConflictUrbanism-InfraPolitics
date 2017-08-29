@@ -2,8 +2,6 @@
 
 ### Digitizing Features from a georeferenced map 
 
-### Storytelling
-
 #### Premise
 
 In this exercise, you will explore some of the on-screen hand digitizing tools available in QGIS and use them to digitize houses, hospitals and other features from a georeferenced map.  You will convert raster spatial data into vector based features.
