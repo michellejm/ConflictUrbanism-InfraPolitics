@@ -1,6 +1,8 @@
-## Tutorial 2: Georeferencing a scanned paper map
+# Tutorial 2: Georeferencing a scanned paper map
 
 This is an exercise in two parts, so it may extend into Tutorial 3. First we will georeference an historical map and then we will make a vector dataset from the raster file.
+
+## Part 1 - Georeferencing
 
 ### Premise
 
@@ -121,7 +123,7 @@ In the next exercise you will be using the sheet you georeferenced here and digi
 
 To complete this part of the tutorial, send just the points file to Michelle at mam2518@columbia.edu
 
-### Part II - Making Vector Data from Raster Data
+## Part II - Making Vector Data from Raster Data
 
 #### Premise
 
