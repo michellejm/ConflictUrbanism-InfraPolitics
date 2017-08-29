@@ -1,8 +1,8 @@
-## Making Data 01: Georeferencing a scanned paper map
+## Tutorial 2: Georeferencing a scanned paper map
 
 ### Premise
 
-In this exercise, you will explore some of the georeferencing tools available in QGIS and use them to georeference a 1909 map of Mumbai. You will learn how to use GIS tools to georectify raster datasets.  You will use the georeferenced map for the next exercise where you will digitize vector features from the map infomation. 
+In this exercise, you will explore some of the georeferencing tools available in QGIS and use them to georeference a 1909 map of Mumbai, "Island of Bombay". You will learn how to use GIS tools to georectify raster datasets.  You will use the georeferenced map for the next exercise where you will digitize vector features from the map infomation. 
 
 ### Notes on the data
 
