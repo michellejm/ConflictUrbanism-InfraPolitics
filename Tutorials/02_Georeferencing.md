@@ -119,9 +119,11 @@ You can make the scanned map layer partially transparent in the layer properties
 Compare the georeferenced map with the Open Street Map layer.  Make sure that features appear to match up closely:
 ![blank](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef23.png)
 
-In the next exercise you will be using the sheet you georeferenced here and digitizing some of the features from it. 
+In the next section, you will be using the sheet you georeferenced here and digitizing some of the features from it. 
 
-To complete this part of the tutorial, export your georeferenced layer as  Michelle at mam2518@columbia.edu
+Export your georeferenced layer as a GeoTiff - be sure to select 'Rendered Image' and CRS 4326 (Psuedo Mercator). Rendered image will remove the black background. CRS 4326 because that is what all webmaps use and we will use this map in a webmap next.
+
+Email the GeoTiff to Michelle at mam2518@columbia.edu
 
 ## Part II - Making Vector Data from Raster Data
 
