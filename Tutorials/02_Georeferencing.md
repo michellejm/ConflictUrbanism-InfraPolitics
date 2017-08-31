@@ -121,7 +121,7 @@ Compare the georeferenced map with the Open Street Map layer.  Make sure that fe
 
 In the next exercise you will be using the sheet you georeferenced here and digitizing some of the features from it. 
 
-To complete this part of the tutorial, send just the points file to Michelle at mam2518@columbia.edu
+To complete this part of the tutorial, export your georeferenced layer as  Michelle at mam2518@columbia.edu
 
 ## Part II - Making Vector Data from Raster Data
 
