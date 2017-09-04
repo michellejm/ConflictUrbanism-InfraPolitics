@@ -9,10 +9,6 @@ With this exercise you will learn how to create a basic web-based map using the 
 5. Experiment with layer styles and map composition
 
 
-#### Premise
-
-In this exercise, you will annotate your map with data we have collected about the plague events in Mumbai/Bombay. Using the GeoTiff you created in [Tutorial 02](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/Tutorials/02_Georeferencing.md) and a spreadsheet of events from the years before and after the plague, you will create an animated timeline telling the story of how the plague started a series of events that amplified the housing shortage in Bombay and gave the colonial powers the opportunity to gain more control over individuals' lives.
-
 #### Notes on the data: 
 
 You will use the 1909 "Island of Bombay" map that you georeferenced in the previous exercise. If you have not already done so please complete the [Georeferencing](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/Tutorials/02_Georeferencing.md) exercise. 
@@ -21,11 +17,11 @@ You will also need a list of events surrounding the plague. This was compiled fr
 
 #### The Premise
 
-With this exercise our goal is to create a simple interactive online map that illustrates a series of events in Bombay before, during, and after the plague. We will use the 1909 Island of Bombay map (that we georeferenced in the previous exercise) as well as some of the features we digitized adding additional annotations. 
+n this exercise, you will annotate your map with data we have collected about the plague events in Mumbai/Bombay. Using the GeoTiff you created in [Tutorial 02](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/Tutorials/02_Georeferencing.md) and a spreadsheet of events from the years before and after the plague, you will create an animated timeline telling the story of how the plague started a series of events that amplified the housing shortage in Bombay and gave the colonial powers the opportunity to gain more control over individuals' lives.
 
 For context lets take a look at what this final map will look like. It is visible [here](LINK)
 
-To accomplish this we will be using Leaflet.js, an incredibly well documented javascript library with many online easily accessible examples to learn from. Review the [Docs](http://leafletjs.com/reference-1.0.3.html) page for explanations of all of the functions in the leaflet library. 
+To accomplish this we will be using Leaflet.js, a well documented javascript library with many online easily accessible examples. Review the [Docs](http://leafletjs.com/reference-1.0.3.html) for explanations of all of the functions in the leaflet library. 
 
 Leaflet.js is one of many many ways to create webmaps. Others include: 
 * OpenLayers
