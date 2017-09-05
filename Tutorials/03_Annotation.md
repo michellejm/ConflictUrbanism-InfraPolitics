@@ -17,7 +17,7 @@ You will also need a list of events surrounding the plague. This was compiled fr
 
 #### The Premise
 
-n this exercise, you will annotate your map with data we have collected about the plague events in Mumbai/Bombay. Using the GeoTiff you created in [Tutorial 02](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/Tutorials/02_Georeferencing.md) and a spreadsheet of events from the years before and after the plague, you will create an animated timeline telling the story of how the plague started a series of events that amplified the housing shortage in Bombay and gave the colonial powers the opportunity to gain more control over individuals' lives.
+In this exercise, you will annotate your map with data we have collected about the plague events in Bombay. Using the GeoTiff you created in [Tutorial 02](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/Tutorials/02_Georeferencing.md) and a spreadsheet of events from the years before and after the plague, you will create an animated timeline telling the story of how the plague started a series of events that amplified the housing shortage in Bombay and gave the colonial powers the opportunity to gain more control over individuals' lives.
 
 For context lets take a look at what this final map will look like. It is visible [here](LINK)
 
@@ -43,7 +43,7 @@ We have provided the basic folder structure that you will need to create your we
 * index.html
 * `js`
 
-In the broadest terms web development can be understood in the following way: HTML is the structure of a website, CSS is the style, and JavaScript is the functionality or the interaction. Each of these are contained in text files which we have organized into the above folder structure. When you are creating a webpage you are creating a series of linked text files that your browser reads. 
+In the broadest terms, web development can be understood in the following way: HTML is the structure of a website, CSS is the style, and JavaScript is the functionality or the interaction. Each of these are contained in text files which we have organized into the above folder structure. When you are creating a webpage you are creating a series of linked text files that your browser reads. 
 
 In addition there are folders for images: `img` and `data`. These two folders will contain any images you will use, and the data for the vector annotations as well as the georeferenced historical map. 
 
