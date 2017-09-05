@@ -69,10 +69,18 @@ Then use it to select the **top left** and **bottom right** corners of your rast
 4. *Reducing the File Size of the Map Image*. To make it more manageable to load in the browser open the GeoTiff file we just created in the photo editor of your choice, adjust the image size to something more manageable and then export as a **.png**. Save this file in the `data` folder of your webmap directory. 
 
 **Exporting Vector Layers as GeoJSON**
-Our webmap will rely on a different data format for our spatial data. Up until now we have been working with shapefiles. When we upload our annotations to the web we will be using a data format called GeoJSON. It is a different way to structure spatial and tabular information and it preserves all of the information we have come to expect from shapefiles. 
+We want to layer data that we have collected about events in Bombay layered over our historic map. These points rely on a different data format . Up until now we have been working with shapefiles. When we upload our annotations to the web we will be using a data format called GeoJSON. It is a different way to structure spatial and tabular information and it preserves all of the information we have come to expect from shapefiles. 
+
+1. *Upload Annotation File* Click on the 'Add Delimited Text Layer' button ![blank](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef3-4.png) and find the plague_timeline file
+
+![blank](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef3-5.png)
+
+The points should appear on your map
+
+![blank](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef3-6.png)
 
 1. *Export as GeoJSON*. Right click on the layer you want to export in the layers panel. Select Save as. Select `geoJSON` as the file format. Select `WGS 84` (a geographic coordinate reference system) as the CSR. Name  your file and save it in the appropriate directory.
-![instructions image](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities_2017/blob/master/Tutorials/Images/Webmaps/03_ExportGeoJSON.png)
+![blank](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef3-7.png)
 
 #### Building a Webmap
 
