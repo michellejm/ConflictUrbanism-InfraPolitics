@@ -82,7 +82,7 @@ The points should appear on your map
 1. *Export as GeoJSON*. Right click on the layer you want to export in the layers panel. Select Save as. Select `geoJSON` as the file format. Select `WGS 84` (a geographic coordinate reference system) as the CSR. Name  your file and save it in the appropriate directory.
 ![blank](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef3-7.png)
 
-#### Building a Webmap
+## Building a Webmap
 
 Lets begin to make our webmap. 
 First you need to make sure you have Python installed. Check if you have Python installed and which version it is. We will be using Python to run a local server.
