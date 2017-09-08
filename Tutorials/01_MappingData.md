@@ -77,9 +77,7 @@ When your style settings are finished, **click** `OK` to exit the properties men
 
 #### Premise
 
-We will work with the basemap we made in Mapping Data 00 and add new data to it in order to examine multiple measures of world population. If you have not already completed the [Mapping data 00](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/01_MappingData00.md) tutorial please do so before beginning this exercise. We will examine population aggregated to cities and countries and a raster dataset that depicts the distribution of world population at a resolution of approximately 1km. 
-
-Open your MappingData_Population.qgs map project.
+We will work with the basemap we made in Mapping Data 00 and add new data to it in order to examine multiple measures of world population.  We will examine population aggregated to cities and countries and a raster dataset that depicts the distribution of world population at a resolution of approximately 1km. 
 
 We have already mapped the locations of populated places (which contains population estimates collected using [LandScan](http://web.ornl.gov/sci/landscan/)) as well as country polygons. We also have tabular data available for population at the country level from the [United Nations](http://esa.un.org/unpd/wpp/Download/Standard/Population/) which we will join to the country polygons, as well as a raster layer that describes world population in 1km grid created by CEISIN. We will answer questions about the differences between the depictions of population at the city, country, and 1km scale. 
 
@@ -230,8 +228,7 @@ In the bottom left hand corner of your QGIS window you will see that five popula
 
 ![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/20_SelectedFeatures.png)
 
-#### On Your Own
-Now on your own use select by attributes and select by location to answer the following question: 
+Now  use select by attributes and select by location to answer the following question: 
 * How many countries contain cities with greater than 7 million inhabitants?
 
 Include the answer as part of your map composition that we will review on Tuesday.   
@@ -240,7 +237,6 @@ Include the answer as part of your map composition that we will review on Tuesda
 
 Now that we have these three different layers we can begin to create maps that highlight the differences between these different ways to measure population. We will compose a map that symbolizes each of our three data layers differently. We will use graduated symbols to express city population, a choropleth map for population by country and a classified color ramp for the gridded population. We will then go over cartographic conventions adding a legend and scale bar to the map and exporting as a PDF. 
 
-*Follow along as we demo this next section, and then create your map composition on your own. Be ready to discuss it in class next week.*
 
 **Proportional  symbols**
 
