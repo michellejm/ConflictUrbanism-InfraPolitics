@@ -264,6 +264,7 @@ We will now embed the "Map of the Island of Bombay" published in 1909 that we ge
 	* iconUrl (where to find the little picture)
 	* iconSize (how big it is in pixels)
 	* popupAnchor (where the popup appears from)
+2. The icon we are suing comes from the [Flaticon](https://www.flaticon.com/free-icon/maps-mark_10030) Collection.
 ```
 var myIcon = L.icon({
 iconUrl: 'css/images/maps-mark.png',
