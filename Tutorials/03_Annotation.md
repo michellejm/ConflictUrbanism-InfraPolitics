@@ -388,7 +388,7 @@ The full completed code for this example is available here:
 
 	<script>
 //initializing the map
-	var map = L.map('map').setView([40.87,-73.87], 15);
+	var map = L.map('map').setView([19.076, 72.878], 15);
 
 //add background tile layers
 	L.tileLayer('http://tile.stamen.com/toner-lite/{z}/{x}/{y}.png',
