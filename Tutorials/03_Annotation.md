@@ -114,7 +114,7 @@ We will run a local server from our computers. The details of this are far beyon
 1. In a Terminal window, navigate to the folder where you have saved your html file (directions below on how to "navigate"). In my case it is in Documents > MappingForTheUrbanHumanities_2017 > Class_Data >3_Webmaps. To navigate there, I type the following commands (don't type the $, that just indicates that you are in the Terminal):
 
 	* `$ cd Documents`
-	* `$ cd MappingForTheUrbanHumanities_2017` 
+	* `$ cd ConflictUrbanism-Infrapolitics` 
 	* `$ cd Class_Data`
 	* `$ cd 3_Webmaps`
 	
@@ -201,7 +201,7 @@ We include them in the header section: `<head>`
 4. *Import Javascript libraries.* Now we need to import the Leaflet and jQuery javascript libraries. We have likewise saved these in the `js` folder in our webmaps directory. 
 	`<script src="js/leaflet.js"></script>`
 
-	`<script src="js/jquery-2.1.1.min.js">  </script>`
+	`<script src="js/jquery-3.2.1.min.js">  </script>`
 5. *Set the size of your map.* Using CSS syntax we will set the size of the map to fill a full browser window: 
 	`<style> #map{position: absolute; top:0; bottom:0; left:0; width: 100%;} </style>`
 6. *Close the <header> tag.*
@@ -215,15 +215,14 @@ Please note: `//` in front of a line means that the code is "commented out" and 
 2. *Make a section for the map.* Make a `<div>` for the map, and call it map.
 3. *Start a javascript command.* Write `<script>` to start writing in javascript within our index.html file.
 4. *Initialize the map* by creating a map variable. 
-`var map = L.map('map').setView([19.076, 72.878], 15);`
+`var map = L.map('map').setView([18.966, 72.831], 12)`
 	* Javascript requires that all variables be labeled with 'var'.
 	* We are going to create a map var and use leaflet to initialize it. We need to give out map two parameters. First, the latitude/longitude for the center of our map, and the zoom level. 
 	1. set `var map =`
 	2. When we call leaflet (i.e. access the leaflet library's set of commands), we use capital L  `L.map` to call Leaflet's map property.
 	*. Javascript (and therefore Leaflet) uses both dot notation and bracket notation, whenever there's a period between things in js, it's called dot notation, and you are "accessing the properties" of an "object" don't worry too much about this - it just means you are looking inside of that object to find a particular property.
-	4. '.setView([`var map = L.map('map').setView([19.076, 72.878], 15);`
-], 15)': We set the view of the map by specifying the center point in latitude and longitude `[`var map = L.map('map').setView([19.076, 72.878], 15);`
-]`, as well as the zoom level: `15`.
+	4. '.setView([`var map = L.map('map').setView([18.966, 72.831], 12);': We set the view of the map by specifying the center point in latitude and longitude `[`var map = L.map('map').setView([18.966, 72.831], 12);`
+]`, as well as the zoom level: `12`.
 
 **Add Map Tiles**
 
@@ -259,122 +258,86 @@ We will now embed the "Map of the Island of Bombay" published in 1909 that we ge
 `L.imageOverlay(imageUrl, imageBounds, {opacity: 0.8}).addTo(map);`
 4. *Save and then refresh your browser* and the 1902 map should appear. 
 
+**Define a new marker for the map**
+
+1. Make a new variable and call it 'myIcon' and set it equal to a leaflet icon element with the properties
+	* iconUrl (where to find the little picture)
+	* iconSize (how big it is in pixels)
+	* popupAnchor (where the popup appears from)
+```
+var myIcon = L.icon({
+iconUrl: 'css/images/maps-mark.png',
+  iconSize: [20, 20],
+  popupAnchor: [0, -28]
+});
+```
+
 **Add Points of Interest (or any geojson file)**
 Now we will add the file of points related to the plague. 
 
 1. *Use the jQuery command, getJSON.* Use $ to call the jQuery library, just like Leaflet is **called** with L., jQuery is **called** with $.
-2. *Tell jQuery where your file is located,* and give the function a name (I'm going to use 'plagueData'). 
-3. *Set the color,* weight, and opacity of your points. 
-4. *Comment out* `//onEachFeature: site_annon` we will use this in the next step.
+2. *Tell jQuery where your file is located,* and give the function a name (I'm going to use 'plagueData').
+3. *add points to the layer* using the latlng category of your geojson
+4. *tell the point to produce the marker that you defined in the last step*
+5. *Add onEachFeature* as a placeholder for the popup function we will define shortly. Comment this out with // until the next step.
 5. *Add the sites to the map*
 6. *Save and then refresh your browser,* the sites should be visible.
 
 ```javascript
 $.getJSON('data/plaguetimeline.geojson',function(plagueData){
-	    L.geoJson(plagueData, {
-	    	color: "#ff7800",
-	    	weight: 3.5,
-	    	opacity: 0.65,
-	    	//onEachFeature: site_annon
-	    }).addTo(map);
+  	$.getJSON('data/plaguetimeline.geojson',function(plagueData){
+	    	L.geoJson(plagueData, {
+	    	pointToLayer: function(feature, latlng) {
+		return L.marker(latlng, {
+		icon: myIcon});
+	},
+	    	// onEachFeature: onEachFeature,
+	    	}).addTo(map);
 	    }); 
 ```
-**Add Interactivity to Road Outlines (or any geojson file)**
+**Add Interactivity to Points (or any geojson file)**
 We will now add popups for each of our road lines. 
 
-1. *Create a variable* lets call it `site_annon`
 2. *Call the leaflet function* `onEachFeature`. This must be defined for two parameters:  `feature` and `layer`. Whatever information we include in this function will be called once for each feature (basically each row) in our GeoJSON file. 
 3. *Define the action* we want called for each feature: 
-	* If the RoadLines.geojson file has properties (attribute information) and has a column named `Event` 
-	* Then create a variable called `roadsPopup`. 
+	* If the plaguetimeline.geojson file has properties (attribute information) and has a column named `Event` 
 	* Inside that variable store the value of the `Event` column in the plaguetimeline.geojson file. 
 	* Use the `.bindPopup()` leaflet method to attach the content of the roadsPopup to each element in the plagueData layer
-4. *Call the onEachFeature function we just defined.* Return to the block of code above where we added the data and uncomment `onEachFeature: site_annon`
+4. *Call the onEachFeature function we just defined.* Return to the block of code above where we added the data and uncomment 
+5. Use the Leaflet function geoJSON, pass it the features property and the onEachFeature function we just defined. 
+6. Add it all to the map.
 
-Your code should now look like the following.
 
-```javascript
-//load GeoJSON file containing sites of plague events, and style points
-  	$.getJSON('data/RoadLines.geojson',function(plagueData){
-	    L.geoJson(plagueData, {
-	    	color: "#ff7800",
-	    	weight: 3.5,
-	    	opacity: 0.65,
-	    	onEachFeature: site_annon
-	    }).addTo(map);
-	    });  
-
-//define popup content for road annotations
- 	var road_annon = function onEachFeature(feature, layer) {
-	    if (feature.properties && feature.properties.Event) {
-	    	var sitePopup = feature.properties.Event;
-	        layer.bindPopup(sitePopup);
-	    }
-	}
 ```
-**Add GeoJSON file containing Points**
-We will now add the GeoJSON file that contains the points we want to highlight with annotations on our map. 
-
-This follows largely the same process as above.
-
-The main difference here is that we have added some extra formatting to the popup windows for the points. 
-
-1. *Use the jQuery command, getJSON.* Use $ to call the jQuery library, just like Leaflet is **called** with L., jQuery is **called** with $.
-2. *Tell jQuery where your file is located,* and give the function a name (I'm going to use 'bldg'). 
-4. *Call the onEachFeature function* we will define below. `onEachFeature: point_annon`
-5. *Add the points to the map*
-6. *Create a variable* lets call it `point_annon`
-7. *Call the leaflet function* `onEachFeature`. As above, this must be defined for two parameters:  `feature` and `layer`. Whatever information we include in this function will be called once for each feature (basically each row) in our GeoJSON file. 
-8. *Define the action* we want called for each feature: 
-	* If the PointAnnotations.geojson file has properties (attribute information) and has a column named `Descr`
-	* Then create a variable called `pointsPopup`. 
-	* Inside that variable store the value of the `Name` column in the RoadLines.geojson file, the `ImgURL` column, and the `Descr` colum. 
-	* Then use html tags to format these elements, creating line breaks `<br/>` between each and setting the size of the image `'" width ="300px"/>'`. 
-	* Use the `.bindPopup()` leaflet method to attach the content of the pointsPopup to each element in the bldg layer
-
-```javascript
-//load GeoJSON file containing points
-	$.getJSON('data/PointAnnotations.geojson',function(bldg){
-		L.geoJson(bldg,{
-			onEachFeature: point_annon
-	    }).addTo(map);
-	});
-
-//define popup content for point annotations
-	var point_annon = function onEachFeature(feature, layer) {
-	    if (feature.properties && feature.properties.Descr) {
-	    	var pointsPopup = feature.properties.Name + '<br/> <img src="'+ feature.properties.ImgURL + '" width ="300px"/> <br/>' + feature.properties.Descr;
-	        layer.bindPopup(pointsPopup);
-	    }
-	}
+//define popup content
+function onEachFeature(feature, layer) {
+    if (feature.properties && feature.properties.Event) {
+        layer.bindPopup(feature.properties.Year + '<br/>' + feature.properties.Event);
+    }
+}
+L.geoJSON(geojsonFeature, {
+	onEachFeature: onEachFeature
+}).addTo(map);
 ```
+
+
 9. *Save your file and refresh* your browser. 
-![img](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities_2017/blob/master/Tutorials/Images/Webmaps/06_ImagePopup.png)
+![img](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef3-8.png)
 
-**Add NYPL Map Warper Raster Tiles**
-As we reviewed yesterday the New York Public Library's Map Warper site is a tremendous resource for historical maps that are in the public domain, and many of which are already georeferenced. 
-
-In addition the NYPL has make it possible to access these historical maps directly from within a webpage. On the [Export page](http://maps.nypl.org/warper/maps/18631#Export_tab) for each georeferenced map within the NYPL Map Warper collection has a link to the map's information in the "Tiles (Google/OSM scheme)." This link allows us to add any of these maps to our webpage in the same way we added the Open Street Map tileLayer. 
-
-1. *Call the .tileLayer method* `L.tileLayer('http://maps.nypl.org/warper/maps/tile/27688/{z}/{x}/{y}.png').addTo(map);`
-
-Explore the NYPL Map Warper collection and experiment with pulling in additional maps. 
 
 
 The full completed code for this example is available here: 
 
-```html
-
-
+```
 <html>
 <head>
-	<title>GeoreferencedWebmaps</title>
+	<title>GeoreferencingMumbai</title>
 
 	<link rel="stylesheet"  href="css/leaflet.css"/> 
 
 	<script src="js/leaflet.js"></script>
 
-	<script src="js/jquery-2.1.1.min.js">  </script>
+	<script src="js/jquery-3.2.1.min.js">  </script>
 
 	<style>
 	#map{position:absolute; top:0; bottom:0; left:0; width: 100%;}
@@ -383,12 +346,11 @@ The full completed code for this example is available here:
 
 </head>
 <body>
-	
 	<div id="map"></div>
 
 	<script>
 //initializing the map
-	var map = L.map('map').setView([19.076, 72.878], 15);
+	var map = L.map('map').setView([18.966, 72.831], 12);
 
 //add background tile layers
 	L.tileLayer('http://tile.stamen.com/toner-lite/{z}/{x}/{y}.png',
@@ -397,7 +359,6 @@ The full completed code for this example is available here:
 		maxZoom: 19,
 		minZoom: 1
 		}).addTo(map);
-
 	
 //link to the historical map image 
 	var imageUrl = 'data/referenced_mumbai.png';
@@ -405,36 +366,55 @@ The full completed code for this example is available here:
 //define the area that image covers
 	var imageBounds = [[19.1012196354, 72.7703713242], [18.8743642027, 72.9320741694]]; 
 
+
+
+
 //add georeferenced historical map
 	L.imageOverlay(imageUrl, imageBounds, {opacity: 0.8}).addTo(map);
 
+//define new marker
+var myIcon = L.icon({
+iconUrl: 'css/images/maps-mark.png',
+  iconSize: [20, 20],
+  iconAnchor: [16, 37],
+  popupAnchor: [0, -28]
+});
 
-//load GeoJSON file containing sites, and style lines
+
+//load GeoJSON file containing sites, and style points
   	$.getJSON('data/plaguetimeline.geojson',function(plagueData){
-	    L.geoJson(plagueData, {
-	    	color: "#ff7800",
-	    	weight: 3.5,
-	    	opacity: 0.65,
-	    	onEachFeature: site_annon
-	    }).addTo(map);
-	    });  
+	    	L.geoJson(plagueData, {
+	    	pointToLayer: function(feature, latlng) {
+		return L.marker(latlng, {
+		icon: myIcon});
+	},
+	    	onEachFeature: onEachFeature,
+	    	}).addTo(map);
+	    }); 
 
 //define popup content for site annotations
-	var site_annon = function onEachFeature(feature, layer) {
-	    if (feature.properties && feature.properties.Event) {
-	    	var pointsPopup = feature.properties.Year + feature.properties.Event + '<br/> <img src="' feature.properties.Image + '" width ="300px"/> <br/>';
-	        layer.bindPopup(pointsPopup);
-	    }
-	}	
+
+function onEachFeature(feature, layer) {
+    // does this feature have a property named popupContent?
+    if (feature.properties && feature.properties.Event) {
+        layer.bindPopup(feature.properties.Year + '<br/>' + feature.properties.Event);
+    }
+}
+
+L.geoJSON(geojsonFeature, {
+
+	onEachFeature: onEachFeature
+}).addTo(map);
+
 	</script>
 </body>
 </html>
+
+
+
+
+
 ```
-
-
-
-
-
 
 ______________________________________________________________________________________________________________
 
