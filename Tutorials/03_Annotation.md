@@ -376,7 +376,6 @@ The full completed code for this example is available here:
 var myIcon = L.icon({
 iconUrl: 'css/images/maps-mark.png',
   iconSize: [20, 20],
-  iconAnchor: [16, 37],
   popupAnchor: [0, -28]
 });
 
@@ -392,10 +391,9 @@ iconUrl: 'css/images/maps-mark.png',
 	    	}).addTo(map);
 	    }); 
 
-//define popup content for site annotations
 
+//define popup content for site annotations
 function onEachFeature(feature, layer) {
-    // does this feature have a property named popupContent?
     if (feature.properties && feature.properties.Event) {
         layer.bindPopup(feature.properties.Year + '<br/>' + feature.properties.Event);
     }
@@ -411,12 +409,9 @@ L.geoJSON(geojsonFeature, {
 </html>
 
 
-
-
-
 ```
 
 ______________________________________________________________________________________________________________
 
-Tutorial written by Michelle McSweeney for *[Conflict Urbanism: InfraPolitics](https://github.com/michellejm/ConflictUrbanism-InfraPolitics)*. Based on the tutorial written by Dare Brawley, for *Mapping for the Urban Humanities*. It is based on the tutorial prepared by Michelle McSweeney for the Spring 2017 course, *Conflict Urbanism: Language Justice* offered at Columbia Univeristy through the Center for Spatial Research. 
+Tutorial written by Michelle McSweeney for *[Conflict Urbanism: InfraPolitics](https://github.com/michellejm/ConflictUrbanism-InfraPolitics)*. Adapted from the tutorial written by Dare Brawley, for *Mapping for the Urban Humanities*, which was based on the tutorial prepared by Michelle McSweeney for the Spring 2017 course, *Conflict Urbanism: Language Justice* offered at Columbia Univeristy through the Center for Spatial Research. 
 
