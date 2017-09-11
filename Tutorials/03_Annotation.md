@@ -19,7 +19,7 @@ You will also need a list of events surrounding the plague. This was compiled fr
 
 In this exercise, you will annotate your map with data we have collected about the plague events in Bombay. Using the GeoTiff you created in [Tutorial 02](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/Tutorials/02_Georeferencing.md) and a spreadsheet of events from the years before and after the plague, you will create an animated timeline telling the story of how the plague started a series of events that amplified the housing shortage in Bombay and gave the colonial powers the opportunity to gain more control over individuals' lives.
 
-For context lets take a look at what this final map will look like. It is visible [here](LINK)
+For context lets take a look at what this final map will look like. It is visible [here](https://michellejm.github.io/ConflictUrbanism-InfraPolitics/Data/3_AnnotationWebMap/)
 
 To accomplish this we will be using Leaflet.js, a well documented javascript library with many online easily accessible examples. Review the [Docs](http://leafletjs.com/reference-1.0.3.html) for explanations of all of the functions in the leaflet library. 
 
