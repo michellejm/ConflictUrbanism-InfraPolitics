@@ -215,13 +215,15 @@ Please note: `//` in front of a line means that the code is "commented out" and 
 2. *Make a section for the map.* Make a `<div>` for the map, and call it map.
 3. *Start a javascript command.* Write `<script>` to start writing in javascript within our index.html file.
 4. *Initialize the map* by creating a map variable. 
-`var map = L.map('map').setView([40.87,-73.87], 15);`
+`var map = L.map('map').setView([19.076, 72.878], 15);`
 	* Javascript requires that all variables be labeled with 'var'.
 	* We are going to create a map var and use leaflet to initialize it. We need to give out map two parameters. First, the latitude/longitude for the center of our map, and the zoom level. 
 	1. set `var map =`
 	2. When we call leaflet (i.e. access the leaflet library's set of commands), we use capital L  `L.map` to call Leaflet's map property.
 	*. Javascript (and therefore Leaflet) uses both dot notation and bracket notation, whenever there's a period between things in js, it's called dot notation, and you are "accessing the properties" of an "object" don't worry too much about this - it just means you are looking inside of that object to find a particular property.
-	4. '.setView([40.87,-73.87], 15)': We set the view of the map by specifying the center point in latitude and longitude `[40.87,-73.87]`, as well as the zoom level: `15`.
+	4. '.setView([`var map = L.map('map').setView([19.076, 72.878], 15);`
+], 15)': We set the view of the map by specifying the center point in latitude and longitude `[`var map = L.map('map').setView([19.076, 72.878], 15);`
+]`, as well as the zoom level: `15`.
 
 **Add Map Tiles**
 
@@ -247,7 +249,7 @@ Please note: `//` in front of a line means that the code is "commented out" and 
 ![img](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities_2017/blob/master/Tutorials/Images/Webmaps/04_MapTiles.png)
 
 **Add GeoreferencedHistorical Map**
-We will now embed the "Map or plan of that part of the Borough of the Bronx, City of New York, lying easterly of the Bronx River" published in 1902 that we georeferenced in the previous exercise. 
+We will now embed the "Map of the Iland of " published in 1902 that we georeferenced in the previous exercise. 
 
 1. *Create a variable* that contains the url of the image, in this case the path to where is it stored in the directory for our webmap. 
 `var imageUrl = 'data/BronxMap.png';`
