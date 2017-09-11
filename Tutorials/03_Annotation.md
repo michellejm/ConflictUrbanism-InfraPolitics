@@ -246,69 +246,69 @@ Please note: `//` in front of a line means that the code is "commented out" and 
 		}).addTo(map);
 ```
 4. *Save* your index.html document. Open your browser and refresh the `localhost:8000` page. You should see the following: 
-![img](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities_2017/blob/master/Tutorials/Images/Webmaps/04_MapTiles.png)
+![img]()
 
 **Add GeoreferencedHistorical Map**
-We will now embed the "Map of the Iland of " published in 1902 that we georeferenced in the previous exercise. 
+We will now embed the "Map of the Island of Bombay" published in 1909 that we georeferenced in the previous exercise. 
 
 1. *Create a variable* that contains the url of the image, in this case the path to where is it stored in the directory for our webmap. 
-`var imageUrl = 'data/BronxMap.png';`
+`var imageUrl = 'data/referenced_mumbai.png';`
 2. *Create another variable* where you define the area that the image covers using two pairs of latitude and longitude coordinates for the top left and bottom right corners of your image. We found these coordinates using the `lat lon tools` plugin for QGIS when we were preparing the historical map raster earlier. 
-`var imageBounds = [[40.8846829955, -73.8978315922], [40.8290586719, -73.8201512858]];`
+`var imageBounds = [[19.1012196354, 72.7703713242], [18.8743642027, 72.9320741694]];`
 3. *Call Leaflet's .imageOverlay()* method pass it the two variable we just created, set the opacity of the map layer and add it to the map. 
 `L.imageOverlay(imageUrl, imageBounds, {opacity: 0.8}).addTo(map);`
 4. *Save and then refresh your browser* and the 1902 map should appear. 
 
-**Add Digitized Road Outlines (or any geojson file)**
-Now we will add the road outlines that we digitized. 
+**Add Points of Interest (or any geojson file)**
+Now we will add the file of points related to the plague. 
 
 1. *Use the jQuery command, getJSON.* Use $ to call the jQuery library, just like Leaflet is **called** with L., jQuery is **called** with $.
-2. *Tell jQuery where your file is located,* and give the function a name (I'm going to use 'roadsData'). 
-3. *Set the color,* line weight, and opacity of your lines. 
-4. *Comment out* `//onEachFeature: road_annon` we will use this in the next step.
-5. *Add the lines to the map*
-6. *Save and then refresh your browser,* the road lines should be visible.
+2. *Tell jQuery where your file is located,* and give the function a name (I'm going to use 'plagueData'). 
+3. *Set the color,* weight, and opacity of your points. 
+4. *Comment out* `//onEachFeature: site_annon` we will use this in the next step.
+5. *Add the sites to the map*
+6. *Save and then refresh your browser,* the sites should be visible.
 
 ```javascript
-$.getJSON('data/RoadLines.geojson',function(roadsData){
-	    L.geoJson(roadsData, {
+$.getJSON('data/plaguetimeline.geojson',function(plagueData){
+	    L.geoJson(plagueData, {
 	    	color: "#ff7800",
 	    	weight: 3.5,
 	    	opacity: 0.65,
-	    	//onEachFeature: road_annon
+	    	//onEachFeature: site_annon
 	    }).addTo(map);
 	    }); 
 ```
 **Add Interactivity to Road Outlines (or any geojson file)**
 We will now add popups for each of our road lines. 
 
-1. *Create a variable* lets call it `road_annon`
+1. *Create a variable* lets call it `site_annon`
 2. *Call the leaflet function* `onEachFeature`. This must be defined for two parameters:  `feature` and `layer`. Whatever information we include in this function will be called once for each feature (basically each row) in our GeoJSON file. 
 3. *Define the action* we want called for each feature: 
-	* If the RoadLines.geojson file has properties (attribute information) and has a column named `Descr` 
+	* If the RoadLines.geojson file has properties (attribute information) and has a column named `Event` 
 	* Then create a variable called `roadsPopup`. 
-	* Inside that variable store the value of the `Descr` column in the RoadLines.geojson file. 
-	* Use the `.bindPopup()` leaflet method to attach the content of the roadsPopup to each element in the RoadsData layer
-4. *Call the onEachFeature function we just defined.* Return to the block of code above where we added the data and uncomment `onEachFeature: road_annon`
+	* Inside that variable store the value of the `Event` column in the plaguetimeline.geojson file. 
+	* Use the `.bindPopup()` leaflet method to attach the content of the roadsPopup to each element in the plagueData layer
+4. *Call the onEachFeature function we just defined.* Return to the block of code above where we added the data and uncomment `onEachFeature: site_annon`
 
 Your code should now look like the following.
 
 ```javascript
-//load GeoJSON file containing roads, and style lines
-  	$.getJSON('data/RoadLines.geojson',function(roadsData){
-	    L.geoJson(roadsData, {
+//load GeoJSON file containing sites of plague events, and style points
+  	$.getJSON('data/RoadLines.geojson',function(plagueData){
+	    L.geoJson(plagueData, {
 	    	color: "#ff7800",
 	    	weight: 3.5,
 	    	opacity: 0.65,
-	    	onEachFeature: road_annon
+	    	onEachFeature: site_annon
 	    }).addTo(map);
 	    });  
 
 //define popup content for road annotations
  	var road_annon = function onEachFeature(feature, layer) {
-	    if (feature.properties && feature.properties.Descr) {
-	    	var roadsPopup = feature.properties.Descr;
-	        layer.bindPopup(roadsPopup);
+	    if (feature.properties && feature.properties.Event) {
+	    	var sitePopup = feature.properties.Event;
+	        layer.bindPopup(sitePopup);
 	    }
 	}
 ```
@@ -400,56 +400,32 @@ The full completed code for this example is available here:
 
 	
 //link to the historical map image 
-	var imageUrl = 'data/BronxMap.png';
+	var imageUrl = 'data/referenced_mumbai.png';
 
 //define the area that image covers
-	var imageBounds = [[40.8846829955, -73.8978315922], [40.8290586719, -73.8201512858]]; 
+	var imageBounds = [[19.1012196354, 72.7703713242], [18.8743642027, 72.9320741694]]; 
 
 //add georeferenced historical map
 	L.imageOverlay(imageUrl, imageBounds, {opacity: 0.8}).addTo(map);
 
 
-//load GeoJSON file containing roads, and style lines
-  	$.getJSON('data/RoadLines.geojson',function(roadsData){
-	    L.geoJson(roadsData, {
+//load GeoJSON file containing sites, and style lines
+  	$.getJSON('data/plaguetimeline.geojson',function(plagueData){
+	    L.geoJson(plagueData, {
 	    	color: "#ff7800",
 	    	weight: 3.5,
 	    	opacity: 0.65,
-	    	onEachFeature: road_annon
+	    	onEachFeature: site_annon
 	    }).addTo(map);
 	    });  
 
-//define popup content for road annotations
- 	var road_annon = function onEachFeature(feature, layer) {
-	    if (feature.properties && feature.properties.Descr) {
-	    	var roadsPopup = feature.properties.Descr;
-	        layer.bindPopup(roadsPopup);
-	    }
-	}
-
-//load GeoJSON file containing points
-	$.getJSON('data/PointAnnotations.geojson',function(bldg){
-		L.geoJson(bldg,{
-			onEachFeature: point_annon
-	    }).addTo(map);
-	});
-
-//define popup content for point annotations
-	var point_annon = function onEachFeature(feature, layer) {
-	    if (feature.properties && feature.properties.Descr) {
-	    	var pointsPopup = feature.properties.Name + '<br/> <img src="'+ feature.properties.ImgURL + '" width ="300px"/> <br/>' + feature.properties.Descr;
+//define popup content for site annotations
+	var site_annon = function onEachFeature(feature, layer) {
+	    if (feature.properties && feature.properties.Event) {
+	    	var pointsPopup = feature.properties.Year + feature.properties.Event + '<br/> <img src="' feature.properties.Image + '" width ="300px"/> <br/>';
 	        layer.bindPopup(pointsPopup);
 	    }
-	}
-	
-	  
-//add NYLP Map Warper maps
-	L.tileLayer('http://maps.nypl.org/warper/maps/tile/27688/{z}/{x}/{y}.png').addTo(map);
-	
-//add NYLP Map Warper maps
-	L.tileLayer('http://maps.nypl.org/warper/maps/tile/17090/{z}/{x}/{y}.png').addTo(map);
-
-
+	}	
 	</script>
 </body>
 </html>
@@ -462,5 +438,5 @@ The full completed code for this example is available here:
 
 ______________________________________________________________________________________________________________
 
-Tutorial written by Dare Brawley, for *Mapping for the Urban Humanities*, a intensive workshop for Columbia University faculty taught in Summer 2017 by the [Center for Spatial Research](http://c4sr.columbia.edu). More information about the course is available [here](http://c4sr.columbia.edu/courses/mapping-urban-humanities-summer-bootcamp). It is based on the tutorial prepared by Michelle McSweeney for the Spring 2017 course, *Conflict Urbanism: Language Justice* offered at Columbia Univeristy through the Center for Spatial Research. 
+Tutorial written by Michelle McSweeney for *[Conflict Urbanism: InfraPolitics](https://github.com/michellejm/ConflictUrbanism-InfraPolitics)*. Based on the tutorial written by Dare Brawley, for *Mapping for the Urban Humanities*. It is based on the tutorial prepared by Michelle McSweeney for the Spring 2017 course, *Conflict Urbanism: Language Justice* offered at Columbia Univeristy through the Center for Spatial Research. 
 
