@@ -237,17 +237,18 @@ Include the answer as part of your map composition that we will review on Tuesda
 
 Now that we have these three different layers we can begin to create maps that highlight the differences between these different ways to measure population. We will compose a map that symbolizes each of our three data layers differently. We will use graduated symbols to express city population, a choropleth map for population by country and a classified color ramp for the gridded population. We will then go over cartographic conventions adding a legend and scale bar to the map and exporting as a PDF. 
 
-
-**Proportional  symbols**
-
-We will symbolize the cities layer with symbols that are sized proportionally to their population -- a city with a larger population will have a larger circle and visa versa. 
-To do this open the layer properties menu for the populated_places layer and navigate to the Style tab. 
-
-Choose Graduated Symbols. Select pop_max as the column, and Natural Breaks (Jenks) as the mode. Click Classify and then click Apply. The populated places will now be colored according to their population. Now we’ll adjust them by size. 
-
-![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/21_Graduate.png)
+**VERSION ISSUE** If the option below doesn't exist, go to the next version's directions
 
 **Click** on the Advanced dropdown menu in the bottom right and navigate to the `Size scale field` option. Select `pop_max`. **Click** `Apply`. You’ll notice that the circles are huge and fill up the entire screen. Return to the `Size scale field` and now select `expression`. In the expression builder window that opens write the following `“pop_max” / 1000000`. Click `Okay` in the expression builder then click `Apply`. Click Okay to close the Properties window. 
+
+**VERSION 2**
+**Click** on 'Simple Marker' and then next to the size option, there is a small icon. If you hover over it, it will show that the 'data defined override is off' click the icon to turn it on, then select 'Size Assistant'
+
+![blank](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef3-11.png)
+
+In the pop up box, select the pop_max filed and Flannery classification
+
+![blank](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef3-12.png)
 
 The outcome of your selections should look something like this:
 
