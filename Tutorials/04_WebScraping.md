@@ -1,4 +1,5 @@
-# Web Scraping aka Getting data not available for download
+# Web Scraping aka 
+## Getting data not available for download
 
 ### Premise
 Often, the data we want is not available, or it is available on a website, but we cannot download it. American cities have done a very good job in recent years of developing "data portals" that allow for easy downloads of large amounts of data. If we only use that, we could probably still spend the rest of our lives analyzing and visualizing just what is there. 
