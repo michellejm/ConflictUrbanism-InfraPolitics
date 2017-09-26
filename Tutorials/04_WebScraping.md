@@ -16,4 +16,9 @@ By the end of this tutorial you will be able to:
 ### Downloads
 I **highly** encourage you to download [Anaconda](https://www.anaconda.com/download) for this tutorial. You will not need it for the remainder of the class, but it is an excellent environment to learn Python in. It also comes with all of the packages we will need. If you have used Python on your computer before, you may have some of the packages already. However, this tutorial is written for use in an iPython Notebook, which comes with Anaconda. 
 
-### 
+### Inspect the Website
+The first thing we need to do is get a sense of how the site is organized.
+1. Visit https://census2011.adrianfrith.com/place/798
+This site has a main, city page then a list of links that take you to sub pages
+2. https://census2011.adrianfrith.com/place/798014
+The subpages have their own subpages
