@@ -29,7 +29,7 @@
 		minZoom: 1
 		}).addTo(map);
 	
-//link to the historical map image 
+//link to the URL of the georeferenced historical map image 
 	var imageUrl = 'data/referenced_mumbai.png';
 
 //define the area that image covers
@@ -38,8 +38,8 @@
 
 
 
-//add georeferenced historical map
-	L.imageOverlay(imageUrl, imageBounds, {opacity: 0.8}).addTo(map);
+//add georeferenced map to the basemap
+	//L.imageOverlay(imageUrl, imageBounds, {opacity: 0.8}).addTo(map);
 
 //define new marker
 var myIcon = L.icon({
@@ -50,16 +50,15 @@ iconUrl: 'css/images/maps-mark.png',
 
 
 //load GeoJSON file containing sites, and style points
-  	$.getJSON('data/plaguetimeline.geojson',function(plagueData){
-	    	L.geoJson(plagueData, {
-	    	pointToLayer: function(feature, latlng) {
-		return L.marker(latlng, {
-		icon: myIcon});
-	},
-	    	onEachFeature: onEachFeature,
-	    	}).addTo(map);
-	    }); 
-
+  	//$.getJSON('data/plaguetimeline.geojson',function(plagueData){
+	    	//L.geoJson(plagueData, {
+	    	//pointToLayer: function(feature, latlng) {
+		//return L.marker(latlng, {
+		//icon: myIcon});
+	//},
+	    	//onEachFeature: onEachFeature,
+	    	//}).addTo(map);
+	    //}); 
 
 
 
@@ -74,7 +73,7 @@ function onEachFeature(feature, layer) {
 
 L.geoJSON(geojsonFeature, {
 
-	onEachFeature: onEachFeature
+	onEachFeature: onEachFeature 
 }).addTo(map);
 
 	</script>
