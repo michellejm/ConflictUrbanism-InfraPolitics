@@ -135,7 +135,7 @@ Inspect the main place to see how the links are formated:
 
 ![blank](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/ws4.png)
 
-We see it is in the <td class="namecell"> in an <a href   > the href points us to the address extension, /place/798014 if we paste that into the browser after the xxx.COM, we see that it takes us to the page we want. Perfect! We found the addresses. 
+We see it is in the `<td class="namecell">` in an `<a href   >` the href points us to the address extension, /place/798014 if we paste that into the browser after the xxx.COM, we see that it takes us to the page we want. Perfect! We found the addresses. 
     
 Let's double check that it's the same on the main page site by inspecting the element, and it is!
 
