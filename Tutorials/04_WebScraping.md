@@ -28,8 +28,12 @@ Web scraping is highly specific to each site. The program we write will be based
 
 ### Vocabulary
 **List** An ordered set of values or strings [Male, Female, Black, White]
+
 **Dictionary** An unordered set of key:value pairs.  {Male: 200, Female: 220, Black: 150, White:120}
-**String** Words 'Male' 'Female'
+
+**String** Words and other units that Python can match, but DOES NOT EVALUATE 'Male' 'Female' '2', 'male' 
+
+**DataFrame** Structure for data with rows and columns, similar to Excel, but with a predefined number of columns, can be modified
 
 HTML/CSS
 **Element**
@@ -94,4 +98,4 @@ If I move my cursor around in this box, it highlights different elements on the 
   
 By right clicking on the title, I see that the top name is in the class attribute, 'topname'
 
-![blank](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/ws2.png)
+![blank](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/ws3.png)
