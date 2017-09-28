@@ -6,7 +6,6 @@ Created on Wed Sep 27 14:44:15 2017
 @author: mam
 """
 import requests, bs4
-import pickle
 
 
 mylist = []
@@ -60,7 +59,4 @@ for subsite in subsitelist:
 with open ('filelist.py', 'w') as f:
     f.write('mylist = %s' % alist)
 
-        
-#with open('outfile', "wb") as fp:
- #   pickle.dump(alist, fp)
     
