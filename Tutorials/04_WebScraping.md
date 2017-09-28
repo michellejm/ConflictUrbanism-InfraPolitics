@@ -285,13 +285,13 @@ for subsite in subsitelist[:5]:
 2. make a new list for the location name (that will get rewritten for every item in the loop), find the location name by selecting the CSS id, .topname. We only want the first instance of it (in case there are more), so we select the zeroth element (Python starts counting at zero). We will get the text from the element (the stuff between the opening and closing tags), and add it to the list of location names that we are making. 
 
 **Step 10 For each subplace**
-    **1. Read the data from the page**
-    **2. Clean the data**
-    **3. Store the place names in a list**
-    **4. Store the data in a dictionary**
-    **5. Pass the dictionary to a dataframe**
-    **6. Add the list of locations to the dataframe**
-    **7. Add the new dataframe to the existing one**
+**1. Read the data from the page**
+**2. Clean the data**
+**3. Store the place names in a list**
+**4. Store the data in a dictionary**
+**5. Pass the dictionary to a dataframe**
+**6. Add the list of locations to the dataframe**
+**7. Add the new dataframe to the existing one**
     
 Next, we will start a new list, and call it 'mylist' to collect all the items in the td tags that are within tr tags. A more elegant way to do this would be to select by the tags. 
 
