@@ -76,8 +76,35 @@ All of the categories that appear across all pages are on the main JHB page. Fan
 #### Data
 There seems to be raw numbers and percentages presented. I want the raw numbers, but not the percentages. The data also appears in 3 tables. I'd rather not have to deal with that, and would rather just make 1 big table of all the data (*I will come to regret this later, and would rewrite it with more time*)
 
+#### Plan 
+**Manual Tasks**
+1. Make sure the subsites data is visible in the HTML
+2. Make sure the links can be collected on the JHB page and the main pages
+
+**Programmatic Tasks**
+3. Make a list of all the features we will look for to make the columns of our dataframe (decide what to do with the 'Other' problem and *Not applicable*)
+4. Set up our program and download all the packages we think we will need
+5. Make a new dataframe that will hold all the data
+6. Make a list of the links from the JHB site to each main place site
+
+6. For each main place, make a list of the links to each subplace
+7. Make a master list for Python to use to visit each subplace site
+8. Visit each subplace and collect the data from the table
+9. For each subplace,
+    1. Read the data from the page
+    2. Clean the data
+    3. Store the data in a dictionary
+    4. Pass the dictionary to a dataframe
+    5. Add the new dataframe to the existing one
+10. Figure out some way to reference the place names and add it to the dataframe as a column
+11. Save the dataframe as a csv
+12. Check the csv
+    1. If it worked, do a happy dance, you got your data!
+    2. If it didn't work, debug
+
 ### Inspecting the Pages
 For this, Google Chrome is the best interface (I am a Firefox user, you can do this with FF, too, but I will use Chrome because it's easier to look at).
+**Step 1 Make sure the subsites data is visible in the HTML**
 Go to the webpage you want to scrape. Right-click and select 'Inspect Element' 
 
 ![blank](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/ws1.png)
@@ -96,6 +123,56 @@ If I move my cursor around in this box, it highlights different elements on the 
 * The category is in the <td class = "namecell">
 * The numbers are in the <td class = "datacell">
   
-By right clicking on the title, I see that the top name is in the class attribute, 'topname'
+By right clicking on the title, I see that the name of this sub area is in the class attribute, 'topname'
 
 ![blank](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/ws3.png)
+
+We now understand how our data is organized on our site.
+
+**Step 2. Make sure the links can be collected on the JHB page and the main pages**
+Now go back to the [JHB site](https://census2011.adrianfrith.com/place/798) Scroll to the list of mainplaces. STart clicking on them and see if there is a pattern to the numbers - if jsut the last 2 digits change (a common strategy), then we can just check pages incrementally. Unfortunately, there is not a pattern here, so we will have to figure something else out. 
+
+Inspect the main place to see how the links are formated:
+
+![blank](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/ws4.png)
+
+We see it is in the <td class="namecell"> in an <a href   > the href points us to the address extension, /place/798014 if we paste that into the browser after the xxx.COM, we see that it takes us to the page we want. Perfect! We found the addresses. 
+    
+Let's double check that it's the same on the main page site by inspecting the element, and it is!
+
+![blank](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/ws5.png)
+
+**Step 3. Make a list of all the features we will look for**
+First, what are we going to do about 'Other'? There are two options, we could download each type of data 3 times, but there are a lot of sites to search, so doing that 3 times is not ideal. I would rather be able to do it all at once. It turns out that 'Other' for both categories is only about 1% of the data. If I'm OK with losing 1% of the data (and making a note to myself that I did that), then I will just omit the 'Other' values before adding them to my dictionary. 
+
+Now we need to get the column names/categories. We could do this programatically, but we only have to do it once, so copy/paste will work just as well. I copied all the headers, put it into Excel, took out what I didn't want, and saved it as a csv in order to get a list of the categories. This is not the kind of list that Python can read, though. To make it readable, I opened the file with Sublime, put quotes around each word, separated each word by a comma, and saved it. 
+
+The final list looks like this:
+'Male', 'Female', 'Black African', 'Coloured', 'Indian or Asian', 'White', 'Sepedi', 'isiZulu', 'Xitsonga', 'Setswana', 'Sesotho', 'isiXhosa', 'Tshivenda', 'English', 'isiNdebele', 'Sign language', 'Afrikaans', 'SiSwati'
+
+The order of this list does not matter because Python will match the strings rather than the index (location).
+
+**Open Python**
+Find Anaconda on your computer (it might not be in your Applications, so you may have to search for it).
+
+Launch a Jupyter Notebook
+![blank](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/ws6.png)
+
+It will open in a browser window and you will see a list of all of your files. Open a New Python3 Notebook.
+
+![blank](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/ws7.png)
+
+A cell-by-cell interpreter will open
+
+![blank](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/ws8.png)
+
+In the first cell, call all of the programs we will need
+Type:
+
+import requests, bs4
+import pandas as pd
+import numpy as np
+from collections import defaultdict
+
+Click `Shift` + `Return` to run the cell. If nothing happens (rather, the number becomes an asterisk, and the asterisk goes back to a number), then it worked! 
+
