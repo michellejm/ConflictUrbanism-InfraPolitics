@@ -17,7 +17,7 @@ url="https://census2011.adrianfrith.com"
 from listfile import mylist as mylist
 
 links = []
-for i in mylist[274:]:
+for i in mylist:
     links.append(url+i)
     
 for link in links:
