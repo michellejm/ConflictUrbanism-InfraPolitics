@@ -26,8 +26,12 @@ When doing any programming, especially in the beginning, it is essential to writ
 
 ### Understand the Website
 The first thing we need to do is get a sense of how the site is organized.
-Visit https://census2011.adrianfrith.com/place/798
-This site has a main, city page then a list of links that take you to sub pages. Let's look at a subpage https://census2011.adrianfrith.com/place/798014. We see that the subpages have their own subpages. This tells us that we will have to:
+
+Visit https://census2011.adrianfrith.com/place/798 We see that this site has a city page then a list of links that take you to the 'main pages'. Let's look at a mainpage https://census2011.adrianfrith.com/place/798014. We see that the mainpages have their own subpages. Let's look at a subpage https://census2011.adrianfrith.com/place/798014056. This seems to be the smallest areal unit, so that is what we want. It is good practice to go through an make sure it is fairly uniform throughout by clicking on som other mainpages and their subpages. 
+
+Statistics only mean so much without a geometry associated with them. There seems to be a link on the right to download the geometries. This is great, we know we can get them. BUT! We only want to deal with one problem at a time. We are fairly sure we can get the geometries, so we will set that problem aside for the time being. 
+
+Based on this structure, we will have to:
   1. Start at the main page for Johannesburg 
   *for each link on the JHB page, follow it to the main page*
   2. Follow each link to each 'Main Place' 
