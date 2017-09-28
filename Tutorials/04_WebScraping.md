@@ -278,9 +278,9 @@ The next command is huge, so we will break it down before putting it into our No
 for subsite in subsitelist[:5]:
 
 1. go out to all of the subsites and read in the text. 
-```
-    dpage = requests.get("https://census2011.adrianfrith.com"+subsite)
-    mypage = bs4.BeautifulSoup(dpage.text)```
+
+    `dpage = requests.get("https://census2011.adrianfrith.com"+subsite)
+    mypage = bs4.BeautifulSoup(dpage.text)`
 
 2. make a new list for the location name (that will get rewritten for every item in the loop), find the location name by selecting the CSS id, .topname. We only want the first instance of it (in case there are more), so we select the zeroth element (Python starts counting at zero). We will get the text from the element (the stuff between the opening and closing tags), and add it to the list of location names that we are making. 
 
