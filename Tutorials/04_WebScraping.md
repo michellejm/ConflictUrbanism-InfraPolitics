@@ -1,5 +1,5 @@
 # Web Scraping 
-# *aka Getting data not available for download*
+#### *aka Getting data not available for download*
 
 ### Premise
 Often, the data we want is not available, or it is available on a website, but we cannot download it. American cities have done a very good job in recent years of developing "data portals" that allow for easy downloads of large amounts of data. If we only use that, we could probably still spend the rest of our lives analyzing and visualizing just what is there. 
@@ -26,8 +26,10 @@ When doing any programming, especially in the beginning, it is essential to writ
 
 ### Understand the Website
 The first thing we need to do is get a sense of how the site is organized.
-1. Visit https://census2011.adrianfrith.com/place/798
+Visit https://census2011.adrianfrith.com/place/798
 This site has a main, city page then a list of links that take you to sub pages. Let's look at a subpage https://census2011.adrianfrith.com/place/798014. We see that the subpages have their own subpages. This tells us that we will have to:
-  1. Start at the main page for Johannesburg *for each link on the JHB page, follow it to the main page*
-  2. Follow each link to each 'Main Place' *for each link on the main page, follow it to the subpage*
+  1. Start at the main page for Johannesburg 
+  *for each link on the JHB page, follow it to the main page*
+  2. Follow each link to each 'Main Place' 
+  *for each link on the main page, follow it to the subpage*
   3. Follow each link to each 'Sub Place'
