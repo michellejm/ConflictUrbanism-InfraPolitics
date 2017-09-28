@@ -285,6 +285,7 @@ for subsite in subsitelist[:5]:
 2. make a new list for the location name (that will get rewritten for every item in the loop), find the location name by selecting the CSS id, .topname. We only want the first instance of it (in case there are more), so we select the zeroth element (Python starts counting at zero). We will get the text from the element (the stuff between the opening and closing tags), and add it to the list of location names that we are making. 
 
 **Step 10 For each subplace**
+
     **1. Read the data from the page**
     **2. Clean the data**
     **3. Store the place names in a list**
