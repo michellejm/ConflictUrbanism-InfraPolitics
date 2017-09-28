@@ -364,7 +364,6 @@ In `NEXT CELL`, type
 
 df.to_csv('jhb_census.csv')
 
-
 Now if we run this, it will download all of the data to our csv file!!
 
 **Step 12. Check the csv**
