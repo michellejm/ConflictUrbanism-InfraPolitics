@@ -378,5 +378,7 @@ Our next task is to download the kml's. The code for that is in the data downloa
 
 The complete code is available [on Github in the Data Folder](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/tree/master/Data/04_Webscraping) both as an iPython Notebook and as a Python program. 
 
-********************************************************
 To complete this tutorial on your own, send Michelle (mam2518) your csv file of a SLICE of the data and tell me what slice you chose.
+********************************************************
+
+This tutorial was prepared by Michelle McSweeney for the Conflict Urbanism: InfraPolitics Course offered by the [Center for Spatial Research](http://c4sr.columbia.edu) at Columbia University in Fall 2017. 
