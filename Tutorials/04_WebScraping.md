@@ -376,7 +376,7 @@ Open with Excel or another program
 
 Our next task is to download the kml's. The code for that is in the data download. This is written as 2 programs - making a list of locations and downloading the data has been separated. It is VERY SLOW, downloading entire files is an involved process. This will be provided to you in the next tutorial. 
 
-The complete code is available on Github sin the Data Folder both as an iPython Notebook and as a Python program. 
+The complete code is available [on Github in the Data Folder](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/tree/master/Data/04_Webscraping) both as an iPython Notebook and as a Python program. 
 
 ********************************************************
 To complete this tutorial on your own, send Michelle (mam2518) your csv file of a SLICE of the data and tell me what slice you chose.
