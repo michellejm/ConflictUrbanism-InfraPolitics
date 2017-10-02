@@ -267,8 +267,8 @@ Now we will compare the total estimated population within the buffers to the ori
 
 * Navigate to `Vector`>`Analysis`>`Basic Statistics`.
 * Select jhb_mine_2kclip as the Input vector layer
-* Select pop2011_es as the Target field and note the Sum: 1,643,157.9
-* Compare this to our original estimate of 861951.0
+* Select pop2011_es as the Target field and note the Sum: 467,140.47
+* Compare this to our original estimate of 861,951.0
 
 We would like to collect all of the demographic information. There's two ways we could do this. First, we could copy and paste every output of 'basic statistics' and save it into a text document and transform it. Or, we could do these staistics in Excel. Excel will prove easier and more intuitive since we've gotten what we need out of QGIS. DO NOT CLOSE your project - we are coming back. 
 
@@ -278,18 +278,47 @@ For now, right click, and 'Save As' csv. Don't add it to your project. We are mo
 
 Download the csv and open it with Excel or Google Sheets. 
 
-In cell AM1, enter a column name, I'm going to use the prefix buf to remind me it's the calculated buffers
+In cell AH1, enter a column name, I'm going to use the prefix buf to remind me it's the calculated buffers
 
-In cell AM2, type `=(N2*AK2)`  Column N is 'Black African' and cell 2 is the first one with numbers in it. 
+I like to freeze my top row now
+
+![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/jb28.png)
+
+In cell AH2, we will multiple the number of 'Black Africans' by the Proportion: Type `=(N2*AK2)`  Column N is 'Black African' and cell 2 is the first one with numbers in it. 
 Hover over the bottom right corner to 'drag and fill' this formula for all of your rows.
 
 ![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/jb27.png)
 
 Repeat for 'Colored', 'Indian or Asian', and 'White'
 
-* Scroll to the bottom of the page to calculate the sum for each group and in cell AM193, type `=SUM(AM2:AM191)`
+* Scroll to the bottom of the page to calculate the sum for each group and in cell AH193, type `=SUM(AH2:AH191)` Repeat for all the columns and the proportional total column (likely AG, so the sum will be in AG193)
+* Calculate the percentages
+  * In cell AH 194, type: `(AH193/$AG$193)*100`. The $ mark holds each value constant as you drag the formula. This will give you percentages
+ 
+
+![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/jb29.png)
+
+We found that 79.8% of people living within 2km of the mines are Black Africans, compared with approximately 84% across the city, which we calculated from the Excel table. This is actually not so disproportionate. 
+
+### Making the map ###
+The final product that we have made is not visually appealing. There are a few things we can do. Either we can focus on Johannesburg and make a series of demographic chloropleth maps to illustrate racial diversity. Or we could contextualize Johannesburg in all of South Africa. 
+
+Let's situate Johannesburg in South Africa.
+
+* Add background vector layers to help situate it- all of these are in the data folder.
+  * Johannesburg city outline 
+  * Guateng state outline
+  * South Africa Waterways (ZAF-wat)
+  * South Africa state boundaries (ZAF - Adm 1)
+  * South Africa country boundaries (ZAF - Adm 0)
+* Change the fills and borders to make it more visually appealing
+* Add a Title, legend, scale bar
+
+![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/jb30.png)
 
 
+
+To complete the tutorial on your own, send your csv and the pdf to Michelle at mam2518@columbia.edu
 
 ______________________________________________________________________________________________________________
 
