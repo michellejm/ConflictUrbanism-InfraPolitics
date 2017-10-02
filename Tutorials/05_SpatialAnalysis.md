@@ -189,7 +189,7 @@ Click `OK`.
 
 To collect these results, you will need to copy & paste them. We will do that for this time just as an example. 
 
-* We see that the total population of all of the micro areas that intersect a 2km buffer around a mine is 3,024,734. Make a note of this total we will compare it to the result we get in the next portion of the exercise. 
+* We see that the total population of all of the micro areas that intersect a 2km buffer around a mine is 861,951.0. Make a note of this total we will compare it to the result we get in the next portion of the exercise. 
 
 ##### Proportional Split
 
@@ -268,18 +268,26 @@ Now we will compare the total estimated population within the buffers to the ori
 * Navigate to `Vector`>`Analysis`>`Basic Statistics`.
 * Select jhb_mine_2kclip as the Input vector layer
 * Select pop2011_es as the Target field and note the Sum: 1,643,157.9
-* Compare this to our original estimate of 3,024,734
+* Compare this to our original estimate of 861951.0
 
-We would like to collect all of the demographic information. There's two ways we could do this. First, we could copy and paste every output of 'basic statistics' and save it into a text document and transform it. Or, we could compute new columns and summarize them. We will go with the latter.
+We would like to collect all of the demographic information. There's two ways we could do this. First, we could copy and paste every output of 'basic statistics' and save it into a text document and transform it. Or, we could do these staistics in Excel. Excel will prove easier and more intuitive since we've gotten what we need out of QGIS. DO NOT CLOSE your project - we are coming back. 
 
-* Open the attribute table
-* Select 'Open field Calculator' 
-* Add a new field and multiple the group (i.e., 'Black African') by the proportion. 
-![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/jb24.png)
-* Set the precision to 2, and the field type to Integer (real)
-* Repeat this for each group we are interested in, 'Black African', 'White', 'Colored', 'Indian or Asian' I'm going to add the prefix, 'buf' so I know what I calculated. 
-* Untoggle the Editing mode, and save your changes. 
+For now, right click, and 'Save As' csv. Don't add it to your project. We are moving to another program. 
 
+![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/jb26.png)
+
+Download the csv and open it with Excel or Google Sheets. 
+
+In cell AM1, enter a column name, I'm going to use the prefix buf to remind me it's the calculated buffers
+
+In cell AM2, type `=(N2*AK2)`  Column N is 'Black African' and cell 2 is the first one with numbers in it. 
+Hover over the bottom right corner to 'drag and fill' this formula for all of your rows.
+
+![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/jb27.png)
+
+Repeat for 'Colored', 'Indian or Asian', and 'White'
+
+* Scroll to the bottom of the page to calculate the sum for each group and in cell AM193, type `=SUM(AM2:AM191)`
 
 
 
