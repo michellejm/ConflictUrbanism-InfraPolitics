@@ -268,7 +268,20 @@ Now we will compare the total estimated population within the buffers to the ori
 * Navigate to `Vector`>`Analysis`>`Basic Statistics`.
 * Select jhb_mine_2kclip as the Input vector layer
 * Select pop2011_es as the Target field and note the Sum: 1,643,157.9
-* 
+* Compare this to our original estimate of 3,024,734
+
+We would like to collect all of the demographic information. There's two ways we could do this. First, we could copy and paste every output of 'basic statistics' and save it into a text document and transform it. Or, we could compute new columns and summarize them. We will go with the latter.
+
+* Open the attribute table
+* Select 'Open field Calculator' 
+* Add a new field and multiple the group (i.e., 'Black African') by the proportion. 
+![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/jb24.png)
+* Set the precision to 2, and the field type to Integer (real)
+* Repeat this for each group we are interested in, 'Black African', 'White', 'Colored', 'Indian or Asian' I'm going to add the prefix, 'buf' so I know what I calculated. 
+* Untoggle the Editing mode, and save your changes. 
+
+
+
 
 ______________________________________________________________________________________________________________
 
