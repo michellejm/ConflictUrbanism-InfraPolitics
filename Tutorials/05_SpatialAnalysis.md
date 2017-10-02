@@ -162,7 +162,7 @@ We will be creating a number of new layers during this portion of the exercise s
 ##### Making Estimates 
 We would like to determine more generally how many people live near mines in Johannesburg – i.e. how many people are affected by the mines? 
 
-In order to answer this question we will need to estimate the total population near mines in the Bronx. We will first use a coarse method of estimation and then we will refine our estimate using a more advanced technique. 
+In order to answer this question we will need to estimate the total population near mines. We will first use a coarse method of estimation and then we will refine our estimate using a more advanced technique. 
 
 For our first approximation we will ask: how many people live in the microareas that intersect a 2km buffer around our mines?
 
@@ -180,7 +180,7 @@ Include features that intersect and overlap/cross the input selection
 * Your selections should look something like this: 
 ![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/jb14.png)
 
-* We can already tell that this will be a very coarse way to estimate the population served by each of the Bronx mines because some micro areas which intersect our buffers are very large and portions of the tract are very far away from any library. 
+* We can already tell that this will be a very coarse way to estimate the population near each of the mines because some micro areas which intersect our buffers are very large and portions of the tract are very far away. 
 
 * Despite this we now want to add up the total population within these selected micro areas.  To determine the total population of all of the microunit tracts that intersect 2km from a mine. To do this we will use the `Basic statistics` tool. Navigate to  `Vector`>`Analysis`>`Basic Statistics`. Select the input layer ('jhb_micro_census' and 'only selected features') and for now, we only want to add the Total column to first determine how many people live in the area. We would need to do this for every column if we wanted the full demographic breakdown. 
 Click `OK`. 
@@ -224,7 +224,7 @@ Under General and Select the **SECOND** WGS84
 ![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/jb20.png)
  
 **Clipping the micro areas to the 2km buffers**
-* Next we will use the `clip` tool to clip the Bronx micro areas with the 2km buffers around the Bronx mines. 
+* Next we will use the `clip` tool to clip the micro areas with the 2km buffers around the mines. 
 * Navigate to `Vector`>`Geoprocessing Tools`>`Clip`
 ![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/jb22.png)
 
@@ -241,7 +241,7 @@ Under General and Select the **SECOND** WGS84
 
 **Calculating the area of the clipped micro areas**
 * Now we will calculate the area of these new polygons. 
-* Open the attribute table for the clipped Bronx micro areas layer: `jhb_mine_2kclip`.
+* Open the attribute table for the clipped micro areas layer: `jhb_mine_2kclip`.
 * Open the field calculator and again create a new field to calculate the new area of each polygon. 
 * Set the Output field name as `AreaClip`, 
 * Select `Decimal number (real)` as the output field type, Set the output field width as 10 and the precision as 2. Under the geometry menu select `$area`. Click `OK`. 
