@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata><idinfo><citation><citeinfo><origin>U.S. Geological Survey</origin><pubdate>2005</pubdate><title>Mineral Resources Data System</title><edition>20160315</edition><geoform>map</geoform><pubinfo><pubplace>Reston, Virginia</pubplace><publish>U.S. Geological Survey</publish></pubinfo><onlink>https://mrdata.usgs.gov/mrds/</onlink></citeinfo></citation><descript><abstract>Mineral resource occurrence data covering the world, most thoroughly
+within the U.S.  This database contains the records previously
+provided in the Mineral Resource Data System (MRDS) of USGS and the
+Mineral Availability System/Mineral Industry Locator System
+(MAS/MILS) originated in the U.S. Bureau of Mines, which is now part
+of USGS.
+The MRDS is a large and complex relational database developed over
+several decades by hundreds of researchers and reporters.  While
+database records describe mineral resources worldwide, the
+compilation of information was intended to cover the United States
+completely, and its coverage of resources in other countries is
+incomplete.
+The content of MRDS records was drawn from reports previously
+published or made available to USGS researchers.  Some of those
+original source materials are no longer available.
+The information contained in MRDS was intended to reflect the
+reports used as sources and is current only as of the date of those
+source reports.  Consequently MRDS does not reflect up-to-date
+changes to the operating status of mines, ownership, land status,
+production figures and estimates of reserves and resources, or the
+nature, size, and extent of workings.  Information on the
+geological characteristics of the mineral resource are likely to
+remain correct, but aspects involving human activity are likely to
+be out of date.</abstract><purpose>This digest of the complex mineral resources database is intended
+for use as reference material supporting mineral resource and
+environmental assessments on local to regional scale worldwide.</purpose><supplinf>Current status: As of 2011, USGS has ceased systematic updates to
+MRDS, and is working to create a new database, focused primarily on
+the conterminous US. For locations outside the United States, MRDS
+remains the best collection of reports that USGS has available. For
+locations in Alaska, the Alaska Resource Data File remains the most
+coherent collection of such reports and is in continuing
+development.
+A small number of records (about 600) were updated slightly to
+support USGS studies in the western U.S. related to a land use
+change proposed by the Bureau of Land Management.</supplinf></descript><timeperd><timeinfo><sngdate><caldate>20160315</caldate></sngdate></timeinfo><current>Date when information was extracted from the main database.</current></timeperd><status><progress>Complete</progress><update>None planned</update></status><spdom><bounding><westbc>16.87103</westbc><eastbc>32.18473</eastbc><northbc>-22.24678</northbc><southbc>-34.07977</southbc></bounding></spdom><keywords><theme><themekt>Alexandria Digital Library Feature Type Thesaurus</themekt><themekey>mine sites</themekey><themekey>mineral deposit areas</themekey></theme><theme><themekt>ISO 19115 Topic Category</themekt><themekey>geoscientificInformation</themekey></theme><theme><themekt>General glossary for mineral resources spatial data</themekt><themekey>columnar text</themekey><themekey>DBF</themekey><themekey>file geodatabase (ESRI)</themekey><themekey>HTML table</themekey><themekey>KML</themekey><themekey>OGC WFS</themekey><themekey>OGC WMS</themekey><themekey>personal geodatabase (ESRI)</themekey><themekey>shapefile</themekey></theme><theme><themekt>USGS Thesaurus</themekt><themekey>economic geology</themekey><themekey>geospatial datasets</themekey><themekey>map interfaces</themekey><themekey>mineral resources</themekey><themekey>web map services</themekey></theme><place><placekt>Common geographic areas</placekt><placekey>fAF = Afghanistan</placekey><placekey>fLD50 = Africa</placekey><placekey>fUS01 = Alabama</placekey><placekey>fUS02 = Alaska</placekey><placekey>fAL = Albania</placekey><placekey>fAG = Algeria</placekey><placekey>fAO = Angola</placekey><placekey>fAY = Antarctica</placekey><placekey>fAC = Antigua and Barbuda</placekey><placekey>fAR = Argentina</placekey><placekey>fUS04 = Arizona</placekey><placekey>fUS05 = Arkansas</placekey><placekey>fAM = Armenia</placekey><placekey>fLD70 = Asia</placekey><placekey>fLD80 = Asia Minor and Middle East</placekey><placekey>fAS = Australia</placekey><placekey>fLD60 = Australia and New Zealand</placekey><placekey>fAU = Austria</placekey><placekey>fAJ = Azerbaijan</placekey><placekey>fBF = Bahamas, the</placekey><placekey>fBA = Bahrain</placekey><placekey>fBG = Bangladesh</placekey><placekey>fBB = Barbados</placekey><placekey>fBO = Belarus</placekey><placekey>fBE = Belgium</placekey><placekey>fBH = Belize</placekey><placekey>fBN = Benin</placekey><placekey>fBL = Bolivia</placekey><placekey>fBK = Bosnia and Herzegovina</placekey><placekey>fBC = Botswana</placekey><placekey>fBR = Brazil</placekey><placekey>fVI = British Virgin Islands</placekey><placekey>fBU = Bulgaria</placekey><placekey>fUV = Burkina Faso</placekey><placekey>fBM = Burma</placekey><placekey>fBY = Burundi</placekey><placekey>fUS06 = California</placekey><placekey>fCB = Cambodia</placekey><placekey>fCM = Cameroon</placekey><placekey>fCA = Canada</placekey><placekey>fCJ = Cayman Islands</placekey><placekey>fLD20 = Central America</placekey><placekey>fCI = Chile</placekey><placekey>fCH = China</placekey><placekey>fKT = Christmas Island</placekey><placekey>fCO = Colombia</placekey><placekey>fUS08 = Colorado</placekey><placekey>fCF = Congo</placekey><placekey>fCG = Congo (Democratic Republic of the)</placekey><placekey>fUS09 = Connecticut</placekey><placekey>fCS = Costa Rica</placekey><placekey>fIV = Cote D'Ivoire</placekey><placekey>fHR = Croatia</placekey><placekey>fCU = Cuba</placekey><placekey>fCY = Cyprus</placekey><placekey>fEZ = Czech Republic</placekey><placekey>fUS10 = Delaware</placekey><placekey>fDA = Denmark</placekey><placekey>fUS11 = District of Columbia</placekey><placekey>fDO = Dominica</placekey><placekey>fDR = Dominican Republic</placekey><placekey>fEC = Ecuador</placekey><placekey>fEG = Egypt</placekey><placekey>fES = El Salvador</placekey><placekey>fER = Eritrea</placekey><placekey>fEN = Estonia</placekey><placekey>fET = Ethiopia</placekey><placekey>fLD40 = Europe</placekey><placekey>fFJ = Fiji</placekey><placekey>fFI = Finland</placekey><placekey>fUS12 = Florida</placekey><placekey>fFR = France</placekey><placekey>fFG = French Guiana</placekey><placekey>fGB = Gabon</placekey><placekey>fGA = Gambia, The</placekey><placekey>fGG = Georgia</placekey><placekey>fUS13 = Georgia</placekey><placekey>fGM = Germany</placekey><placekey>fGH = Ghana</placekey><placekey>fGR = Greece</placekey><placekey>fGL = Greenland</placekey><placekey>fGP = Guadeloupe</placekey><placekey>fGT = Guatemala</placekey><placekey>fGV = Guinea</placekey><placekey>fGY = Guyana</placekey><placekey>fHA = Haiti</placekey><placekey>fUS15 = Hawaii</placekey><placekey>fHO = Honduras</placekey><placekey>fHU = Hungary</placekey><placekey>fUS16 = Idaho</placekey><placekey>fUS17 = Illinois</placekey><placekey>fIN = India</placekey><placekey>fUS18 = Indiana</placekey><placekey>fID = Indonesia</placekey><placekey>fUS19 = Iowa</placekey><placekey>fIR = Iran</placekey><placekey>fIZ = Iraq</placekey><placekey>fEI = Ireland</placekey><placekey>fIS = Israel</placekey><placekey>fIT = Italy</placekey><placekey>fJM = Jamaica</placekey><placekey>fJA = Japan</placekey><placekey>fJE = Jersey</placekey><placekey>fJO = Jordan</placekey><placekey>fUS20 = Kansas</placekey><placekey>fKZ = Kazakhstan</placekey><placekey>fUS21 = Kentucky</placekey><placekey>fKE = Kenya</placekey><placekey>fKN = Korea, Democratic People's Republic of</placekey><placekey>fKS = Korea, Republic of</placekey><placekey>fKG = Kyrgyzstan</placekey><placekey>fLA = Laos</placekey><placekey>fLE = Lebanon</placekey><placekey>fLT = Lesotho</placekey><placekey>fLI = Liberia</placekey><placekey>fLY = Libya</placekey><placekey>fLH = Lithuania</placekey><placekey>fUS22 = Louisiana</placekey><placekey>fLU = Luxembourg</placekey><placekey>fMK = Macedonia</placekey><placekey>fMA = Madagascar</placekey><placekey>fUS23 = Maine</placekey><placekey>fMI = Malawi</placekey><placekey>fMY = Malaysia</placekey><placekey>fML = Mali</placekey><placekey>fMB = Martinique</placekey><placekey>fUS24 = Maryland</placekey><placekey>fUS25 = Massachusetts</placekey><placekey>fMR = Mauritania</placekey><placekey>fMX = Mexico</placekey><placekey>fUS26 = Michigan</placekey><placekey>fUS27 = Minnesota</placekey><placekey>fUS28 = Mississippi</placekey><placekey>fUS29 = Missouri</placekey><placekey>fMG = Mongolia</placekey><placekey>fUS30 = Montana</placekey><placekey>fMH = Montserrat</placekey><placekey>fMO = Morocco</placekey><placekey>fMZ = Mozambique</placekey><placekey>fWA = Namibia</placekey><placekey>fNR = Nauru</placekey><placekey>fUS31 = Nebraska</placekey><placekey>fNP = Nepal</placekey><placekey>fNL = Netherlands</placekey><placekey>fNT = Netherlands Antilles</placekey><placekey>fUS32 = Nevada</placekey><placekey>fNC = New Caledonia</placekey><placekey>fUS33 = New Hampshire</placekey><placekey>fUS34 = New Jersey</placekey><placekey>fUS35 = New Mexico</placekey><placekey>fUS36 = New York</placekey><placekey>fNZ = New Zealand</placekey><placekey>fNU = Nicaragua</placekey><placekey>fNG = Niger</placekey><placekey>fNI = Nigeria</placekey><placekey>fLD10 = North America</placekey><placekey>fUS37 = North Carolina</placekey><placekey>fUS38 = North Dakota</placekey><placekey>fNO = Norway</placekey><placekey>fUS39 = Ohio</placekey><placekey>fUS40 = Oklahoma</placekey><placekey>fMU = Oman</placekey><placekey>fUS41 = Oregon</placekey><placekey>fPK = Pakistan</placekey><placekey>fPM = Panama</placekey><placekey>fPP = Papua New Guinea</placekey><placekey>fPA = Paraguay</placekey><placekey>fUS42 = Pennsylvania</placekey><placekey>fPE = Peru</placekey><placekey>fRP = Philippines</placekey><placekey>fPL = Poland</placekey><placekey>fPO = Portugal</placekey><placekey>fUS72 = Puerto Rico</placekey><placekey>fUS44 = Rhode Island</placekey><placekey>fRO = Romania</placekey><placekey>fRS = Russia</placekey><placekey>fRW = Rwanda</placekey><placekey>fSA = Saudi Arabia</placekey><placekey>fSG = Senegal</placekey><placekey>fSL = Sierra Leone</placekey><placekey>fLO = Slovakia</placekey><placekey>fSI = Slovenia</placekey><placekey>fBP = Solomon Islands</placekey><placekey>fSO = Somalia</placekey><placekey>fSF = South Africa</placekey><placekey>fLD30 = South America</placekey><placekey>fUS45 = South Carolina</placekey><placekey>fUS46 = South Dakota</placekey><placekey>fLD90 = Southeast Asia</placekey><placekey>fSP = Spain</placekey><placekey>fCE = Sri Lanka</placekey><placekey>fSC = St. Kitts and Nevis</placekey><placekey>fST = St. Lucia</placekey><placekey>fSU = Sudan</placekey><placekey>fNS = Suriname</placekey><placekey>fWZ = Swaziland</placekey><placekey>fSW = Sweden</placekey><placekey>fSZ = Switzerland</placekey><placekey>fSY = Syria</placekey><placekey>fTI = Tajikistan</placekey><placekey>fTZ = Tanzania</placekey><placekey>fUS47 = Tennessee</placekey><placekey>fUS48 = Texas</placekey><placekey>fTH = Thailand</placekey><placekey>fTO = Togo</placekey><placekey>fTS = Tunisia</placekey><placekey>fTU = Turkey</placekey><placekey>fTX = Turkmenistan</placekey><placekey>fUG = Uganda</placekey><placekey>fUP = Ukraine</placekey><placekey>fAE = United Arab Emirates</placekey><placekey>fUK = United Kingdom</placekey><placekey>fUS = United States</placekey><placekey>fUY = Uruguay</placekey><placekey>fUS49 = Utah</placekey><placekey>fUZ = Uzbekistan</placekey><placekey>fNH = Vanuatu</placekey><placekey>fVE = Venezuela</placekey><placekey>fUS50 = Vermont</placekey><placekey>fVM = Vietnam</placekey><placekey>fUS51 = Virginia</placekey><placekey>fUS78 = Virgin Islands of the United States</placekey><placekey>fUS53 = Washington</placekey><placekey>fWE = West Bank</placekey><placekey>fWI = Western Sahara</placekey><placekey>fUS54 = West Virginia</placekey><placekey>fUS55 = Wisconsin</placekey><placekey>fUS56 = Wyoming</placekey><placekey>fZA = Zambia</placekey><placekey>fZI = Zimbabwe</placekey></place><place><placekt>Augmented FIPS 10-4 and FIPS 6-4</placekt><placekey>fSF = South Africa</placekey></place></keywords><accconst>none</accconst><useconst>none</useconst><ptcontac><cntinfo><cntperp><cntper>Peter N. Schweitzer</cntper><cntorg>USGS ER GD</cntorg></cntperp><cntaddr><addrtype>mailing address</addrtype><address>12201 Sunrise Valley Drive</address><city>Reston</city><state>VA</state><postal>20192-0002</postal><country>USA</country></cntaddr><cntvoice>703-648-6533</cntvoice><cntfax>703-648-6252</cntfax><cntemail>pschweitzer@usgs.gov</cntemail></cntinfo></ptcontac><datacred>Hundreds of people have contributed to the development of MRDS and
+MAS/MILS over several decades.  The present digest owes much of its
+coherence to Bill Ferguson, Bruce Lipin, and Paul Schruben of USGS.</datacred></idinfo><dataqual><attracc><attraccr>Collected over many decades, this information is highly variable
+in quality.  Currency of individual records is variable as well,
+so it is likely that some information will be found to be out of
+date.  This is a subject of continuing refinement by the USGS and
+its cooperators.</attraccr></attracc><logic>Collected and reported by numerous diverse people, the descriptions
+provided are not highly consistent in structure or terminology.
+Recent revision of the MRDS database has begun to address this
+issue, and the present database digest contains fields chosen for
+their general consistency, though much work remains to be done.</logic><complete>The database is generally sparse; many records have no information
+for a given field.  A few fields required for proper processing
+are complete throughout.  The number of records lacking data in
+each field is shown in the list below with the percent of records
+lacking data for that field:
+&gt;Field       Missing values
+&gt;Label      Number   Percent
+&gt;-----------------------------------
+&gt;DEP_ID          0       0.0
+&gt;MRDS_ID    149235      49.0
+&gt;MAS_ID     110652      36.4
+&gt;SITE_NAME       0       0.0
+&gt;LATITUDE     4033       1.3
+&gt;LONGITUDE    4033       1.3
+&gt;REGION      58555      19.2
+&gt;COUNTRY     58555      19.2
+&gt;STATE       58762      19.3
+&gt;COUNTY      65215      21.4
+&gt;DISTRICT   254769      83.7
+&gt;ADMIN      299777      98.5
+&gt;LAND_STAT  114367      37.6
+&gt;COM_TYPE       34       0.0
+&gt;COMMOD1     22335       7.3
+&gt;COMMOD2    285184      93.7
+&gt;COMMOD3    239278      78.6
+&gt;OPER_TYPE       0       0.0
+&gt;DEP_TYPE   269516      88.6
+&gt;PROD_SIZE  194976      64.1
+&gt;DEV_STAT        0       0.0
+&gt;ORE        236479      77.7
+&gt;GANGUE     272740      89.6
+&gt;OTHER_MATL 294207      96.7
+&gt;OREBODY_FM 264927      87.1
+&gt;WORK_TYPE  238249      78.3
+&gt;MODEL      292387      96.1
+&gt;ALTERATION 289757      95.2
+&gt;CONC_PROC  293637      96.5
+&gt;PREV_NAME  241287      79.3
+&gt;ORE_CTRL   279810      91.9
+&gt;REPORTER       36       0.0
+&gt;HROCK_UNIT 268180      88.1
+&gt;HROCK_CODE 236050      77.6
+&gt;AROCK_UNIT 291593      95.8
+&gt;AROCK_CODE 278263      91.4
+&gt;STRUCTURE  280348      92.1
+&gt;TECTONIC   285058      93.7
+&gt;REF         25211       8.3</complete><posacc><horizpa><horizpar>Positional information is highly variable.  In the best cases
+this information was provided by plotting the location on a 7.5
+minute topographic map, however many records were located on
+the basis of published reports containing imprecise or scant
+information on the specific geographic location.  Approximately
+4000 records have no reliable geographic coordinates, although
+about 114 of those have other locational information systematic
+enough to warrant placement within the controlled vocabulary
+used to select data for analysis on the web.</horizpar></horizpa></posacc><lineage><srcinfo><srccite><citeinfo><origin>George T. Mason, Jr.</origin><origin>Raymond E. Arndt</origin><title>Mineral Resources Data System (MRDS)</title><pubdate>1996</pubdate><edition>1</edition><serinfo><sername>U.S. Geological Survey Digital Data Series</sername><issue>DDS-20</issue></serinfo><pubinfo><pubplace>Reston, VA</pubplace><publish>U.S. Geological Survey</publish></pubinfo></citeinfo></srccite><typesrc>CD-ROM</typesrc><srctime><timeinfo><rngdates><begdate>1968</begdate><enddate>1998</enddate></rngdates></timeinfo><srccurr>Period in which information was added to the MRDS.</srccurr></srctime><srccitea>DDS-20</srccitea><srccontr>Previous publication of the MRDS data</srccontr></srcinfo><srcinfo><srccite><citeinfo><origin>McFaul, Edward J.</origin><origin>Mason, George T.</origin><origin>Ferguson, William B.</origin><origin>Lipin, Bruce R.</origin><pubdate>2000</pubdate><title>U.S. Geological Survey mineral databases; MRDS and MAS/MILS</title><serinfo><sername>U.S. Geological Survey Digital Data Series</sername><issue>DDS-52</issue></serinfo><pubinfo><pubplace>Reston, Virginia</pubplace><publish>U.S. Geological Survey</publish></pubinfo><othercit>ISBN:  0607940212</othercit><onlink>https://store.usgs.gov/</onlink></citeinfo></srccite><typesrc>CD-ROM</typesrc><srctime><timeinfo><sngdate><caldate>2000</caldate></sngdate></timeinfo><srccurr>publication date</srccurr></srctime><srccitea>DDS-52</srccitea><srccontr>Previously published versions of MRDS and MAS/MILS</srccontr></srcinfo><srcinfo><srccite><citeinfo><origin>U.S. Geological Survey</origin><pubdate>2005</pubdate><title>Mineral Resource Data System</title><othercit>relational database for internal development and refinement</othercit></citeinfo></srccite><srctime><timeinfo><rngdates><begdate>1996</begdate><enddate>2005</enddate></rngdates></timeinfo><srccurr>Period during which the data were migrated from the original
+databases to the Oracle RDBMS.</srccurr></srctime><srccitea>Internal RDBMS</srccitea><srccontr>This version of the database is the source for the current digest.</srccontr></srcinfo><procstep><procdesc>Conversion of MRDS and MAS/MILS for use as a combined minerals
+database within the Oracle relational database management system
+proceeded under the general supervision of Bruce Lipin of USGS.
+Review of many database fields resulted in significant
+simplification, harmonization among records within these databases
+and between the databases, and elimination of duplicate records.
+The resulting relational database is currently maintained by
+William Ferguson under the supervision of Paul Schruben.</procdesc><srcused>DDS-52</srcused><procdate>1996 - 2004</procdate><srcprod>Internal RDBMS</srcprod><proccont><cntinfo><cntperp><cntper>Paul G Schruben</cntper><cntorg>USGS ER GD</cntorg></cntperp><cntaddr><addrtype>mailing address</addrtype><address>12201 Sunrise Valley Drive</address><city>Reston</city><state>VA</state><postal>20192-0002</postal><country>USA</country></cntaddr><cntvoice>703-648-6142</cntvoice><cntfax>703-648-6383</cntfax><cntemail>pschrube@usgs.gov</cntemail></cntinfo></proccont></procstep><procstep><procdesc>Select fields and tables from the Oracle RDBMS are extracted using
+the script pull.php to produce local copies of the tables
+containing only those fields needed to produce the current digest.
+The script combine.php draws data from these local tables  to
+create a single monolithic table with one row per mineral resource
+record.
+At this writing a number of corrections are made to the data given
+for the form of orebodies.  These changes include the elimination
+of the useless value "SEE DEPOSIT DESCRIPTION COMMENTS", the
+elimination of empty parentheses from most records, replacement of
+the abbreviation 'IRREG' with the more common complete value
+'IRREGULAR', and especially a complex analysis of most values
+originating in the MAS/MILS database.  These changes are described
+by the script orebody-fix.php.
+Additional modifications are made to the geographic locations of
+about 4300 records whose coordinates are given in the source
+database as the South Pole.  These coordinates are replaced with
+NULL values in the current database.  The data selection software
+in the current distribution web site allows some of these records
+to be retrieved because some of the records contained additional
+information linking them to specific geographic areas.  These
+changes are carried out by the script place-fix.php.
+Information about host rocks and associated rocks was subject to
+additional correction using the SQL statements in fix-rock.php.
+This table is used to create the GIS shapefiles and other formats
+available for download.</procdesc><srcused>Internal RDBMS</srcused><procdate>2005</procdate><proccont><cntinfo><cntperp><cntper>Peter N Schweitzer</cntper><cntorg>U.S. Geological Survey, ER</cntorg></cntperp><cntpos>Geologist</cntpos><cntaddr><addrtype>mailing address</addrtype><address>Mail Stop 954
+12201 Sunrise Valley Drive</address><city>Reston</city><state>VA</state><postal>20192</postal><country>USA</country></cntaddr><cntvoice>703-648-6533</cntvoice><cntfax>703-648-6252</cntfax><cntemail>pschweitzer@usgs.gov</cntemail></cntinfo></proccont></procstep><procstep><procdesc>A small number of records (about 560) were updated to reflect
+work in and around the area of concern from the Wyoming Land
+Conservation Initiative.  The records in question were added,
+deleted, or modified by Anna Wilson of USGS.</procdesc><procdate>20160107</procdate></procstep><procstep><procdesc>Deleted 10096613;
+Updated 10133306, 10206596, 10230343, 10305546
+Five more records ere changed to reflect
+work in and around the area of concern from the Wyoming Land
+Conservation Initiative.  The records in question were added,
+deleted, or modified by Anna Wilson of USGS.</procdesc><procdate>20160127</procdate></procstep><procstep><procdesc>Deleted 75 records, updated 1090 records
+The records in question were added, deleted, or modified by Anna Wilson of USGS.
+Updated record 10303371 at the request of the site owner.</procdesc><procdate>20160129</procdate></procstep><procstep><procdesc>Deleted 2 records, updated 4 records
+Deleted 10036970 and 10249686; these were geochemical observations, not actual mineral resource reports.
+Modified 10080767, 10090610, 10169488, and 10230223 to improve geographic location, references, and a few comments.
+The records in question were deleted, or modified by Anna Wilson of USGS.</procdesc><procdate>20160315</procdate></procstep><procstep><procdesc>Updated plss_coordinates in 10294773, replacing section 25 with south half of section 29, after examining figure 7 of the reference, U.S. Bureau of Mines MLA 44-88.</procdesc><procdate>20170321</procdate></procstep></lineage></dataqual><spdoinfo><direct>Point</direct><ptvctinf><sdtsterm><sdtstype>Entity point</sdtstype><ptvctcnt>304328</ptvctcnt></sdtsterm></ptvctinf></spdoinfo><spref><horizsys><geograph><latres>0.0001</latres><longres>0.0001</longres><geogunit>decimal degrees</geogunit></geograph><geodetic><horizdn>World Geodetic System 1984</horizdn><ellips>WGS 84</ellips><semiaxis>6378137</semiaxis><denflat>298.257</denflat></geodetic></horizsys></spref><eainfo><detailed><enttyp><enttypl>mrds.dbf</enttypl><enttypd>Mineral resource records</enttypd><enttypds>USGS</enttypds></enttyp><attr><attrlabl>DEP_ID</attrlabl><attrdef>Deposit identification number.
+A unique 12-digit system generated sequence number which references
+records of information pertaining to a mineral property.
+Textual values of no more than 12 characters.</attrdef></attr><attr><attrlabl>MRDS_ID</attrlabl><attrdef>MRDS identification number.
+Identification number used to refer to this entry in the Mineral
+Resources Data System, if the record appeared in that database.
+Textual values of no more than 7 characters.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+149235 records have no value for MRDS_ID.</edomvd></edom></attrdomv></attr><attr><attrlabl>MAS_ID</attrlabl><attrdef>MAS/MILS identification number.
+Identification number for this site as it appeared in the Mineral
+Availability System/Mineral Industry Locator System database,.
+Textual values of no more than 10 characters.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+110652 records have no value for MAS_ID.</edomvd></edom></attrdomv></attr><attr><attrlabl>SITE_NAME</attrlabl><attrdef>Name of the site, deposit, or operation.
+Current (preferred) form of the name of the site, deposit, or
+operation to which the record refers.
+Textual values of no more than 70 characters.</attrdef></attr><attr><attrlabl>LATITUDE</attrlabl><attrdef>Latitude.
+Geographic latitude of the site, WGS84
+if needed).
+Real numbers stored in double precision.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+4033 records have no value for LATITUDE.</edomvd></edom></attrdomv><attrdomv><rdom><rdommin>-76.6667</rdommin><rdommax>80</rdommax><attrunit/></rdom></attrdomv></attr><attr><attrlabl>LONGITUDE</attrlabl><attrdef>Longitude.
+Geographic longitude of the site, WGS84
+if needed).
+Real numbers stored in double precision.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+4033 records have no value for LONGITUDE.</edomvd></edom></attrdomv><attrdomv><rdom><rdommin>-178.8167</rdommin><rdommax>179.54917</rdommax><attrunit/></rdom></attrdomv></attr><attr><attrlabl>REGION</attrlabl><attrdef>Geographic region.
+Code indicating the geographic region.
+Textual values of no more than 2 characters.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+58555 records have no value for REGION.</edomvd></edom></attrdomv></attr><attr><attrlabl>COUNTRY</attrlabl><attrdef>Country name.
+Name of the country in which the site is located.
+Textual values of no more than 20 characters.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+58555 records have no value for COUNTRY.</edomvd></edom></attrdomv></attr><attr><attrlabl>STATE</attrlabl><attrdef>State name.
+Name of the state or province in which the site is located.
+Textual values of no more than 32 characters.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+58762 records have no value for STATE.</edomvd></edom></attrdomv></attr><attr><attrlabl>COUNTY</attrlabl><attrdef>County name.
+Name of the county in which the site is located.
+Textual values of no more than 96 characters.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+65215 records have no value for COUNTY.</edomvd></edom></attrdomv></attr><attr><attrlabl>DISTRICT</attrlabl><attrdef>Mining district.
+The most recent name of the mining district, subdistrict, or area.
+Textual values of no more than 96 characters.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+254769 records have no value for DISTRICT.</edomvd></edom></attrdomv></attr><attr><attrlabl>ADMIN</attrlabl><attrdef>Administrative area.
+Administrative unit area name.  The area type is given in the
+LAND_STAT field.
+Textual values of no more than 160 characters.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+299777 records have no value for ADMIN.</edomvd></edom></attrdomv></attr><attr><attrlabl>LAND_STAT</attrlabl><attrdef>Administrative area type.
+Type of geographic area named in ADMIN.
+Textual values of no more than 35 characters.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+114367 records have no value for LAND_STAT.</edomvd></edom></attrdomv></attr><attr><attrlabl>COM_TYPE</attrlabl><attrdef>Commodity type.
+Type of commodities present: metallic (M), non-metallic (N), or both
+(B).
+Textual values of no more than 1 characters.</attrdef><attrdomv><edom><edomv>M</edomv><edomvd>Metallic commodity</edomvd></edom></attrdomv><attrdomv><edom><edomv>N</edomv><edomvd>Non-metallic commodity</edomvd></edom></attrdomv><attrdomv><edom><edomv>B</edomv><edomvd>Commodity used in metallic and non-metallic forms</edomvd></edom></attrdomv><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+34 records have no value for COM_TYPE.</edomvd></edom></attrdomv></attr><attr><attrlabl>COMMOD1</attrlabl><attrdef>Primary commodities.  Guidance given to database editors is to include in this category commodities that have a strong effect on the economics of the project, and might be economically viable as the only commodity.
+Primary  commodities present, a comma-separated list. Commodity
+qualifiers follow each commodity, delimited by a hyphen.
+Textual values of no more than 128 characters.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+22335 records have no value for COMMOD1.</edomvd></edom></attrdomv></attr><attr><attrlabl>COMMOD2</attrlabl><attrdef>Secondary commodities.  Guidance given to database editors is to include commodities that can be economically recovered but have little effect on the economic viability of the project.
+Secondary commodities present, a comma-separated list. Commodity
+qualifiers follow each commodity, delimited by a hyphen.
+Textual values of no more than 128 characters.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+285184 records have no value for COMMOD2.</edomvd></edom></attrdomv></attr><attr><attrlabl>COMMOD3</attrlabl><attrdef>Tertiary commodities.  Guidance given to database editors is to list commodities that are economically interesting but not economically recoverable as of the date of the source information.
+Tertiary commodities present, a comma-separated list. Commodity
+qualifiers follow each commodity, delimited by a hyphen.
+Textual values of no more than 128 characters.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+239278 records have no value for COMMOD3.</edomvd></edom></attrdomv></attr><attr><attrlabl>OPER_TYPE</attrlabl><attrdef>Operation type.
+Type of operation existing or proposed at the site.
+Textual values of no more than 30 characters.</attrdef><attrdomv><edom><edomv>Surface</edomv><edomvd>Open-pit or open-cast mine in which the overburden is completely removed and the sides of the mine are typically terraced away from the center.  The overburden and ore are usually transported out of the pit in trucks. Includes quarry operations which are often open at the front as well, and strip mines which are open at both ends.</edomvd></edom></attrdomv><attrdomv><edom><edomv>Underground</edomv><edomvd>The opening to the mine is small relative to the size of the workings.  The opening is usually called a shaft or adit.  The ore is transported out of the mine in cars, buckets, on conveyor belts, etc.</edomvd></edom></attrdomv><attrdomv><edom><edomv>Surface-Underground</edomv><edomvd>Both surface and underground operations are present</edomvd></edom></attrdomv><attrdomv><edom><edomv>Placer</edomv><edomvd>A stream-sediment or beach-sand mine.</edomvd></edom></attrdomv><attrdomv><edom><edomv>Offshore</edomv><edomvd>Underwater mining operation such as for Mn nodules.</edomvd></edom></attrdomv><attrdomv><edom><edomv>Well</edomv><edomvd>The product is extracted through a borehole.  Water, oil, and gas are the most common products, but includes solution-mining or in-situ leaching in which liquid solvent is circulated underground to extract the material.</edomvd></edom></attrdomv><attrdomv><edom><edomv>Processing Plant</edomv><edomvd>No ore extraction at the site, only a mill, smelter, etc.</edomvd></edom></attrdomv><attrdomv><edom><edomv>Leach</edomv><edomvd>Ore or concentrate is placed on an impervious pad, and a solvent is percolated or forced through the heap.  The desired mineral or solute is dissolved into the leachate, from which it is more easily refined.</edomvd></edom></attrdomv><attrdomv><edom><edomv>Brine Operation</edomv><edomvd>The product, usually a type of salt, produced from a well or open pan.</edomvd></edom></attrdomv><attrdomv><edom><edomv>Geothermal</edomv><edomvd>Energy extracted from heat stored in the earth.</edomvd></edom></attrdomv><attrdomv><edom><edomv>Unknown</edomv><edomvd>Unknown or undetermined by evaluator</edomvd></edom></attrdomv></attr><attr><attrlabl>DEP_TYPE</attrlabl><attrdef>Deposit type.
+General type of deposit or resource present at the site.
+Textual values of no more than 40 characters.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+269516 records have no value for DEP_TYPE.</edomvd></edom></attrdomv></attr><attr><attrlabl>PROD_SIZE</attrlabl><attrdef>Production size.  A single character value.
+A broad characterization of the magnitude of production at the site.  The precise meanings of this field have changed over time and are lost to history; it is clear in retrospect that two different categorizations were used, a three-fold set based on magnitude (Small, Medium, Large) and a simple indicator (Yes or No), with some records showing U for unknown.  Modern specialists would prefer that such a categorization take into account the type of deposit and commodity at the site, but there is no evidence that approach was taken in assigning values to this field.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+194976 records have no value for PROD_SIZE.</edomvd></edom></attrdomv><attrdomv><edom><edomv>Y</edomv><edomvd>Yes, production has occurred</edomvd></edom></attrdomv><attrdomv><edom><edomv>N</edomv><edomvd>No, production has not occurred</edomvd></edom></attrdomv><attrdomv><edom><edomv>S</edomv><edomvd>Small ammount of material produced (we do not know what criteria are used to make this determination)</edomvd></edom></attrdomv><attrdomv><edom><edomv>M</edomv><edomvd>Medium ammount of material produced (we do not know what criteria are used to make this determination)</edomvd></edom></attrdomv><attrdomv><edom><edomv>L</edomv><edomvd>Large ammount of material produced (we do not know what criteria are used to make this determination)</edomvd></edom></attrdomv><attrdomv><edom><edomv>U</edomv><edomvd>Production statistics were not known to the reporters</edomvd></edom></attrdomv></attr><attr><attrlabl>DEV_STAT</attrlabl><attrdef>Development status.
+Status of development of the resource or operation.
+Textual values of no more than 25 characters.</attrdef><attrdomv><edom><edomv>Occurrence</edomv><edomvd>Ore mineralization in outcrop, shallow pit or pits, or isolated drill hole.  Grade, tonnage, and extent of mineralization essentially unknown.  No production has taken place and there has been no or little activity since discovery with the possible exception of routine claim maintenance.</edomvd></edom></attrdomv><attrdomv><edom><edomv>Prospect</edomv><edomvd>A deposit that has gone beyond the occurrence stage. That is subsequent work such as surface trenching, adits, or shafts, drill holes, extensive geophysics, geochemistry, and/or geologic mapping has been carried out. Enough work has been done to at least estimate grade and tonnage. The deposits may or may not have undergone feasibility studies that would lead to a decision on going into production.</edomvd></edom></attrdomv><attrdomv><edom><edomv>Producer</edomv><edomvd>A mine in production at the time the data was entered.  An intermittent producer that produces on demand or seasonally with variable lengths of inactivity is considered a producer.</edomvd></edom></attrdomv><attrdomv><edom><edomv>Past Producer</edomv><edomvd>A mine formerly operating that has closed, where the equipment or structures may have been removed or abandoned.</edomvd></edom></attrdomv><attrdomv><edom><edomv>Plant</edomv><edomvd>A processing plant (smelter, refiner, beneficiation, etc.) that may or may not be currently producing at the time of data entry. A plant will have no geological information associated with it.</edomvd></edom></attrdomv><attrdomv><edom><edomv>Unknown</edomv><edomvd>At the time of data entry, either the development status was unknown or the data source this record came from did not specify this value.</edomvd></edom></attrdomv></attr><attr><attrlabl>ORE</attrlabl><attrdef>Ore minerals or materials.
+Name of the ore mineral or material found in this deposit.
+Textual values of no more than 255 characters.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+236479 records have no value for ORE.</edomvd></edom></attrdomv></attr><attr><attrlabl>GANGUE</attrlabl><attrdef>Gangue minerals or materials.
+Name of the gangue mineral or material found in this deposit.
+Textual values of no more than 255 characters.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+272740 records have no value for GANGUE.</edomvd></edom></attrdomv></attr><attr><attrlabl>OTHER_MATL</attrlabl><attrdef>Other minerals or materials.
+Name of other minerals or materials found in this deposit.
+Textual values of no more than 255 characters.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+294207 records have no value for OTHER_MATL.</edomvd></edom></attrdomv></attr><attr><attrlabl>OREBODY_FM</attrlabl><attrdef>Ore body form.
+Form and shape of the ore body.
+Textual values of no more than 255 characters.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+264927 records have no value for OREBODY_FM.</edomvd></edom></attrdomv></attr><attr><attrlabl>WORK_TYPE</attrlabl><attrdef>Workings type.
+General type of workings at the site.
+Textual values of no more than 64 characters.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+238249 records have no value for WORK_TYPE.</edomvd></edom></attrdomv></attr><attr><attrlabl>MODEL</attrlabl><attrdef>Mineral deposit model.
+Mineral deposit models that characterize the site.  Multiple models
+are delimited by braces, with a model number for each.
+Textual values of no more than 80 characters.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+292387 records have no value for MODEL.</edomvd></edom></attrdomv></attr><attr><attrlabl>ALTERATION</attrlabl><attrdef>Alteration processes.
+Geochemical alteration, if any, believed to have been important in
+forming or modifying the ore materials of a deposit.
+Textual values of no more than 255 characters.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+289757 records have no value for ALTERATION.</edomvd></edom></attrdomv></attr><attr><attrlabl>CONC_PROC</attrlabl><attrdef>Concentration processes.
+Geological processes that are believed to have occurred to concentrate
+ore materials in the deposit.
+Textual values of no more than 255 characters.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+293637 records have no value for CONC_PROC.</edomvd></edom></attrdomv></attr><attr><attrlabl>PREV_NAME</attrlabl><attrdef>Previous names.
+Names by which the site or operation has bee known in the past.
+Textual values of no more than 255 characters.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+241287 records have no value for PREV_NAME.</edomvd></edom></attrdomv></attr><attr><attrlabl>ORE_CTRL</attrlabl><attrdef>Ore controls.
+Geologic features, typically structural, that exert control over the
+form, extent, or character of the deposit.
+Textual values of no more than 255 characters.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+279810 records have no value for ORE_CTRL.</edomvd></edom></attrdomv></attr><attr><attrlabl>REPORTER</attrlabl><attrdef>Reporter.
+Names of the persons primarily responsible for entering information
+about the site.
+Textual values of no more than 224 characters.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+36 records have no value for REPORTER.</edomvd></edom></attrdomv></attr><attr><attrlabl>HROCK_UNIT</attrlabl><attrdef>Host rock unit name.
+Lithologic and stratigraphic information regarding the host rocks for
+the ore deposit.
+Textual values of no more than 255 characters.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+268180 records have no value for HROCK_UNIT.</edomvd></edom></attrdomv></attr><attr><attrlabl>HROCK_CODE</attrlabl><attrdef>Host rock type code.
+Integer number(s) indicating the type of host rocks.
+Textual values of no more than 40 characters.</attrdef><attrdefs>Rock names, their hierarchical relationships, and definitions
+appear to be derived from Bruce Johnson's simplified classification
+of lithology for geologic map units, "LithClass 6".  However the
+numerical codes given here are not part of that work.</attrdefs><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+236050 records have no value for HROCK_CODE.</edomvd></edom></attrdomv><attrdomv><edom><edomv>1</edomv><edomvd>Unconsolidated Deposit
+Dominantly unsorted and unstratified drift, generally
+unconsolidated, deposited directly by and underneath a glacier
+without subsequent reworking by meltwater</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>2</edomv><edomvd>Unconsolidated Deposit &gt; Alluvium
+A general term for clay, silt, sand, gravel or similar
+unconsolidated detrital material, deposited during
+comparatively recent geologic time by a stream or other body of
+running water, as a sorted or semi-sorted sediment.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>3</edomv><edomvd>Unconsolidated Deposit &gt; Beach Sand
+A loose aggregate of unlithified mineral or rock particles of
+sand size forming a beach (the relatively thick and temporary
+accumulation of loose water-borne material that is in active
+transit along, or deposited on, the shore zone between the
+limits of low water and high water)</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>4</edomv><edomvd>Unconsolidated Deposit &gt; Dune Sand
+A type of blown sand that has been piled up by the wind into a
+sand dune, usually consisting of rounded mineral grains,
+commonly quartz, having diameters ranging from 0.1 to 1 mm</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>5</edomv><edomvd>Unconsolidated Deposit &gt; Loess
+A widespread, homogeneous, commonly nonstratified, porous,
+friable, slightly coherent, usually highly calcareous,
+fine-grained blanket deposit, consisting predominantly of silt
+with subordinate grain sizes ranging from clay to fine sand.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>6</edomv><edomvd>Unconsolidated Deposit &gt; Volcanic Ash
+A fine pyroclastic material (under 2.0 mm in diameter).  The
+term usually refers to the unconsolidated material</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>7</edomv><edomvd>Unconsolidated Deposit &gt; Colluvium
+A general term applied to any loose, heterogeneous, and
+incoherent mass of soil material and/or rock fragments
+deposited by rainwash, sheetwash, or slow, continuous downslope
+creep, usually collecting at the base of gentle slopes or
+hillsides.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>8</edomv><edomvd>Unconsolidated Deposit &gt; Till
+Dominantly unsorted and unstratified drift, generally
+unconsolidated, deposited directly by and underneath a glacier
+without subsequent reworking by meltwater</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>9</edomv><edomvd>Unconsolidated Deposit &gt; Glacial Sediment
+Stratified glacial drift deposited by, or reworked by running
+water, or deposited in standing water</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>10</edomv><edomvd>Unconsolidated Deposit &gt; Peat
+An unconsolidated deposit of semicarbonized plant remains in a
+water saturated environment, such as a bog or fen, and of
+persistently high moisture content (at least 75 percent).</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>11</edomv><edomvd>Unconsolidated Deposit &gt; Coral
+A hard calcareous substance consisting of the continuous
+skeleton secreted by coral polyps for their support and
+habitation and found in single specimens growing plant-like on
+the sea bottom or in extensive, solidified accumulations (coral
+reefs).</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>12</edomv><edomvd>Unconsolidated Deposit &gt; Clay, Mud
+A loose, earthy, extremely fine-grained, natural sediment
+composed primarily of clay-size or colloidal particles and
+characterized by high plasticity and by a considerable content
+of clay minerals.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>13</edomv><edomvd>Unconsolidated Deposit &gt; Silt
+A loose aggregate of unlithified mineral or rock particles of
+silt size (1/256 to 1/16 mm); an unconsolidated deposit
+consisting essentially of fine-grained clastic particles.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>14</edomv><edomvd>Unconsolidated Deposit &gt; Sand
+A loose aggregate of unlithified mineral or rock particles of
+sand size (1/16 to 2 mm); an unconsolidated deposit consisting
+essentially of medium-grained clastic particles.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>15</edomv><edomvd>Unconsolidated Deposit &gt; Gravel
+A loose accumulation of rock fragments composed predominantly of
+more or less rounded pebbles and small stones.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>16</edomv><edomvd>Unconsolidated Deposit &gt; Sand And Gravel
+A loose aggregate of unlithified mineral or rock particles of
+sand size (1/16 to 2 mm); an unconsolidated deposit consisting
+essentially of medium-grained clastic particles, plus a loose
+accumulation of rock fragments composed predominantly of more
+or less rounded pebbles and small stones.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>17</edomv><edomvd>Unconsolidated Deposit &gt; Brine
+Saline waters containing high amounts of Na, Ca, K, Cl, and
+other soluble elements.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>18</edomv><edomvd>Unconsolidated Deposit &gt; Seafloor
+The surface of the rock or sediments at the bottom of the sea.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>19</edomv><edomvd>Sedimentary Rock
+A rock resulting from the consolidation of loose sediment that
+has accumulated in layers</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>20</edomv><edomvd>Sedimentary Rock &gt; Clastic Sedimentary Rock
+A composed principally of broken fragments that are derived from
+preexisting rocks or minerals and that have been transported
+some distance from their place of origin.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>21</edomv><edomvd>Sedimentary Rock &gt; Clastic Sedimentary Rock &gt; Mudstone
+A general term that includes claystone, siltstone, shale, and
+argillite, and that should be used only when the amounts of
+clay-sized and silt-sized particles are not known or specified,
+or cannot be precisely identified.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>22</edomv><edomvd>Sedimentary Rock &gt; Clastic Sedimentary Rock &gt; Mudstone &gt; Claystone
+An indurated rock having more than 67 percent clay-sized
+minerals.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>23</edomv><edomvd>Sedimentary Rock &gt; Clastic Sedimentary Rock &gt; Mudstone &gt; Bentonite
+A soft, plastic, porous, light-colored rock composed essentially
+of clay minerals of the montmorillonite (smectite) group plus
+colloidal silica, and produced by devitrification and
+accompanying chemical alteration of a glassy igneous material,
+usually a tuff or volcanic ash</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>24</edomv><edomvd>Sedimentary Rock &gt; Clastic Sedimentary Rock &gt; Shale
+A laminated, indurated rock having more than 67 percent
+clay-sized minerals.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>25</edomv><edomvd>Sedimentary Rock &gt; Clastic Sedimentary Rock &gt; Shale &gt; Black Shale
+A dark, thinly laminated carbonaceous shale, exceptionally rich
+in organic matter (5 percent or more carbon content) and
+sulfide (esp. iron sulfide, usually pyrite), and often
+containing unusual concentrations of certain trace elements (U,
+V, Cu, Ni).</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>26</edomv><edomvd>Sedimentary Rock &gt; Clastic Sedimentary Rock &gt; Shale &gt; Oil Shale
+A kerogen-bearing, finely laminated brown or black sedimentary
+rock that will yield liquid or gaseous hydrocarbon on
+distillation.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>27</edomv><edomvd>Sedimentary Rock &gt; Clastic Sedimentary Rock &gt; Argillite
+A compact rock derived either from mudstone or shale, that has
+undergone a somewhat higher degree of induration than mudstone
+or shale but is less clearly laminated than shale and without
+its fissility, and that lacks the cleavage distinctive of
+slate.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>28</edomv><edomvd>Sedimentary Rock &gt; Clastic Sedimentary Rock &gt; Siltstone
+An indurated silt having the texture and composition of shale
+but lacking its fine lamination or fissility; a massive
+mudstone in which silt-sized particles predominate over
+clay-sized particles.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>29</edomv><edomvd>Sedimentary Rock &gt; Clastic Sedimentary Rock &gt; Sandstone
+A medium-grained clastic sedimentary rock composed of abundant
+sand-sized fragments, which may have a finer-grained matrix
+(silt or clay), and which is more or less indurated by a
+cementing material</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>30</edomv><edomvd>Sedimentary Rock &gt; Clastic Sedimentary Rock &gt; Orthoquartzite
+A clastic sedimentary rock that is made up almost exclusively of
+quartz sand (with or without chert), that is relatively free of
+or lacks a fine-grained matrix; a quartzite of sedimentary
+origin, or a "pure quartz sandstone".</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>31</edomv><edomvd>Sedimentary Rock &gt; Clastic Sedimentary Rock &gt; Calcarenite
+A clastic sedimentary rock that is made up predominantly of
+recycled carbonate particles of sand size; a consolidated
+calcareous sand</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>32</edomv><edomvd>Sedimentary Rock &gt; Clastic Sedimentary Rock &gt; Arkose
+A feldspar-rich sandstone, commonly coarse-grained and pink or
+reddish, that is typically composed of angular to subangular
+grains that may be either poorly or moderately well sorted.
+Quartz is usually the dominant mineral, with feldspars
+constituting at least 25 percent.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>33</edomv><edomvd>Sedimentary Rock &gt; Clastic Sedimentary Rock &gt; Wacke
+A "dirty" sandstone that consists of a mixed variety of unsorted
+or poorly sorted mineral and rock fragments and of an abundant
+matrix of clay and fine silt; specif. an impure sandstone
+containing more than 10 percent argillaceous matrix.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>34</edomv><edomvd>Sedimentary Rock &gt; Clastic Sedimentary Rock &gt; Graywacke
+a dark gray, firmly indurated, coarse-grained sandstone that
+consists of poorly sorted angular to subangular grains of
+quartz and feldspar, with a variety of dark rock and mineral
+fragments embedded in a compact clayey matrix having the
+general composition of slate and containing an abundance of
+very fine-grained illite, sericite, and chloritic minerals.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>35</edomv><edomvd>Sedimentary Rock &gt; Clastic Sedimentary Rock &gt; Conglomerate
+A coarse-grained clastic sedimentary rock, composed of rounded
+to subangular fragments larger than 2 mm in diameter typically
+containing fine-grained particles in the interstices, and
+commonly cemented by calcium carbonate, iron oxide, silica, or
+hardened clay</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>36</edomv><edomvd>Sedimentary Rock &gt; Clastic Sedimentary Rock &gt; Sedimentary Breccia
+A breccia (coarse-grained clastic rock composed of angular
+broken rock fragments held together by a mineral cement or a
+fine-grained matrix) formed by sedimentary processes</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>37</edomv><edomvd>Sedimentary Rock &gt; Clastic Sedimentary Rock &gt; Olistostrome
+A sedimentary deposit consisting of a chaotic mass of intimately
+mixed heterogeneous materials (such as blocks and muds) that
+accumulated as a semi-fluid body by submarine gravity sliding
+or slumping of unconsolidated sediments.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>38</edomv><edomvd>Sedimentary Rock &gt; Clastic Sedimentary Rock &gt; Lake Sediments
+Sediments laid on the floor of a lake, usually coarse grainde
+near shore and rapidly changing to fine-grained clay and
+limesone in deeper water.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>39</edomv><edomvd>Sedimentary Rock &gt; Carbonate
+A sedimentary rock composed of more than 50 percent by weight
+carbonate minerals</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>40</edomv><edomvd>Sedimentary Rock &gt; Carbonate &gt; Limestone
+A sedimentary rock consisting chiefly (more than 50 percent by
+weight or by areal percentages under the microscope) of calcium
+carbonate, primarily in the form of the mineral calcite.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>41</edomv><edomvd>Sedimentary Rock &gt; Carbonate &gt; Dolomite
+A carbonate sedimentary rock of which more than 50 percent by
+weight or by areal percentages under the microscope consists of
+the mineral dolomite</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>42</edomv><edomvd>Sedimentary Rock &gt; Mixed Clastic/Carbonate Rock
+An undivided mixture of clastic and carbonate sedimentary rocks.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>43</edomv><edomvd>Sedimentary Rock &gt; Mixed Clastic/Volcanic Rock
+An undivided mixture of clastic and carbonate sedimentary rocks.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>44</edomv><edomvd>Sedimentary Rock &gt; Phosphorite
+A sedimentary rock with a high enough content of phosphate
+minerals to be of economic interest.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>45</edomv><edomvd>Sedimentary Rock &gt; Chemical Sediment
+A sedimentary rock composed primarily of material formed
+directly by precipitation from solution or colloidal suspension
+or by the deposition of insoluble precipitates</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>46</edomv><edomvd>Sedimentary Rock &gt; Chemical Sediment &gt; Evaporite
+A nonclastic sedimentary rock composed primarily of minerals
+produced from a saline solution as a result of extensive or
+total evaporation of the solvent.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>47</edomv><edomvd>Sedimentary Rock &gt; Chemical Sediment &gt; Salt
+An evapotite primarily composed of sodium chloride.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>48</edomv><edomvd>Sedimentary Rock &gt; Chemical Sediment &gt; Chert
+A hard, extremely dense or compact, dull to semivitreous,
+microcrystalline or cryptocrystalline sedimentary rock,
+consisting dominantly of interlocking crystals of quartz less
+than 30 cm in diameter.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>49</edomv><edomvd>Sedimentary Rock &gt; Chemical Sediment &gt; Iron Formation
+A chemical sedimentary rock, typically thin-bedded and/or finely
+laminated, containing at least 15 percent iron of sedimentary
+origin, and commonly but not necessarily containing layers of
+chert</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>50</edomv><edomvd>Sedimentary Rock &gt; Chemical Sediment &gt; Exhalite
+A chemical sedimentary rock, usually containing oxide,
+carbonate, or sulfide as anions, and iron, magnesium, base
+metals, and gold as cations, formed by the issuance of
+volcanically derived fluids onto the sea floor or into the sea</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>51</edomv><edomvd>Sedimentary Rock &gt; Coal
+A readily combustible rock containing more than 50 percent by
+weight and more than 70 percent by volume carbonaceous
+material, formed by compaction and induration of variously
+altered plant remains</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>52</edomv><edomvd>Sedimentary Rock &gt; Diatomite
+A light-colored,soft, friable, siliceous sedimentary
+rockconsisting chiefly of opaline frustules of the diatom.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>53</edomv><edomvd>Volcanic Rock (Aphanitic)
+A generally finely crystalline or glassy igneous rock resulting
+from volcanic action at or near the Earth's surface, either
+ejected explosively or extruded as a lava.  The term includes
+near-surface intrusions that form a part of the volcanic
+structure.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>54</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Glassy Rock
+Extrusive rock having a texture which is similar to that of
+glass or quartz and developed as a result of rapid cooling of
+the lava without distinct crystallization.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>55</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Glassy Rock &gt; Obsidian
+A black or dark-colored volcanic glass, usually of rhyolite
+composition, characterized by conchoidal fracture</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>56</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Glassy Rock &gt; Vitrophyre
+Any porphyritic igneous rock having a glassy groundmass.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>57</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Glassy Rock &gt; Pumice
+A light-colored vesicular glassy rock commonly having the
+composition of rhyolite.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>58</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Pyroclastic Rock
+Clastic rock material formed by volcanic explosion or aerial
+expulsion from a volcanic vent.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>59</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Pyroclastic Rock &gt; Tuff
+Consolidated or cemented volcanic ash.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>60</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Pyroclastic Rock &gt; Tuff &gt; Welded Tuff
+A glass-rich pyroclastic rock that has been indurated by the
+welding together of its glass shards under the combined action
+of the heat retained by particles, the weight of the overlying
+material, and hot gasses.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>61</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Pyroclastic Rock &gt; Tuff &gt; Ash-Flow Tuff
+A tuff deposited by an ash flow or gaseous cloud; a type of
+ignimbrite.  It is a consolidated, but not necessarily welded
+deposit.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>62</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Pyroclastic Rock &gt; Ignimbrite
+The deposit of a pyroclastic flow.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>63</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Pyroclastic Rock &gt; Volcanic Breccia (Agglomerate)
+A pyroclastic rock that consists of angular volcanic fragments
+that are larger than 64 mm in diameter and that may or may not
+have a matrix</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>64</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Felsic Volcanic Rock
+A light-colored, fine-grained or aphanitic extrusive or
+hypabyssal rock, with or without phenocrysts and composed
+chiefly of quartz and feldspar.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>65</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Felsic Volcanic Rock &gt; Alkali Rhyolite
+A volcanic rock defined in the QAPF diagram as having Q/(Q+A+P)
+between 20 and 60 and P/(P+A) less than 10.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>66</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Felsic Volcanic Rock &gt; Rhyolite
+A volcanic rock defined in the QAPF diagram as having Q/(Q+A+P)
+between 20 and 60 and P/(P+A) between 10 and 35.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>67</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Felsic Volcanic Rock &gt; Rhyodacite
+A volcanic rock defined in the QAPF diagram as having Q/(Q+A+P)
+between 20 and 60 and P/(P+A) between 35 and 65.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>68</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Felsic Volcanic Rock &gt; Dacite
+A volcanic rock defined in the QAPF diagram as having Q/(Q+A+P)
+between 20 and 60 and P/(P+A) greater than 65.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>69</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Felsic Volcanic Rock &gt; Alkali Trachyte
+A volcanic rock defined in the QAPF diagram as having Q/(Q+A+P)
+less than 20 or F/(F+A+P) less than 10, and P/(P+A) less than
+10.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>70</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Felsic Volcanic Rock &gt; Trachyte
+A volcanic rock defined in the QAPF diagram as having Q/(Q+A+P)
+less than 20 or F/(F+A+P) less than 10, and P/(P+A) between 10
+and 35.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>71</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Felsic Volcanic Rock &gt; Quartz Latite
+A volcanic rock defined in the QAPF diagram as having Q/(Q+A+P)
+between 5 and 20 and P/(P+A) between 35 and 65.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>72</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Felsic Volcanic Rock &gt; Latite
+A volcanic rock defined in the QAPF diagram as having Q/(Q+A+P)
+less than 5 or F/(F+A+P) less than 10, and P/(P+A) between 35
+and 65.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>73</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Intermediate Volcanic Rock
+A solidified body of volcanic rock having approximately equal
+light- and dark-colored minerals in its mode</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>74</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Intermediate Volcanic Rock &gt; Trachyandesite
+A volcanic rock defined modally by Q/(Q+A+P) less than 20 or
+F/(F+A+P) less than 10, P/(A+P) between 65 and 90, and M less
+than 35.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>75</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Intermediate Volcanic Rock &gt; Andesite
+A volcanic rock defined modally by Q/(Q+A+P) less than 20 or
+F/(F+A+P) less than 10, P/(A+P) greater than 90, and M less
+than 35</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>76</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Mafic Volcanic Rock
+A solidified body of volcanic rock having abundant dark-colored
+minerals in its mode</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>77</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Mafic Volcanic Rock &gt; Trachybasalt
+A volcanic rock defined modally by Q/(Q+A+P) less than 20 or
+F/(F+A+P) less than 10, P/(A+P) between 65 and 90, and M
+greater than 35.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>78</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Mafic Volcanic Rock &gt; Basalt
+A volcanic rock defined modally by Q/(Q+A+P) less than 20 or
+F/(F+A+P) less than 10, P/(A+P) greater than 90, and M greater
+than 35.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>79</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Mafic Volcanic Rock &gt; Basalt &gt; Tholeiite
+A silica-oversaturated basalt, characterized by the presence of
+low-calcium pyroxenes in addition to clinopyroxene and calcic
+plagioclase.  Olivine may be present in the mode, but neither
+olivine nor nepheline appear in the norm.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>80</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Mafic Volcanic Rock &gt; Basalt &gt; Hawaiite
+A basalt in which the normative and modal feldspar is andesine,
+and with soda:potash ratio greater than 2:1.  It generally, but
+not always, lacks normative quartz, and commonly contains
+normative and modal olivine.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>81</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Mafic Volcanic Rock &gt; Basalt &gt; Alkaline Basalt
+A basalt with nepheline and/or acmite in the CIPW norm.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>82</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Alkalic Volcanic Rock
+A volcanic rock that contains more sodium and/or potassium than
+is required to form feldspar with the available silica.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>83</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Alkalic Volcanic Rock &gt; Phonolite
+A volcanic rock defined in the QAPF diagram as having F/(F+A+P)
+between 10 an 60, and P/(P+A) less than 10.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>84</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Alkalic Volcanic Rock &gt; Tephrite (Basanite)
+A volcanic rock defined in the QAPF diagram as having F/(F+A+P)
+between 10 an 60, and P/(P+A) greater than 90.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>85</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Komatiite (Ultramafite)
+A volcanic rock with color index (M) greater than or equal to 90</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>86</edomv><edomvd>Volcanic Rock (Aphanitic) &gt; Volcanic Carbonatite
+A rock of apparent volcanic origin composed of at least 50
+percent carbonate minerals</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>87</edomv><edomvd>Plutonic Rock
+A rock formed at considerable depth by crystallization of magma
+and/or by chemical alteration.  It is characteristically
+medium- to coarse-grained, of granitoid texture.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>88</edomv><edomvd>Plutonic Rock &gt; Aplite
+A light-colored igneous rock characterized by a fine-grained
+allotriomorphic-granular (i.e. aplitic) texture.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>89</edomv><edomvd>Plutonic Rock &gt; Porphyry
+An igneous rock of any composition that contains conspicuous
+phenocrysts in a fine-grained groundmass</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>90</edomv><edomvd>Plutonic Rock &gt; Porphyry &gt; Lamprophyre
+A group of porphyritic igneous rocks in which mafic minerals
+form the phenocrysts; feldspars, if present, are restricted to
+the groundmass</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>91</edomv><edomvd>Plutonic Rock &gt; Pegmatite
+An exceptionally coarse-grained igneous rock, with interlocking
+crystals, usually found as irregular dikes, lenses, or veins,
+esp. at the margins of batholiths</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>92</edomv><edomvd>Plutonic Rock &gt; Granitoid
+A general term for all phaneritic igneous rocks dominated by
+quartz and feldspars</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>93</edomv><edomvd>Plutonic Rock &gt; Granitoid &gt; Alkali-Granite (Alaskite)
+A plutonic rock defined in the QAPF diagram as having Q between
+20 and 60 and P/(A+P) less than 10</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>94</edomv><edomvd>Plutonic Rock &gt; Granitoid &gt; Granite
+A plutonic rock defined in the QAPF diagram as having Q between
+20 and 60 and P/(A+P) between 10 and 65</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>95</edomv><edomvd>Plutonic Rock &gt; Granitoid &gt; Granite &gt; Peraluminous Granite
+A granite with aluminum oxide greater than sodium oxide +
+potassium oxide + calcium oxide; typical accessories include:
+muscovite, biotite, corundum, topaz, garnet</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>96</edomv><edomvd>Plutonic Rock &gt; Granitoid &gt; Granite &gt; Metaluminous Granite
+A granite with aluminum oxide greater than sodium oxide +
+potassium oxide, but with aluminum oxide less than sodium oxide
++ potassium oxide + calcium oxide; typical accessories include:
+hornblende, epidote, melilite, or biotite + pyroxene</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>97</edomv><edomvd>Plutonic Rock &gt; Granitoid &gt; Granite &gt; Subaluminous Granite
+A granite with aluminum oxide approximately equal to sodium
+oxide + potassium oxide; typical accessories include: olivine,
+orthopyroxene, clinopyroxene</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>98</edomv><edomvd>Plutonic Rock &gt; Granitoid &gt; Granite &gt; Peralkaline Granite
+A granite with aluminum oxide less than sodium oxide + potassium
+oxide; typical accessories include: soda pyroxene and soda
+amphibole[</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>99</edomv><edomvd>Plutonic Rock &gt; Granitoid &gt; Granodiorite
+A plutonic rock defined in the QAPF diagram as having Q between
+20 and 60 and P/(A+P) between 65 and 90</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>100</edomv><edomvd>Plutonic Rock &gt; Granitoid &gt; Tonalite
+A plutonic rock defined in the QAPF diagram as having Q between
+20 and 60 and P/(A+P) greater than 90</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>101</edomv><edomvd>Plutonic Rock &gt; Granitoid &gt; Tonalite &gt; Trondhjemite
+A tonalite with color index (M) less than 15; composed
+essentially of sodic plagioclase, quartz, sparse biotite, and
+little or no alkali feldspar</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>102</edomv><edomvd>Plutonic Rock &gt; Granitoid &gt; Alkali Syenite
+A plutonic rock defined in the QAPF diagram as having Q/(Q+A+P)
+less than 20 or F/(F+A+P) less than 10, and P/(P+A) less than
+10</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>103</edomv><edomvd>Plutonic Rock &gt; Granitoid &gt; Quartz Syenite
+A plutonic rock defined in the QAPF diagram as having Q between
+5 and 20 and P/(A+P) between 10 and 35</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>104</edomv><edomvd>Plutonic Rock &gt; Granitoid &gt; Syenite
+A plutonic rock defined in the QAPF diagram as having Q between
+5 and 20 and P/(A+P) between 35 and 65</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>105</edomv><edomvd>Plutonic Rock &gt; Granitoid &gt; Quartz Monzonite
+A plutonic rock defined in the QAPF diagram as having Q between
+5 and 20 and P/(A+P) between 65 and 90, and plagioclase more
+sodic than An50</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>106</edomv><edomvd>Plutonic Rock &gt; Granitoid &gt; Monzonite
+A plutonic rock defined in the QAPF diagram as having Q less
+than 5 or F/(F+A+P) less than 10, and P/(A+P) between 35 and 65</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>107</edomv><edomvd>Plutonic Rock &gt; Mafic Intrusive Rock
+An igneous rock composed chiefly of one or more dark
+ferromagnesian minerals.  An exception is made for anorthosite,
+which occurs in association with mafic rocks.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>108</edomv><edomvd>Plutonic Rock &gt; Mafic Intrusive Rock &gt; Quartz Monzodiorite
+A plutonic rock defined in the QAPF diagram as having Q between
+5 and 20 and P/(A+P) between 65 and 90, and plagioclase more
+sodic than An50</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>109</edomv><edomvd>Plutonic Rock &gt; Mafic Intrusive Rock &gt; Quartz Monzogabbro
+A plutonic rock defined in the QAPF diagram as having Q between
+5 and 20 and P/(A+P) between 65 and 90, and plagioclase more
+calcic than An50</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>110</edomv><edomvd>Plutonic Rock &gt; Mafic Intrusive Rock &gt; Monzodiorite
+A plutonic rock defined in the QAPF diagram as having Q less
+than 5 or F/(F+A+P) less than 10, and P/(A+P) between 65 and
+90, and plagioclase more sodic than An50</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>111</edomv><edomvd>Plutonic Rock &gt; Mafic Intrusive Rock &gt; Monzogabbro
+A plutonic rock defined in the QAPF diagram as having Q less
+than 5 or F/(F+A+P) less than 10, and P/(A+P) between 65 and
+90, and plagioclase more calcic than An50</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>112</edomv><edomvd>Plutonic Rock &gt; Mafic Intrusive Rock &gt; Quartz Diorite
+A plutonic rock defined in the QAPF diagram as having Q between
+5 and 20, P/(A+P) greater than 90, and plagioclase more sodic
+than An50</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>113</edomv><edomvd>Plutonic Rock &gt; Mafic Intrusive Rock &gt; Quartz Gabbro
+A plutonic rock defined in the QAPF diagram as having Q between
+5 and 20, P/(A+P) greater than 90, and plagioclase more calcic
+than An50</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>114</edomv><edomvd>Plutonic Rock &gt; Mafic Intrusive Rock &gt; Diorite
+A plutonic rock defined in the QAPF diagram as having Q between
+0 and 5 or F/(F+A+P) less than 10, P/(A+P) greater than 90 and
+plagioclase more sodic than An50</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>115</edomv><edomvd>Plutonic Rock &gt; Mafic Intrusive Rock &gt; Diorite &gt; Diabase
+A plutonic rock whose main components are labradorite and
+pyroxene and which is characterized by ophitic texture</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>116</edomv><edomvd>Plutonic Rock &gt; Mafic Intrusive Rock &gt; Gabbro
+A plutonic rock defined in the QAPF diagram as having Q between
+0 and 5 or F/(F+A+P) less than 10, P/(A+P) greater than 90 and
+plagioclase more calcic than An50</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>117</edomv><edomvd>Plutonic Rock &gt; Mafic Intrusive Rock &gt; Gabbro &gt; Norite
+A plutonic rock satisfying the definition of gabbro, in which
+pl/(pl+px+ol) is between 10 and 90 and opx/(opx+cpx) is greater
+than 95.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>118</edomv><edomvd>Plutonic Rock &gt; Mafic Intrusive Rock &gt; Gabbro &gt; Troctolite
+A plutonic rock satisfying the definition of gabbro, in which
+pl/(pl+px+ol) is between 10 and 90 and px/(pl+px+ol) is less
+than 5.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>119</edomv><edomvd>Plutonic Rock &gt; Mafic Intrusive Rock &gt; Anorthosite
+A plutonic rock defined in the QAPF diagram as having Q between
+0 and 5, P/(A+P) greater than 90, and M less than 10.  A group
+of monomineralogic plutonic igneous rocks composed almost
+entirely of plagioclase feldspar.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>120</edomv><edomvd>Plutonic Rock &gt; Alkalic Intrusive Rock
+A plutonic rock that contains more sodium and/or potassium than
+is required to form feldspar with the available silica</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>121</edomv><edomvd>Plutonic Rock &gt; Alkalic Intrusive Rock &gt; Nepheline Syenite
+A plutonic rock defined in the QAPF diagram as having F/(F+A+P)
+between 10 and 60, and P/(P+A) less than 50; composed
+essentially of alkali feldspar and nepheline</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>122</edomv><edomvd>Plutonic Rock &gt; Ultramafic Intrusive Rock
+A general name for plutonic rock with color index (M) greater
+than or equal to 90</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>123</edomv><edomvd>Plutonic Rock &gt; Ultramafic Intrusive Rock &gt; Peridotite
+A plutonic rock with M equal to or greater than 90 and
+ol/(ol+opx+cpx) greater than 40</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>124</edomv><edomvd>Plutonic Rock &gt; Ultramafic Intrusive Rock &gt; Peridotite &gt; Dunite
+A plutonic rock with M equal to or greater than 90 and
+ol/(ol+opx+cpx) greater than 90</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>125</edomv><edomvd>Plutonic Rock &gt; Ultramafic Intrusive Rock &gt; Peridotite &gt; Harzburgite
+A plutonic rock with M equal or greater than 90, ol/(ol+opx+cpx)
+greater than 40, and cpx/(ol+opx+cpx) less than 5.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>126</edomv><edomvd>Plutonic Rock &gt; Ultramafic Intrusive Rock &gt; Peridotite &gt; Wherlite
+A plutonic rock with M equal or greater than 90, ol/(ol+opx+cpx)
+greater than 40, and opx/(ol+opx+cpx) less than 5.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>127</edomv><edomvd>Plutonic Rock &gt; Ultramafic Intrusive Rock &gt; Peridotite &gt; Lherzolite
+A plutonic rock with M equal or greater than 90, ol/(ol+opx+cpx)
+greater than 40, and opx roughly equal to cpx.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>128</edomv><edomvd>Plutonic Rock &gt; Ultramafic Intrusive Rock &gt; Peridotite &gt; Kimberlite
+A porphyritic alkalic peridotite containing abundant phenocrysts
+of olivine and phlogopite, and possibly geikielite and chromian
+pyrope, in a fine-grained groundmass of calcite and
+second-generation olivine and phlogopite.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>129</edomv><edomvd>Plutonic Rock &gt; Ultramafic Intrusive Rock &gt; Pyroxenite
+A plutonic rock with M equal to or greater than 90 and
+pyroxene/(ol+pyroxene) greater than 90.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>130</edomv><edomvd>Plutonic Rock &gt; Ultramafic Intrusive Rock &gt; Pyroxenite &gt; Clinopyroxenite
+A plutonic rock with M equal to or greater than 90 and
+cpx/(ol+opx+cpx) greater than 90.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>131</edomv><edomvd>Plutonic Rock &gt; Ultramafic Intrusive Rock &gt; Pyroxenite &gt; Orthopyroxenite
+A plutonic rock with M equal to or greater than 90 and
+opx/(ol+opx+cpx) greater than 90.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>132</edomv><edomvd>Plutonic Rock &gt; Ultramafic Intrusive Rock &gt; Hornblendite
+A plutonic rock with M equal to or greater than 90 and
+hbl/(hbl+px+ol) greater than 90.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>133</edomv><edomvd>Plutonic Rock &gt; Intrusive Carbonatite
+A plutonic rock composed of at least 50% carbonate minerals.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>134</edomv><edomvd>Metamorphic Rock
+A rock derived from pre-existing rocks by mineralogical,
+chemical, and/or structural changes, essentially in the solid
+state, in response to marked changes in temperature, pressure,
+shearing stress, and chemical environment, generally at depth
+in the earth's crust.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>135</edomv><edomvd>Metamorphic Rock &gt; Hornfels
+A fine-grained rock composed of a mosaic of equidimensional
+grains without preferred orientation and typically formed by
+contact metamorphism.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>136</edomv><edomvd>Metamorphic Rock &gt; Metasedimentary Rock
+A sedimentary rock that shows evidence of having been subjected
+to metamorphism</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>137</edomv><edomvd>Metamorphic Rock &gt; Metasedimentary Rock &gt; Meta-Argillite
+An argillite that has been metamorphosed.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>138</edomv><edomvd>Metamorphic Rock &gt; Metasedimentary Rock &gt; Slate
+A compact, fine-grained metamorphic rock that possesses slaty
+cleavage and hence can be split into slabs and thin plates</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>139</edomv><edomvd>Metamorphic Rock &gt; Metasedimentary Rock &gt; Quartzite
+A granoblastic metamorphic rock consisting mainly of quartz and
+formed by recrystallization of sandstone or chert by either
+regional or thermal metamorphism.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>140</edomv><edomvd>Metamorphic Rock &gt; Metasedimentary Rock &gt; Marble
+A metamorphic rock consisting predominantly of fine- to
+coarse-grained recrystallized calcite and/or dolomite, usually
+with a granoblastic, saccharoidal texture</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>141</edomv><edomvd>Metamorphic Rock &gt; Metavolcanic Rock
+A volcanic rock that shows evidence of having been subjected to
+metamorphism.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>142</edomv><edomvd>Metamorphic Rock &gt; Metavolcanic Rock &gt; Felsic Metamorphic Rock
+A metavolcanic rock having abundant light-colored minerals,
+typically quartz and feldspar</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>143</edomv><edomvd>Metamorphic Rock &gt; Metavolcanic Rock &gt; Felsic Metamorphic Rock &gt; Meta-Rhyolite
+A low-grade, felsic metavolcanic rock with preserved evidence of
+its original rhyolitic character</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>144</edomv><edomvd>Metamorphic Rock &gt; Metavolcanic Rock &gt; Felsic Metamorphic Rock &gt; Keratophyre
+All salic extrusive and hypabyssal rocks characterized by the
+presence of albite or albite-oligoclase and chlorite, epidote,
+and calcite, generally of secondary order.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>145</edomv><edomvd>Metamorphic Rock &gt; Metavolcanic Rock &gt; Mafic Metamorphic Rock
+A metavolcanic rock having abundant dark-colored minerals,
+typically feldspar, amphibole, and/or pyroxene</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>146</edomv><edomvd>Metamorphic Rock &gt; Metavolcanic Rock &gt; Mafic Metamorphic Rock &gt; Meta-Basalt
+A low-grade, mafic metavolcanic rock with preserved evidence of
+its original basaltic character</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>147</edomv><edomvd>Metamorphic Rock &gt; Metavolcanic Rock &gt; Mafic Metamorphic Rock &gt; Spilite
+An altered basalt, characteristically amygdaloidal or vesicular,
+in which the feldspar has been albitized and is typically
+accompanied by chlorite, calcite, epidote, chalcedony,
+prehnite, or other low-temperature hydrous crystallization
+products characteristic of a greenstone.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>148</edomv><edomvd>Metamorphic Rock &gt; Metavolcanic Rock &gt; Mafic Metamorphic Rock &gt; Greenstone
+A field term applied to any compact, dark-green, altered or
+metamorphosed basic igneous rock (e.g. spilite, basalt, gabbro,
+diabase) that owes its color to the presence of chlorite,
+actinolite, or epidote.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>149</edomv><edomvd>Metamorphic Rock &gt; Phyllite
+A metamorphosed rock, intermediate in grade between slate and
+mica schist. Minute crystals of graphite, sericite, or chlorite
+impart a silky sheen to the surfaces of cleavage (or
+schistosity).</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>150</edomv><edomvd>Metamorphic Rock &gt; Schist
+A strongly foliated crystalline rock, formed by dynamic
+metamorphism, that can be readily split into thin flakes or
+slabs due to the well developed parallelism of more than 50
+percent of the minerals present, particularly those of the
+lamellar or elongate prismatic habit, e.g. mica and hornblende.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>151</edomv><edomvd>Metamorphic Rock &gt; Schist &gt; Greenschist
+A schistose metamorphic rock whose green color is due to the
+presence of chlorite, epidote, or actinolite; a common product
+of low-grade regional metamorphism of pelitic or basic igneous
+rocks</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>152</edomv><edomvd>Metamorphic Rock &gt; Schist &gt; Blueschist
+A schistose metamorphic rock with a blue color owing to the
+presence of sodic amphibole, glaucophane, or crossite, and
+commonly mottled bluish-gray lawsonite; characteristic of
+metamorphism in areas of unusually low thermal gradient, such
+as subduction zones</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>153</edomv><edomvd>Metamorphic Rock &gt; Schist &gt; Mica Schist
+A schist whose essential constituents are mica and quartz, and
+whose schistosity is mainly due to the parallel arrangement of
+mica flakes.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>154</edomv><edomvd>Metamorphic Rock &gt; Schist &gt; Pelitic Schist
+A schistose metamorphic rock derived by metamorphism of an
+argillaceous or a fine-grained alluminous sediment.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>155</edomv><edomvd>Metamorphic Rock &gt; Schist &gt; Quartz-Feldspar Schist
+A schist whose essential constituents are quartz and feldspar
+and having lesser amounts of mica and/or hornblende</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>156</edomv><edomvd>Metamorphic Rock &gt; Schist &gt; Calc-Silicate Schist
+A metamorphosed calcareous rock, commonly derived from
+argillaceous limestone or calcareous mudstone, containing
+calcium-bearing silicates such as diopside and wollastonite,
+with a schistose structure produced by parallelism of platy
+minerals</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>157</edomv><edomvd>Metamorphic Rock &gt; Schist &gt; Amphibole Schist
+A schist whose essential constituent is amphibole with
+lesseramounts of feldspar, quartz, and/or mica</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>158</edomv><edomvd>Metamorphic Rock &gt; Granofels
+A medium- to coarse-grained granoblastic metamorphic rock with
+little or no foliation or lineation.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>159</edomv><edomvd>Metamorphic Rock &gt; Gneiss
+A foliated rock formed by regional metamorphism, in which bands
+or lenticles of granular minerals alternate with bands or
+lenticles in which minerals having flaky or elongate prismatic
+habits predominate. Generally less than 50 percent of the
+minerals show preferred orientation.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>160</edomv><edomvd>Metamorphic Rock &gt; Gneiss &gt; Felsic Gneiss
+A gneissic rock dominated by light-colored minerals, commonly
+quartz and feldspar</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>161</edomv><edomvd>Metamorphic Rock &gt; Gneiss &gt; Felsic Gneiss &gt; Granitic Gneiss
+A gneissic rock with a general granitoid composition</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>162</edomv><edomvd>Metamorphic Rock &gt; Gneiss &gt; Felsic Gneiss &gt; Biotite Gneiss
+A granitic gneiss in which the dominant mafic mineral is biotite</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>163</edomv><edomvd>Metamorphic Rock &gt; Gneiss &gt; Mafic Gneiss
+A gneissic rock dominated by dark-colored minerals, commonly
+biotite and hornblende</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>164</edomv><edomvd>Metamorphic Rock &gt; Gneiss &gt; Orthogneiss
+A gneissic rock formed from an igneous parent</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>165</edomv><edomvd>Metamorphic Rock &gt; Gneiss &gt; Paragneiss
+A gneissic rock formed from a sedimentary parent</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>166</edomv><edomvd>Metamorphic Rock &gt; Gneiss &gt; Migmatite
+A composite "mixed rock" composed of igneous or
+igneous-appearing and metamorphic portions</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>167</edomv><edomvd>Metamorphic Rock &gt; Amphibolite
+A crystalloblastic rock consisting mainly of amphibole and
+plagioclase with little or no quartz.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>168</edomv><edomvd>Metamorphic Rock &gt; Granulite
+A metamorphic rock consisting of even-sized, interlocking
+mineral grains less than 10 percent of which have any obvious
+preferred orientation.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>169</edomv><edomvd>Metamorphic Rock &gt; Eclogite
+A granular rock composed essentially of garnet
+(almandine-pyrope) and sodic pyroxene (omphacite).</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>170</edomv><edomvd>Metamorphic Rock &gt; Greisen
+A pneumatolytically altered granitic rock composed largely of
+quartz, mica, and topaz.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>171</edomv><edomvd>Metamorphic Rock &gt; Skarn (Tactite)
+A rock of complex mineralogic composition formed by contact
+metamorphism and metasomatism of carbonate rocks.  It is
+typically coarse-grained and rich in garnet, iron-rich
+pyroxene, epidote, wollastonite, and scapolite.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>172</edomv><edomvd>Metamorphic Rock &gt; Serpentinite
+A rock consisting almost wholly of serpentine-group minerals
+derived from the hydration of ferromagnesian silicate minerals
+such as olivine and pyroxene.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>173</edomv><edomvd>Tectonite
+A rock whose fabric reflects the history of its deformation.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>174</edomv><edomvd>Tectonite &gt; Tectonic Melange
+A melange produced by tectonic processes.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>175</edomv><edomvd>Tectonite &gt; Cataclasite
+A fine-grained, cohesive cataclastic rock, normally lacking a
+penetrative foliation or microfabric, formed during fault
+movement.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>176</edomv><edomvd>Tectonite &gt; Phyllonite
+A rock that macroscopically resembles phyllite but that is
+formed by mechanical degradation (mylonitization) of initially
+coarser rocks.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>177</edomv><edomvd>Tectonite &gt; Mylonite
+A compact, chert-like rock without cleavage, but with a streaky
+or banded structure, produced by the extreme granulation and
+shearing of rocks that have been pulverized and rolled during
+overthrusting or intense dynamic metamorphism.</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>178</edomv><edomvd>Tectonite &gt; Flaser Gneiss
+A dynamically metamorphosed rock in which lenses or layers of
+original or relatively unaltered granular materials are
+surrounded by a matrix of highly sheared and crushed material,
+giving the appearance of a crude flow structure</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv><attrdomv><edom><edomv>179</edomv><edomvd>Tectonite &gt; Augen Gneiss
+Gneissic rock containing augen (large lenticular mineral grains
+or mineral aggregates having the shape of an eye in cross
+section)</edomvd><edomvds>Johnson, Bruce R., "LithClass 6"</edomvds></edom></attrdomv></attr><attr><attrlabl>AROCK_UNIT</attrlabl><attrdef>Associated rock unit name.
+Lithologic and stratigraphic information regarding the rocks for the
+ore deposit that are not specifically identified as host ro.
+Textual values of no more than 255 characters.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+291593 records have no value for AROCK_UNIT.</edomvd></edom></attrdomv></attr><attr><attrlabl>AROCK_CODE</attrlabl><attrdef>Associated rock type code.
+A comma-separated list of integer numbers indicating the
+types of associated rocks. Each list has no more than 40
+characters.
+Values are the same as HROCK_CODE</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+278263 records have no value for AROCK_CODE.</edomvd></edom></attrdomv></attr><attr><attrlabl>STRUCTURE</attrlabl><attrdef>Structural characteristics.
+Description of geological structures at or near the deposit.
+Textual values of no more than 255 characters.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+280348 records have no value for STRUCTURE.</edomvd></edom></attrdomv></attr><attr><attrlabl>TECTONIC</attrlabl><attrdef>Tectonic setting.
+Description of tectonic setting within which the deposit is found,
+includes regional geologic structure.
+Textual values of no more than 255 characters.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+285058 records have no value for TECTONIC.</edomvd></edom></attrdomv></attr><attr><attrlabl>REF</attrlabl><attrdef>References.
+Bibliographic references providing information supporting the database
+record.  Braces delimit multiple references.
+Textual values of no more than 32768 characters.</attrdef><attrdomv><edom><edomv>(no value)</edomv><edomvd>Information not available for this record.
+25211 records have no value for REF.</edomvd></edom></attrdomv></attr></detailed></eainfo><distinfo><distrib><cntinfo><cntperp><cntper>Peter N Schweitzer</cntper><cntorg>U.S. Geological Survey, ER</cntorg></cntperp><cntpos>Geologist</cntpos><cntaddr><addrtype>mailing address</addrtype><address>Mail Stop 954
+12201 Sunrise Valley Drive</address><city>Reston</city><state>VA</state><postal>20192</postal><country>USA</country></cntaddr><cntvoice>703-648-6533</cntvoice><cntfax>703-648-6252</cntfax><cntemail>pschweitzer@usgs.gov</cntemail></cntinfo></distrib><resdesc>USGS MRDS</resdesc><distliab>This dataset was prepared by an agency of the United States
+Government.  Neither the United States Government nor any agency
+thereof, nor any of their employees, make any warranty, expressed or
+implied, or assumes any legal liability or responsibility for the
+accuracy, completeness,  or usefulness of any information, apparatus,
+product, or process disclosed in this report, or represents that its
+use would not infringe privately owned rights.  Reference therein to
+any specific commercial product, process, or service by trade name,
+trademark, manufacturer, or otherwise does not necessarily constitute
+or imply its endorsement, recommendation, or favoring by the United
+States Government or any agency thereof.  Any views and opinions of
+authors expressed herein do not necessarily state or reflect those of
+the United States Government or any agency thereof.</distliab><stdorder><digform><digtinfo><formname>Shapefile</formname><formvern>1.0</formvern><formcont>Mineral resource records (flat, subset of database fields)</formcont><filedec>unzip</filedec><transize>27.3</transize></digtinfo><digtopt><onlinopt><computer><networka><networkr>https://mrdata.usgs.gov/mrds/mrds.zip</networkr></networka></computer></onlinopt></digtopt></digform><digform><digtinfo><formname>FGDB</formname><formvern>9.x</formvern><formcont>Mineral resource records (separate tables, subset of fields))</formcont><filedec>unzip</filedec><transize>39</transize></digtinfo><digtopt><onlinopt><computer><networka><networkr>https://mrdata.usgs.gov/mrds/mrds-gdb.zip</networkr></networka></computer></onlinopt></digtopt></digform><digform><digtinfo><formname>CSV</formname><formcont>Mineral resource records (separate tables, subset of fields)</formcont><filedec>unzip</filedec><transize>20</transize></digtinfo><digtopt><onlinopt><computer><networka><networkr>https://mrdata.usgs.gov/mrds/rdbms-tab.zip</networkr></networka></computer></onlinopt></digtopt></digform><digform><digtinfo><formname>Tab-delimited text</formname><formvern>convention, not standardized</formvern><formcont>Mineral resource records (separate tables, all fields)</formcont><filedec>unzip</filedec><transize>118</transize></digtinfo><digtopt><onlinopt><computer><networka><networkr>https://mrdata.usgs.gov/mrds/rdbms-tab-all.zip</networkr></networka></computer></onlinopt></digtopt></digform><digform><digtinfo><formname>OGC WMS</formname><formvern>1.3.0</formvern><formcont>Mineral occurrences, processing plants, and mines</formcont></digtinfo><digtopt><onlinopt><computer><networka><networkr>https://mrdata.usgs.gov/services/mrds?request=getcapabilities&amp;service=WMS&amp;version=1.3.0&amp;</networkr></networka></computer></onlinopt></digtopt></digform><digform><digtinfo><formname>OGC WFS</formname><formvern>1.0.0</formvern><formcont>Mineral occurrences, processing plants, and mines</formcont></digtinfo><digtopt><onlinopt><computer><networka><networkr>https://mrdata.usgs.gov/wfs/mrds?request=getcapabilities&amp;service=WFS&amp;version=1.0.0&amp;</networkr></networka></computer></onlinopt></digtopt></digform><fees>none</fees></stdorder></distinfo><metainfo><metd>20170321</metd><metc><cntinfo><cntperp><cntper>Peter N Schweitzer</cntper><cntorg>USGS Eastern Mineral and Environmental Resources Science Center</cntorg></cntperp><cntpos>Geologist</cntpos><cntaddr><addrtype>mailing address</addrtype><address>12201 Sunrise Valley Drive</address><city>Reston</city><state>VA</state><postal>20192-0002</postal><country>USA</country></cntaddr><cntvoice>703-648-6533</cntvoice><cntfax>703-648-6252</cntfax><cntemail>pschweitzer@usgs.gov</cntemail></cntinfo></metc><metstdn>Content Standard for Digital Geospatial Metadata</metstdn><metstdv>FGDC-STD-001-1998</metstdv></metainfo></metadata>
