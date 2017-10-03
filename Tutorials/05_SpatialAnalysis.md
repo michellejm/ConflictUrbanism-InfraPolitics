@@ -307,14 +307,13 @@ Let's situate Johannesburg in South Africa.
 
 * Add background vector layers to help situate it- all of these are in the data folder.
   * Johannesburg city outline 
-  * Guateng state outline
-  * South Africa Waterways (ZAF-wat)
-  * South Africa state boundaries (ZAF - Adm 1)
-  * South Africa country boundaries (ZAF - Adm 0)
+  * Roadways clipped to the JHB city limits
 * Change the fills and borders to make it more visually appealing
 * Add a Title, legend, scale bar
 
-![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/jb30.png)
+Change the color ramp on the demographics to go from white to dark grey, make the roads grey and light, make the boundary of the city heavier, add a border to the mine locations, etc.
+
+![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/jb32.png)
 
 
 
