@@ -27,6 +27,7 @@ We want to know the demographic breakdown of people who live within 3km of the m
 First we will upload the shape file of Johannesburg at the sub place level. Then we will add the census data to get a census map of Johannesburg. Then we will add the lat/long of the mines in the area, and create buffers around them. These buffers will represent the sphere of influence of each mine. We will then use a spatial join and proportional split to count the number of people living within 2km of the mine, and determine what the breakdown by race is.
 
 #### Data
+THe DAta and shapefiles for this tutorial are in the [Data Folder for the class](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/tree/master/Data/05_SpatialAnalysis), which you can download with the Green button again, or with the desktop app.
 Johannesburg
 1. JHB Census at the subplace level
 2. JHB Subplace Boundaries
