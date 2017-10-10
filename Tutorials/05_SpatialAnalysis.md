@@ -23,19 +23,15 @@ We are interested in understanding who lives in close proximity to the mines, an
 * What is their proximity to gated versus informal settlements?
 
 #### Plan
-We want to know the demographic breakdown of people who live within 3km of the mines.
+We want to know the demographic breakdown of people who live within 2km of the mines.
 First we will upload the shape file of Johannesburg at the sub place level. Then we will add the census data to get a census map of Johannesburg. Then we will add the lat/long of the mines in the area, and create buffers around them. These buffers will represent the sphere of influence of each mine. We will then use a spatial join and proportional split to count the number of people living within 2km of the mine, and determine what the breakdown by race is.
 
 #### Data
-THe DAta and shapefiles for this tutorial are in the [Data Folder for the class](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/tree/master/Data/05_SpatialAnalysis), which you can download with the Green button again, or with the desktop app.
+The Data and shapefiles for this tutorial are in the [Data Folder for the class](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/tree/master/Data/05_SpatialAnalysis), which you can download with the Green button again, or with the desktop app.
 Johannesburg
 1. JHB Census at the subplace level
 2. JHB Subplace Boundaries
 3. Mines in South Africa
-
-Background Files (to make our map look nicer)
-4. Waterways in South Africa [available here](www.gadm.org)
-5. South Africa state borders [available here](http://www.gadm.org/country)
 
 Another good place for South Africa shapefiles is [Mapcruzin](http://www.mapcruzin.com/free-south-africa-arcgis-maps-shapefiles.htm)
 
@@ -54,8 +50,6 @@ Select the `add vector data` button and navigate to the  folder and add the foll
 * jhb_mines.shp
 
 * ZAF_adm2.shp
-* ZAF_water_areas_dcw.shp
-* ZAF_water_lines_dcw.shp
 
 ![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/dm1.png)
 
