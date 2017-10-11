@@ -170,7 +170,7 @@ Add the new layer to the map
 
 I'm going to call mine 'barrio_centrality'
 
-![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/md16'.png)
+![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/md16.png)
 
 
 Inspect the Attribute Table of 'barrio centrality'. We still have degrees. Since we are really creating a comparative metric, that might be fine, but I don't like it anyhow, so we will change it to kilometers.
@@ -179,7 +179,7 @@ First make a new column to sum the degrees using the Open Field Calculator
 
 We will make a new field, I will call mine 'sumdegrees' (Real decimal number with precision 2) and it will be all of the 'university' fields added together.
 
-![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/md18'.png)
+![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/md18.png)
 
 Finally I'll turn the degrees into approximate kilometers, and make another column called 'total' which will be "sumdegrees" * 100
 
@@ -191,11 +191,11 @@ Save your changes by toggling the Editing button off.
 
 Open the Properties menu, select the style, and use 'Graduates Symbols' based on the 'Total' column that you just made. Use the Jenks break, select 'Classify' and 'OK' You should see a map of the most and least isolated barrios in Medellín. 
 
-![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/md19'.png)
+![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/md19.png)
 
 Toggle off the points, the buildings, and change your roads to grey. 
 
-![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/md20'.png)
+![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/md20.png)
 
 We see from this that the western side of Medellín is more isolated than the Eastern side. If we were to add features such as mountains and rivers, it may become more apparent as to why this is. 
 
@@ -221,7 +221,7 @@ You will need to set up this tool.
 
 Navigate to Vector > Road Graph > Settings 
 
-![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/md21'.png)
+![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/md21.png)
 
 If we were to calculate the amount of time it takes to get places, we would have to set up the speed limit or average speed on each road or road segment. This is done by creating a column in your Attribute Table that corresponds to speed. In our roads file, all of the roads are classified by the type of road that they are. We could use this to get fairly specific about each road. Note that the customization of this tool happens mostly in your Attribute Table. So, if some roads are One-Way, that is indicated in the Attribute Table, 
 
@@ -235,22 +235,22 @@ Direction: 'Always use default'
 Speed Field: 'Always use default'    km/hr
 
 
-![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/md22'.png)
+![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/md22.png)
 
 Once you finish making the settings, a Road Graph Box should appear in the left side panel. If it doesn't, go to View > Panels  and turn on the 'Shortest Path'
 
-![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/md23'.png)
+![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/md23.png)
 
 
 Now, we want to compare distances, so I'm going to 'Select by Click' ![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/md24'.png) a barrio and a university so that I will be able to find them in the Attribute Table. You have to have the layer name selected in the layers panel for this to work.
 
 Now, pick where you want to start (i.e., one of the outer barrios) using the selector and pick your destination (one of the schools) and open the corresponding attribute to table to find the one that you selected.
 
-![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/md26'.png) 
+![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/md26.png) 
 
-![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/md25'.png) 
+![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/md25.png) 
 
-![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/md27'.png) 
+![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/md27.png) 
 
 
 It looks like this is university_2 since it is the third in the list (they stayed in order, and the numbering started from zero), and barrio CODIGO 5008.
