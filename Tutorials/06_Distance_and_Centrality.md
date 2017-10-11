@@ -18,6 +18,7 @@ We are interested in understanding which barrios have the most and the least acc
 * Where are the municipal resources concentrated?
 * How far away from each resource is each barrio?
 * Which barrios are the closest and which are the furthest?
+
 ADVANCED
 * Using a representative sample, how much does the travelling distance deviate from the direct distance?
 
