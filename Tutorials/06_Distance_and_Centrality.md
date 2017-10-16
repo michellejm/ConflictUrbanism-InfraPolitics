@@ -31,7 +31,7 @@ First we will upload a shape file of Medellín at the barrio level, a shapefile 
 This could lead to projects of 'betweenness', network analysis, or centrality.
 
 #### Data
-The Data and shapefiles for this tutorial are in the [Data Folder for the class](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/tree/master/Data/06_Centrality), which you can download with the Green button again, or with the desktop app.
+The Data and shapefiles for this tutorial are in the [Data Folder for the class](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/tree/master/Data/06_Distance_Centrality_MDL), which you can download with the Green button again, or with the desktop app.
 
 Medellín
 1. MDL at the barrio level
