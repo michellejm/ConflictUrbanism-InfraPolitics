@@ -149,16 +149,6 @@ Load the basic scripts you will need.
 
 ```
 
-Every map will also start by making a map div and opening the script that you will put your leaflet code into. 
-
-```
-<body>
-	<div id="map"></div>
-
-	<script>
-
-```
-
 Here we diverge. Please go to your tutorial:
 
 
@@ -167,6 +157,8 @@ Here we diverge. Please go to your tutorial:
 2. Census and Mines map of Johannesburg where users can toggle the census layers.
 
 3. Distance map of Medellín where users can move a point and see how far they could get in a car in 10, 20, and 30 minutes.
+
+
 
 ______________________________________________________________________________________________________________
 
