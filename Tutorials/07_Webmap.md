@@ -6,18 +6,20 @@ The city/project combination are designed around the maps we have already made. 
 
 ### Outcomes
 
-1. Mumbai: Add a before/after slider to your map using Leaflet slider plugin ([example](http://www.nytimes.com/interactive/2011/03/13/world/asia/satellite-photos-japan-before-and-after-tsunami.html?_r=0))
+1. Mumbai: Add a timeline slider to your map using Leaflet timeline plugin
 
 2. Johannesburg: Select which layers to display using Leaflet layers control plugin
 
 3. Medellín: Show distance metrics using the Route360 plugin 
 
 
-* You will make a map of distances based on travel time in Medellín. You will use the Route360 tool to make 2 maps of Medellín, a basic one showing the drivable distance in 5, 15, and 25 minutes. You will then make a second webmap with a scale bar and the outline of the city layered on top. You will export a geojson of this that you will then look at in QGIS and use for further analysis.
+* Using the geojson we exported from [Tutorial 3](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/Tutorials/03_Annotation.md), you will make a map with a timeline slider that makes popups appear in a sequence. Advanced options are to make the timeline animated, use custom markers, and add the georeferenced map as a tile layer. 
 
-OR 
+* Using QGIS, you will export the census data we joined to the microunit layer and the mines in Johannesburg both as geojsons. Youw ill then style these layers and add them as layers in Leaflet.
 
-* You will add a timeline slider to illustrate your map of Mumbai. 
+* Using the API for the Route360 plugin, you will make a map illustrating how far someone can get walking or driving in Medellín. 
+
+You will make a map of distances based on travel time in Medellín. You will use the Route360 tool to make 2 maps of Medellín, a basic one showing the drivable distance in 5, 15, and 25 minutes. You will then make a second webmap with a scale bar and the outline of the city layered on top. You will export a geojson of this that you will then look at in QGIS and use for further analysis.
 
 OR 
 
