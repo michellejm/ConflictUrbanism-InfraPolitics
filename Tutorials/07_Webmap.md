@@ -8,22 +8,17 @@ The city/project combination are designed around the maps we have already made. 
 
 1. Mumbai: Add a timeline slider to your map using Leaflet timeline plugin
 
-2. Johannesburg: Select which layers to display using Leaflet layers control plugin
+2. Johannesburg: Multiple census layers on a leaflet map using Leaflet layers control plugin
 
 3. Medellín: Show distance metrics using the Route360 plugin 
 
 
-* Using the geojson we exported from [Tutorial 3](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/Tutorials/03_Annotation.md), you will make a map with a timeline slider that makes popups appear in a sequence. Advanced options are to make the timeline animated, use custom markers, and add the georeferenced map as a tile layer. 
 
-* Using QGIS, you will export the census data we joined to the microunit layer and the mines in Johannesburg both as geojsons. Youw ill then style these layers and add them as layers in Leaflet.
+* Using the geojson we exported from [Tutorial 3](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/Tutorials/03_Annotation.md), you will make a map with a timeline slider that makes popups appear in a sequence. 
+
+* Using QGIS, you will export the census data we joined to the microunit layer and the mines in Johannesburg both as geojsons. You will then style these layers and add them as layers in Leaflet. 
 
 * Using the API for the Route360 plugin, you will make a map illustrating how far someone can get walking or driving in Medellín. 
-
-You will make a map of distances based on travel time in Medellín. You will use the Route360 tool to make 2 maps of Medellín, a basic one showing the drivable distance in 5, 15, and 25 minutes. You will then make a second webmap with a scale bar and the outline of the city layered on top. You will export a geojson of this that you will then look at in QGIS and use for further analysis.
-
-OR 
-
-* You will make a many layered map of Johannesburg highlighting the different demographic groups living near to the mines. 
 
 ### Set Up (For ALL Projects)
 
