@@ -12,13 +12,12 @@ The city/project combination are designed around the maps we have already made. 
 
 3. Medellín: Show distance metrics using the Route360 plugin 
 
-4. ADVANCED: If you complete your project, make it animated using 
 
 * You will make a map of distances based on travel time in Medellín. You will use the Route360 tool to make 2 maps of Medellín, a basic one showing the drivable distance in 5, 15, and 25 minutes. You will then make a second webmap with a scale bar and the outline of the city layered on top. You will export a geojson of this that you will then look at in QGIS and use for further analysis.
 
 OR 
 
-* You will add a before and after slider to the webmap you made of Mumbai. 
+* You will add a timeline slider to illustrate your map of Mumbai. 
 
 OR 
 
@@ -160,6 +159,8 @@ Here we diverge. Please go to your tutorial:
 
 
 
+
+To complete this tutorial, submit your working FOLDER
 ______________________________________________________________________________________________________________
 
 Tutorial written by Michelle McSweeney, for Conflict Urbanism: InfaPolitics, a seminar taught at Columbia University by the [Center for Spatial Research](http://c4sr.columbia.edu) in Fall 2017.
