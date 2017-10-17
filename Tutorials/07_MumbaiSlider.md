@@ -1,89 +1,139 @@
-## Before/After Slider of Mumbai
+## Timeline Slider - Mumbai
+
+To illustrate a sequence of events, you will make a timeline slider. This is a manual slider using [this plugin](https://github.com/dwilhelm89/LeafletSlider) built be Dennis Wilhelm. You will first make a time-based slider. Then, time permitting, you will change the icon to use the font-awesome library. This can be customized based on any column in your geojson file. 
+
+The geojson file for this project comes from Tutorial 3: Annotating with Leaflet.js. For instructions on how to export a geojson from QGIS, please revisit that tutorial. 
+
+First you will get your code running with the time slider only. Then, you will add the popups. Finally, time permitting, you turn the historical map that you georeferenced into a tilelayer using Mapbox and import it into your project. This is the first step in adding a before/after slider.
+
+If you would rather make the animated version, [the plugin for that is here](http://skeate.github.io/Leaflet.timeline/). It is slightly more complicated, so would be a good next step after completing this tutorial. However, if you are comfortable with HTML, CSS, and JS, you may want to go straight to the animated version. 
+
+    
+1. Load your dependencies. You will need the leaftlet and jquery stylesheets.
+
+****Get the Leaflet stylesheet from the CDN and remove the one that we downloaded. This plugin requires this version of leaflet to display the popups****
+
+    
+```
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" type="text/css">
+
+```
+
+You will need the leaflet, jquery, jquery-ui, jqueryui-touch (for touchscreens), and the SliderControl javascript libraries. We know that we will need all of these because we read the ReadMe file associated with the plugin.
+
+****Again, retrieve these from the CDN as there is a version issue****
+
+```
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+    <!-- Include this library for mobile touch support  -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js"></script>
+
+    <script src="SliderControl.js"></script>
+    ```
+    
+2. Set the style of your map, this is the same for all maps we are making-we want it to take up the entire space it is given
+ 
+```   
+     <style>
+  #map{position:absolute; top:0; bottom:0; left:0; width: 100%;}
+    </style>
+```
+
+3. Close the header and open the body, and make a div for the map. Open a script tag.
+
+4. Set up our variables for the slider, the map, and the special markers. We will set the slider to null, the map to the latitude, longitude, and zoom level we want, and the marker to the same simple black marker we used in Tutorial 3. We will use all of these later - we just need them all to exist before we start writing our code. 
+
+```
+// make the slider exist
+    var sliderControl = null;
+    
+// create a map variable with the center point and zoom specified
+    var map = L.map('map').setView([LATITUDE, LONGITUDE], ZOOM);
+
+//Specify an icon
+var myIcon = L.icon({
+iconUrl: 'css/images/maps-mark.png',
+  iconSize: [20, 20],
+  popupAnchor: [0, -16]
+});
+```
+
+5. Load your tile layer. We will use stamen's terrian map. It's nice, it's basic, you can style it with other tiles should you wish. Be sure to add an attribution for both the tiles and the data. 
+
+```
+        L.tileLayer('http://tile.stamen.com/terrain/{z}/{x}/{y}.png', {
+        attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+    }).addTo(map);
+    
+```
 
 
-1. Set up your dependencies.
+6. Pull in your geojson data and add it as a marker layer, similar to how we did in Tutorial 3.
 
-CSS – In addition to the Leaflet CSS we’re including Bootstrap as well as CSS that will allow us to use Bootstrap glyphicons thanks to Lennard Voogdt and this project.
+```
+//Fetch some data from a GeoJSON file
+$.getJSON("YOUR_FILE", function(plagueData) {
+    // create a marker layer
+    var testlayer = L.geoJson(plagueData, {
+        pointToLayer: function(feature, latlng) {
+            return L.marker(latlng, {
+            icon: myIcon
+            });
+        },
+        });
+```
+
+7. Add the slider controller. These features can all be changed, see the docs [here](https://github.com/dwilhelm89/LeafletSlider/blob/master/README.md).
+
+```
+        sliderControl = L.control.sliderControl({
+                position: "topleft",
+                timeAttribute: "Date",
+                layer: testlayer,
+                follow: true
+            });
+
+```
+
+8. Add the slider to the map
+
+```
+        //Make sure to add the slider to the map ;-)
+        map.addControl(sliderControl);
+        //And initialize the slider
+        sliderControl.startSlider();
+    });
+
+```
+
+9. Close the script, body, and html tags
+
+10. Check your map by running it on the local server (if you just open the html document with the browser, the slider will not appear).
 
 
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-<link rel="stylesheet" href="css/leaflet.awesome-markers.css">
-
-JS - jQuery, jQuery-ui, code that allows users on touch devices to use the map and the code from Graham that creates the map (the map creation function is in jquery.beforeafter-map-0.11.js).
+11. Go back and add the popups to the geojson layer
 
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
-<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script> 
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery.beforeafter-map-0.11.js"></script>
+```
+$.getJSON("data/plaguetimeline.geojson", function(plagueData) {
+    // create a marker layer
+    var testlayer = L.geoJson(plagueData, {
+        pointToLayer: function(feature, latlng) {
+            return L.marker(latlng, {
+            icon: myIcon
+            });
+        },
+        onEachFeature: function (feature, layer) {
+            layer.bindPopup(feature.properties.Year + '<br/>' + feature.properties.Event);
+            }
+        });
+```
 
-HTML - create an overall div and a div that holds the before and after map instances (note that the ID for these is before and after, respectively).
+To complete this tutorial, submit your working FOLDER
+______________________________________________________________________________________________________________
 
-   <div id="map-container">
-        <!-- Make sure to give the map divs height and width 
-         I do it with the map class -->
-        <div id="before" class="map"></div>
-        <div id="after" class="map"></div>
-    </div>
-
-2. Create the Leaflet maps
-
-Set up the maps:
-
-    var center = [38.895, -77.020];
-        var zoom = 12;
-        var before = L.map('before', {
-                attributionControl: false,
-                inertia: false,
-                minZoom: 12
-            }).setView(center, zoom);
-            
-        var after = L.map('after', {
-                inertia: false,
-                minZoom: 12
-            }).setView(center, zoom);
-
-Populate them with layers. In this case I'm using a MapBox TileLayer that we edited a bit:
-
-    L.tileLayer('http://{s}.tiles.mapbox.com/v3/spatial.map-qgihrqg5/{z}/{x}/{y}.png').addTo(before); // 
-    L.tileLayer('http://{s}.tiles.mapbox.com/v3/spatial.map-qgihrqg5/{z}/{x}/{y}.png').addTo(after); // 
-
-3. Add features to the map
-
-We will also add some before/after features. Red will be before and blue will be after. Note that if you wanted to simply add a traditional Leaflet marker you would use:
-
- L.marker([38.895, -77.060]).addTo(before);
-
-but we wanted to use colored markers and Bootstrap glyphicons. Perhaps drink before and relax with music after?
-
-    #BEFORE (red)    
-    var circle = L.circle([38.895, -77.020], 2000, {
-        color: 'red',
-        fillColor: 'red',
-        fillOpacity: 0.5
-    }).addTo(before);
-
-    L.marker([38.895, -77.060], {icon: L.AwesomeMarkers.icon({icon: 'glass',  prefix: 'glyphicon',markerColor: 'red'}) }).addTo(before);
-    L.marker([38.895, -77.050], {icon: L.AwesomeMarkers.icon({icon: 'glass',  prefix: 'glyphicon',markerColor: 'red'}) }).addTo(before);
-    L.marker([38.895, -77.040], {icon: L.AwesomeMarkers.icon({icon: 'glass',  prefix: 'glyphicon',markerColor: 'red'}) }).addTo(before);
-
-    #AFTER (blue)
-    var circle = L.circle([38.895, -77.020], 2000, {
-        color: 'blue',
-        fillColor: 'blue',
-        fillOpacity: 0.5
-    }).addTo(after);
-
-    L.marker([38.905, -77.010], {icon: L.AwesomeMarkers.icon({icon: 'headphones',  prefix: 'glyphicon',markerColor: 'blue'}) }).addTo(after);
-    L.marker([38.915, -77.000], {icon: L.AwesomeMarkers.icon({icon: 'headphones',  prefix: 'glyphicon',markerColor: 'blue'}) }).addTo(after);
-    L.marker([38.925, -76.990], {icon: L.AwesomeMarkers.icon({icon: 'headphones',  prefix: 'glyphicon',markerColor: 'blue'}) }).addTo(after);
-
-4. Use the beforeAfter function to create the final maps and slider
-
-The beforeAfter function is in the jquery.beforeafter-map-0.11.js file created by Graham MacDonald.
-
-$('#map-container').beforeAfter(before, after);
-
-5. Play with your map
+Tutorial written by Michelle McSweeney, for Conflict Urbanism: InfaPolitics, a seminar taught at Columbia University by the [Center for Spatial Research](http://c4sr.columbia.edu) in Fall 2017.
