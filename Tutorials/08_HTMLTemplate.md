@@ -1,8 +1,8 @@
-##Tutorial 5: Setting Up A Conflict Urbanism: Language Justice Case Study
+## Setting Up A Conflict Urbanism: InfraPolitics Case Study
 
-This tutorial is required for all students in Conflict Urbanism: Language Justice. It introduces the format you will be working with and explains the template we expect you to use. Through editing the pre-made template, you will develop familiarity with HTML and CSS. These two languages drive both the structure and formatting of webpages. 
+This tutorial introduces the html template we expect you to use. It is built on Bootstrap and customized for all the Conflict Urbanism courses. Through editing the pre-made template, you will develop familiarity with HTML and CSS. These two languages drive both the structure and formatting of webpages. 
 
-If you are already familiar with HTML and CSS, you may skip ahead to working directly with the template provided. You are requested *not* to change the style settings, so that everyone's project retains a similar aesthetic.
+If you are already familiar with HTML and CSS, you may skip ahead to working directly with the template provided. You are requested *not* to change the style settings, so that everyone's project retains a similar aesthetic. You can change the individual CSS for your individual project within reason (no pink text, lobster fonts, etc), but not the project CSS.
 
 This tutorial is primarily an introduction to using the template we have provided. Whereas other tutorials in this series are more hands-on and technical, this one is really designed to get you up and running with the template you will use. 
 
@@ -17,7 +17,8 @@ By the end of this tutorial, you will be able to:
 For this tutorial, you will need:
 * [Sublime](http://www.sublimetext.com/)
 * [Chrome](https://www.google.com/chrome/)
-* Case_Study Files, Download [here](https://drive.google.com/open?id=0B8IdSWLrkSd3WHNIN05fZlNJMk0) Or view the files [here](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/tree/master/CaseStudy)
+
+* Case Study Template Files
 
 
 ### Introduction to HTML/CSS
@@ -260,7 +261,7 @@ The code for the Case Study is pasted below. This is the same as the template.ht
 Every step is commented. More detailed comments follow this code block. You can follow the instructions in the code or go to the end if you want a more high-level introduction. Everytime you change the code in Sublime, `Save`. `Refresh` the web page and you should be able to see the changes. Note: Do not make any changes to the .css files. 
 
 ```html
-<!-- Conflict Urbanism: Language Justice
+<!-- Conflict Urbanism: InfraPolitics
      Center for Spatial Research
      Michelle McSweeney (mam2518@columbia.edu)
 
@@ -270,7 +271,7 @@ Every step is commented. More detailed comments follow this code block. You can 
 
   <head>
   <!--Do not change: Main title as appears in window -->
-  <title> Conflict Urbanism: Language Justice</title>
+  <title> Conflict Urbanism: InfraPolitics</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -300,7 +301,7 @@ Every step is commented. More detailed comments follow this code block. You can 
       <div class="col-md-12">
 
         <!--Do not change these : Title  -->
-        <h5><a href="index.html">Conflict Urbanism: Language Justice</a></h5>
+        <h5><a href="index.html">Conflict Urbanism: InfraPolitics</a></h5>
 
         <!--Add: Case Study Title -->
         <h5>Case Study | Type Title Here </h5>
@@ -407,7 +408,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br/><br/> 
 
 <iframe width='100%' height='500px' frameBorder='0' src= "http://c4sr.columbia.edu/conflict-urbanism-aleppo/index.html" name="iframe_x"></iframe> 
-<p><a href="http://c4sr.columbia.edu/conflict-urbanism-aleppo/index.html" target="iframe_x">Language Justice Site</a></p>
+<p><a href="http://c4sr.columbia.edu/conflict-urbanism-aleppo/index.html" target="iframe_x">InfraPolitics Site</a></p>
 
 <br/>
 
@@ -638,4 +639,4 @@ To complete this tutorial, please send the template as an .html file to Michelle
 You can leave the Lorem Ipsum in the template until you are creating the final product. 
 
 _____________________
-This tutorial was prepared by Michelle McSweeney for the Conflict Urbanism: Language Justice Course offered as part of the Mellon Grant for Architecture in the Humanities in the Center for Spatial Research. It is based on a tutorial written by Medeeha Merchant, for Conflict Urbanism: Aleppo taught in Spring 2016 also by the Center for Spatial Research.
+This tutorial was prepared by Michelle McSweeney for the Conflict Urbanism: InfraPolitics Course offered as part of the Mellon Grant for Architecture in the Humanities in the Center for Spatial Research. It is based on a tutorial written by Medeeha Merchant, for Conflict Urbanism: Aleppo taught in Spring 2016 also by the Center for Spatial Research.
