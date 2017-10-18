@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    	<title>Demographics Johannesburg</title>
+
+	<link rel="stylesheet"  href="css/leaflet.css"/> 
+
+	<script src="js/leaflet.js"></script>
+	<script src="js/jquery-3.2.1.min.js">  </script>
+
+
+	 <style>
+ #map{position:absolute; top:0; bottom:0; left:0; width: 100%;}
+  </style>
+
+
+</head>
+
+<body>
+  <div id="map"></div>
+
+  <script>
+
+var map = L.map('map').setView([-26.204, 28.047], 11);
+
+var layerControl;
+
+L.tileLayer('http://tile.stamen.com/terrain/{z}/{x}/{y}.png', {
+        attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a> and <a href ="https://census2011.adrianfrith.com/">2011 South African Census </a>collected by Adrian Frith'
+    }).addTo(map);
+
+
+
+$.getJSON("data/censusjhb.geojson",function(jhbData){
+    var white = L.geoJson( jhbData, {
+      style: function(feature){
+        var fillColor;
+        density = feature.properties.PWhite;
+        if ( density > .80 ) fillColor = "#006837";
+        else if ( density > .60 ) fillColor = "#31a354";
+        else if ( density > .40 ) fillColor = "#78c679";
+        else if ( density > .20 ) fillColor = "#c2e699";
+        else if ( density > 0 ) fillColor = "#ffffcc";
+        else fillColor = "#f7f7f7";  // no data
+        return { color: "#999", weight: 1, fillColor: fillColor, fillOpacity: .6 };
+      },
+      onEachFeature: function( feature, layer ){
+        layer.bindPopup( "<strong>" + feature.properties.Name + "</strong><br/>" + feature.properties.PWhite + " percent of this area is White" )
+      }});
+    map.addLayer(white);
+    layerControl.addOverlay(white, "White");
+  });
+
+
+$.getJSON("data/2kmines.geojson", function(minesData) {
+	var mines = L.geoJson(minesData, { 
+			style: function(feature) {
+				return { color: "#000", weight: 1, fillColor: "#daa520", fillOpacity: .6 };
+			},
+       	onEachFeature: function( feature, layer ){
+         layer.bindPopup( "<strong>" + feature.properties.site_name + "</strong><br/>" + feature.properties.commod1 )
+       }});
+	map.addLayer(mines);
+	layerControl.addOverlay(mines, "Mines");
+	});
+
+// This is currently not working and I have no idea why not. Currently all layers must be displayed at the same time.
+
+       var overlay = {
+         "White": white,
+         "Mines": mines
+       };
+
+
+
+layerControl = L.Control.Layers(overlay);
+layerControl.addTo(map);
+
+
+  </script>
+</body>
+</html>

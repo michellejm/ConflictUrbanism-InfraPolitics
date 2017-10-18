@@ -1,0 +1,75 @@
+<html>
+<head>
+	<title>Distances Medellin</title>
+
+<!--Stylesheets-->
+	<link rel="stylesheet"  href="css/leaflet.css"/> 
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/leaflet_awesome_markers.css">
+
+<!--Javascript-->
+	<script src="js/leaflet.js"></script>
+	<script src="js/jquery-3.2.1.min.js">  </script>
+	<script src="https://releases.route360.net/r360-js/latest.js"></script>
+  <script src="js/leaflet_awesome_markers.js"></script>
+
+	 <style>
+  #map{position:absolute; top:0; bottom:0; left:0; width: 100%;}
+  </style>
+
+
+</head>
+<body>
+  <div id="map"></div>
+
+  <script>
+//initializing the map
+var latlon = [6.24, -75.58]
+
+var map = L.map('map').setView(latlon, 13);
+// add attribution for the transit data used by the r360 polygon service
+map.attributionControl.addAttribution("Lots of data")
+
+//add background tile layers
+
+
+r360.basemap({ style: 'basic', apikey: "A6JVYV2QT7NFKQSRODZZLR3" }).addTo(map);
+
+
+//define new marker
+// var marker = L.marker((latlon)).addTo(map);
+
+var aMarker = L.AwesomeMarkers.icon({
+       prefix: 'fa', //font awesome
+       icon: 'fa fa-car fa-3x', 
+       iconColor: 'black',
+    })
+
+var marker = L.marker((latlon), {icon: aMarker}).addTo(map);
+
+var polygonLayer = r360.leafletPolygonLayer().addTo(map);
+
+
+var travelOptions = r360.travelOptions();
+// please contact us and request your own key
+travelOptions.setServiceKey("A6JVYV2QT7NFKQSRODZZLR3");
+// set the service url for your area
+travelOptions.setServiceUrl("https://service.route360.net/south_america/");
+// we only have one source which is the marker we just added
+travelOptions.addSource(marker);
+// we want to have polygons for 10 to 30 minutes
+travelOptions.setTravelTimes([600, 1200, 1800]);
+// go by foot
+travelOptions.setTravelType("car");
+
+
+r360.PolygonService.getTravelTimePolygons(travelOptions, function(polygons){
+
+    // add the returned polygons to the polygon layer
+    // and zoom the map to fit the polygons perfectly
+    polygonLayer.clearAndAddLayers(polygons, true);
+});
+
+  </script>
+</body>
+</html>
