@@ -2,6 +2,8 @@
 
 To illustrate a sequence of events, you will make a timeline slider. This is a manual slider using [this plugin](https://github.com/dwilhelm89/LeafletSlider) built be Dennis Wilhelm. You will first make a time-based slider. Then, time permitting, you will change the icon to use the font-awesome library. This can be customized based on any column in your geojson file. 
 
+For timelines without a map, check out [SIMILE](http://www.simile-widgets.org/timeline/).
+
 The geojson file for this project comes from [Tutorial 3: Annotating with Leaflet.js](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/Tutorials/03_Annotation.md). For instructions on how to export a geojson from QGIS, please revisit that tutorial. 
 
 First you will get your code running with the time slider only. Then, you will add the popups. Finally, time permitting, you can style your popups with the [Awesome-Markers Leaflet Plugin](https://github.com/lvoogdt/Leaflet.awesome-markers), or make an animated timeline (if you are comfortable with HTML, CSS, and JS, you may want to go straight to the animated version [the plugin for that is here](http://skeate.github.io/Leaflet.timeline/).) You can also turn the historical map that you georeferenced into a [tilelayer using Mapbox](https://www.mapbox.com/help/georeferencing-imagery/#upload-to-mapbox-as-a-tileset) and import it into your project as a tilelayer. This is the first step in adding a [before/after slider](https://github.com/dwilhelm89/LeafletSlider).
