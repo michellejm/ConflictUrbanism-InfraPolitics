@@ -2,9 +2,9 @@
 
 This tutorial introduces the html template we expect you to use. It is built on Bootstrap and customized for all the Conflict Urbanism courses. Through editing the pre-made template, you will develop familiarity with HTML and CSS. These two languages drive both the structure and formatting of webpages. 
 
-If you are already familiar with HTML and CSS, you may skip ahead to working directly with the template provided. You are requested *not* to change the style settings, so that everyone's project retains a similar aesthetic. You can change the individual CSS for your individual project within reason (no pink text, lobster fonts, etc), but not the project CSS.
+If you are already familiar with HTML and CSS, you may skip ahead to working directly with the template provided. Please do  *not* to change the style settings, so that everyone's project retains a similar aesthetic. You can change the individual CSS for your individual project within reason (no pink text, lobster fonts, etc), but not the project CSS.
 
-This tutorial is primarily an introduction to using the template we have provided. Whereas other tutorials in this series are more hands-on and technical, this one is really designed to get you up and running with the template you will use. 
+This tutorial is primarily an introduction to using the template we have provided so you can submit your final project.
 
 By the end of this tutorial, you will be able to:
 * Set up a Case Study for your project
@@ -23,7 +23,7 @@ For this tutorial, you will need:
 
 ### Introduction to HTML/CSS
 
-The following section is adapted from [here](http://learn.shayhowe.com/html-css/building-your-first-web-page/) and provides a good understanding of Web Basics. Please refer to it for more information. Likewise, if you are interested in diving deeper, work through the following (7 hour) [course](https://www.codecademy.com/learn/web), on Code Academy. 
+The following section is adapted from [here](http://learn.shayhowe.com/html-css/building-your-first-web-page/) and provides a good understanding of Web Basics. Please refer to it for more information. Likewise, if you are interested in diving deeper, work through this (7 hour) [codeacademy course](https://www.codecademy.com/learn/web), on Code Academy. 
 
 A **Website** uses at least two languages:
 
