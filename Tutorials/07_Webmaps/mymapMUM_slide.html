@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mumbai Time Slider Example</title>
+    <!--Not necessary for a simple map, but good practice to include-->
+    <meta charset="utf-8" />
+
+    <!-- Not necessary since we will embed our map in a bootstrap site, which is mobile responsive anyhow, but good practice to include-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--Stylesheets-->
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" type="text/css">
+
+<!--Javascript-->
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+    <!-- Include this library for mobile touch support  -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js"></script>
+
+    <script src="SliderControl.js"></script>
+
+     <style>
+  #map{position:absolute; top:0; bottom:0; left:0; width: 100%;}
+    </style>
+
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <script>
+    var sliderControl = null;
+
+    var map = L.map('map').setView([18.966, 72.831], 13);
+
+//Specify an icon
+    var myIcon = L.icon({
+        iconUrl: 'css/images/maps-mark.png',
+        iconSize: [20, 20],
+        popupAnchor: [0, -16]
+        });
+
+    L.tileLayer('http://tile.stamen.com/terrain/{z}/{x}/{y}.png', {
+        attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+    }).addTo(map);
+
+
+//Fetch some data from a GeoJSON file
+$.getJSON("data/plaguetimeline.geojson", function(plagueData) {
+    // create a marker layer
+    var testlayer = L.geoJson(plagueData, {
+        pointToLayer: function(feature, latlng) {
+            return L.marker(latlng, {
+            icon: myIcon
+            });
+        },
+        onEachFeature: function (feature, layer) {
+            layer.bindPopup(feature.properties.Year + '<br/>' + feature.properties.Event);
+            }
+        });
+        sliderControl = L.control.sliderControl({
+                position: "topleft",
+                timeAttribute: "Date",
+                layer: testlayer,
+                follow: 3
+            });
+
+
+
+        //Make sure to add the slider to the map ;-)
+        map.addControl(sliderControl);
+
+        //And initialize the slider
+        sliderControl.startSlider();
+    });
+
+</script>
+</body>
+</html>
