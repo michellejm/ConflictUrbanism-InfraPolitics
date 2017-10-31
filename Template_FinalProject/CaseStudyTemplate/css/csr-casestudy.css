@@ -1,0 +1,172 @@
+
+/* you do not need to change any of the CSS in this file*/
+
+body {
+  font-family:"UniversNextW01-Regular",Helvetica,Arial,sans-serif;
+  /*font-family: 'Roboto', sans-serif;*/
+  letter-spacing: 0.02em;
+  line-height: 1.3em;
+  font-size: 16px
+}
+.body-text a {
+  color:black;
+  text-decoration: underline;
+}
+
+.c4sr-contentwrapper {
+  width:100%;
+  margin: 0px;
+  padding-right:0px;
+}
+#top-row {
+  padding-left:25px;
+  padding-top: 75px;
+  padding-bottom:20px;
+}
+#sticky-menu {
+    position: fixed;
+    top: 135px;
+    padding-top: 6px;
+}
+.c4sr-navbar {
+      padding: 13px;
+      color: black;
+      background: white;
+      letter-spacing: 0.02em;
+      border-bottom: 1px solid #000;
+    }
+.c4sr-navbar a {
+        color: black;
+    }
+
+.c4sr-menu-left {
+        margin-left: 10px;
+        float: left;
+    }
+
+.c4sr-menu-right {
+        padding: 0;
+        margin: 0;
+        color: red;
+        float: right;
+        margin-right: 34px;
+    }
+
+.c4sr-menu-right a {
+  margin-left: 40px;
+}
+
+.c4sr-sidenav {
+  color: black;
+}
+
+.c4sr-sidenav a {
+  color: black;
+}
+.c4sr-sidenav li {
+    padding-top: 10px;
+}
+
+.footnote-ref {
+  position: relative;
+  font-size: 70%;
+}
+
+.footnote-ref a {
+  color: black;
+}
+.footnote {
+    display: inline;
+    font-size: 66%;
+    position: relative;
+    top: -6px;
+    padding: 0;
+  }
+.caption {
+  font-size: 70%;
+  line-height: 1.2em;
+  padding-bottom: 15px;
+}
+.c4sr-footer {
+        padding:0 0 20px 0;
+        width: 105%;
+        font-size: 80%;
+        z-index: 999;
+        background: #fff;
+        position: relative;
+        border-top: 1px solid #000;
+        padding-top: 1.4em;
+        color: black;
+    }
+.c4sr-footer a {
+        color:black;
+}
+#c4sr-embed {
+  padding-top: 20px;
+  padding-bottom:10px;
+}
+
+.cu-crown img {
+    width: 10%;
+    height: auto;
+    margin-top: 20px;
+}
+
+a.c4sr-button {
+    width: 100%;
+    float: left;
+    border: 1px solid black;
+    background: none;
+    border-radius: 0;
+    font-size: 100%;
+    padding: 11px;
+    margin-bottom: 20px;
+    margin-top:15px;
+}
+
+.mobile-warning{
+  display: none;
+}
+@media (max-width: 768px) {
+      ul.c4sr-sidenav {
+      display: none;
+    }
+      #top-row {
+        padding-left: 0;
+      }
+      .c4sr-menu-right {
+        display: none;
+      }
+      .footnotes{
+        display: none;
+      }
+      .c4sr-menu-left {
+        padding-left: 0px;
+      }
+      #c4sr-titlemobile {
+        padding: 0px;
+      }
+      .c4sr-navbar {
+        padding-left: 3px;
+      }
+      .mobile-warning {
+        display: inline;
+        font-size: 80%;
+        color:red;
+      }
+  }
+
+@media only screen and (min-width: 768){
+  .mobile-warning {
+    display: inline;
+    font-size: 80%;
+  }
+}
+  @media (max-width: 980px) {
+        #sticky-menu {
+        top: 170px;
+      }
+  /*
+  @media screen and (max-width: 768px) {
+    .c4sr-menu-right { display: none; }
+  }*/
