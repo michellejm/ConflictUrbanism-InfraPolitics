@@ -260,383 +260,332 @@ The code for the Case Study is pasted below. This is the same as the template.ht
 
 Every step is commented. More detailed comments follow this code block. You can follow the instructions in the code or go to the end if you want a more high-level introduction. Everytime you change the code in Sublime, `Save`. `Refresh` the web page and you should be able to see the changes. Note: Do not make any changes to the .css files. 
 
-```html
-<!-- Conflict Urbanism: InfraPolitics
-     Center for Spatial Research
-     Michelle McSweeney (mam2518@columbia.edu)
+```
 
 ================================================================= -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
   <head>
-  <!--Do not change: Main title as appears in window -->
-  <title> Conflict Urbanism: InfraPolitics</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Change to your project's title -->
+    <title>Project Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!--Add: Project Keyword Description & Student Name  -->
-  <meta name="description" content="">
-  <meta name= "author" content="">
-    
-  <!--Do not change: boostrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- Site specific CSS -->
+    <link rel="stylesheet" href="css/csr-casestudy.css">
+    <link rel="stylesheet" href="css/footnotes.css">
+    <!-- Webfont CSS -->
+    <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/c28915cb-7a1f-477c-9084-e9e755ede452.css">
 
-  <!--Do not change: css files required for case study -->
-  <link href='css/conflict_main.css' rel='stylesheet' />
-  <link href='css/conflict_cthese.css' rel='stylesheet' />
-  
-  <style>
-  body {
-    font-family: Arial, sans;
-  }
-  </style>
   </head>
-
-<body>
-
-  <div class="container main">
-    <div class="row top-row">
-      <div class="col-md-12">
-
-        <!--Do not change these : Title  -->
-        <h5><a href="index.html">Conflict Urbanism: InfraPolitics</a></h5>
-
-        <!--Add: Case Study Title -->
-        <h5>Case Study | Type Title Here </h5>
-
-        <!--Add: Image Header: File Size: 1800x450.png. 
-        Save your file as 'Header_image_1800x450.png in the <img> folder
-        Use Illustrator Template in folder, if you require size setup-->
-        <div class="img-padding">
-          <img src="img/Header_image_1800x450.png" class="img-responsive" />
+  <body>
+    <!-- Top navbar (do not change)-->
+    <nav class = "navbar fixed-top c4sr-navbar" role="navigation" id="c4sr-navbar">
+      <div class="container-fluid" id="c4sr-titlemobile">
+          <div class="c4sr-menu-left">
+              <a class = "navbar-link" href="http://c4sr.columbia.edu/conflict-urbanism-infrapolitics/seminar/index.html">Conflict Urbanism: InfraPolitics</a>
+          </div>
+          <div class ="c4sr-menu-right">
+              <a class = "navbar-link" href="http://c4sr.columbia.edu/conflict-urbanism-infrapolitics/seminar/index.html">About</a>
+              <a class = "navbar-link" href="http://c4sr.columbia.edu/conflict-urbanism-infrapolitics/seminar/index.html#projects">Projects</a>
+              <a class = "navbar-link" href="http://c4sr.columbia.edu/conflict-urbanism-infrapolitics/seminar/index.html#people">People</a>
+          </div>
+      </div>
+    </nav>
+    <!-- Main content -->
+    <div class="container-fluid">
+    <div class="c4sr-contentwrapper">
+      <div class ="row" id="top-row">
+        <div class ="col-md-12" >
+          <!-- Your project title -->
+          <h2>Project Title: Subtitle that is standard for long academic titles</h4>
+          <!-- Your name, degree program and school -->
+          <div class="caption">Student Name, Second Student Name, Third Student Name</div>
+          </div>
         </div>
 
+    <!-- Side navigation menu -->
+      <div class = "row">
+        <div class = "col-md-3">
+          <div class ="nav" id="sticky-menu">
+            <ul class = "c4sr-sidenav">
+              <!-- Make as many sections as fit your project  -->
+              <!-- Change the href to match the associated h5 id tag -->
+              <li><a href="#intro">Introduction</a></li>
+              <li><a href="#first">Section One</a></li>
+              <li><a href="#second">Section Two</a></li>
+            </ul>
+          </div>
+        </div>
+
+      <!-- Section for the text and images for your project -->
+        <div class = "col-md-6 body-text">
+          <!-- create your own id tag that matches the href you create in the sidenav section-->
+          <h5 id ="intro">Introduction</h5><br/>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel nibh condimentum, imperdiet nisi at, accumsan lectus. Vestibulum suscipit varius urna et tempus. Donec quam lorem, fermentum ut augue id, pretium lacinia sapien. Sed aliquam turpis placerat lectus condimentum, sit amet consequat mi rhoncus. Donec sit amet libero varius eros molestie vehicula. Nullam mollis arcu quis leo ullamcorper, eu sodales magna cursus. <a href="c4sr.columbia.edu">Vestibulum ante</a> ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis condimentum rutrum elit, id sagittis neque mollis nec.<div class="footnote">1</div> Nam ornare sit amet dui vel bibendum.<br/><br/> Aliquam at nunc quis erat faucibus laoreet. Nulla at lectus vehicula, ornare mi id, fringilla turpis. Maecenas sodales, lorem eu tincidunt laoreet, augue sapien blandit massa, in malesuada metus nibh tempus urna. Sed laoreet purus nisi, vel sodales lorem pulvinar vitae.
+
+          <!-- embeded image -->
+          <img src="img/testimage.png" class="img-fluid" id="c4sr-embed">
+          <!-- image caption -->
+          <div class="caption">This is a caption for your image</div>
+
+          Ut at dolor vel quam venenatis dictum. Phasellus dapibus tincidunt ex, a tempus sapien lacinia at.
+          <div class="footnote">2</div> Duis lobortis arcu in est eleifend tincidunt. Integer volutpat mi a nunc auctor, sodales sagittis massa fermentum. Cras purus purus, auctor at eros eu, maximus cursus enim. Cras efficitur eget elit auctor dapibus. In molestie nisl nunc, quis malesuada nunc scelerisque sit amet. Quisque ac quam facilisis, tempus justo quis, congue nunc. Quisque mauris arcu, porta nec purus id, blandit imperdiet mi.
+          <br/><br/> Aliquam at nunc quis erat faucibus laoreet. Nulla at lectus vehicula, ornare mi id, fringilla turpis. Maecenas sodales, lorem eu tincidunt laoreet, augue sapien blandit massa, in malesuada metus nibh tempus urna. Sed laoreet purus nisi, vel sodales lorem pulvinar vitae.<div class="footnote">3</div>  Ut at dolor vel quam venenatis dictum. Phasellus dapibus tincidunt ex, a tempus sapien lacinia at. Duis lobortis arcu in est eleifend tincidunt. Integer volutpat mi a nunc auctor, sodales sagittis massa fermentum. Cras purus purus, auctor at eros eu, maximus cursus enim. Cras efficitur eget elit auctor dapibus. In molestie nisl nunc, quis malesuada nunc scelerisque sit amet. Quisque ac quam facilisis, tempus justo quis, congue nunc. Quisque mauris arcu, porta nec purus id, blandit imperdiet mi.<br/><br/>
+
+          <h5 id="first">Section One</h5>
+          Aliquam at nunc quis erat faucibus laoreet. Nulla at lectus vehicula, ornare mi id, fringilla turpis. Maecenas sodales, lorem eu tincidunt laoreet, augue sapien blandit massa, in malesuada metus nibh tempus urna. Sed laoreet purus nisi, vel sodales lorem pulvinar vitae. Ut at dolor vel quam venenatis dictum. Phasellus dapibus tincidunt ex, a tempus sapien lacinia at. Duis lobortis arcu in est eleifend tincidunt. Integer volutpat mi a nunc auctor, sodales sagittis massa fermentum. Cras purus purus, auctor at eros eu, maximus cursus enim. Cras efficitur eget elit auctor dapibus. In molestie nisl nunc, quis malesuada nunc scelerisque sit amet. Quisque ac quam facilisis, tempus justo quis, congue nunc. Quisque mauris arcu, porta nec purus id, blandit imperdiet mi.
+
+          <!-- Embedded map or other item -->
+          <!-- the src value could be to an html file you write -->
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item" id="c4sr-embed" height="700px"
+            src="http://maps.stamen.com/toner/embed#10/40.7476/-73.9810" allowfullscreen>
+            </iframe>
+          </div>
+
+          <!-- <img src="img/testimage.png" class="img-fluid" id="c4sr-img"> -->
+
+          <div class="caption">This is a caption for your embedded item</div>
+
+          Ut at dolor vel quam venenatis dictum. Phasellus dapibus tincidunt ex, a tempus sapien lacinia at. Duis lobortis arcu in est eleifend tincidunt. Integer volutpat mi a nunc auctor, sodales sagittis massa fermentum. Cras purus purus, auctor at eros eu, maximus cursus enim. Cras efficitur eget elit auctor dapibus. In molestie nisl nunc, quis malesuada nunc scelerisque sit amet. Quisque ac quam facilisis, tempus justo quis, congue nunc. Quisque mauris arcu, porta nec purus id, blandit imperdiet mi.<br/><br/>
+          <h5 id="second">Section Two</h5>
+          Aliquam at nunc quis erat faucibus laoreet. Nulla at lectus vehicula, ornare mi id, fringilla turpis. Maecenas sodales, lorem eu tincidunt laoreet, augue sapien blandit massa, in malesuada metus nibh tempus urna. Sed laoreet purus nisi, vel sodales lorem pulvinar vitae. Ut at dolor vel quam venenatis dictum. Phasellus dapibus tincidunt ex, a tempus sapien lacinia at. Duis lobortis arcu in est eleifend tincidunt. Integer volutpat mi a nunc auctor, sodales sagittis massa fermentum. Cras purus purus, auctor at eros eu, maximus cursus enim. Cras efficitur eget elit auctor dapibus. In molestie nisl nunc, quis malesuada nunc scelerisque sit amet. Quisque ac quam facilisis, tempus justo quis, congue nunc. Quisque mauris arcu, porta nec purus id, blandit imperdiet mi.<br/>
+          <div class="mobile-warning">Please note: footnotes not visible on mobile.</div>
+        <a class="btn btn-default btn-block c4sr-button c4sr-big-button" href="http://c4sr.columbia.edu/conflict-urbanism-infrapolitics/seminar/index.html">Return to Student Projects</a>
+        </div>
+
+        <!-- Footnotes -->
+        <div class = "col-md-3">
+          <div class = "footnotes">
+            <!-- Footnote  1 -->
+            <div class = "footnote-ref footnote-ref-1">
+              <sup>1</sup>
+              <a href="google.com">Content of footnote one</a>
+            </div>
+            <!-- Footnote 2 -->
+            <div class = "footnote-ref footnote-ref-2">
+              <sup>2</sup>
+              <a href="google.com">Content of footnote two</a>
+            </div>
+            <!-- Footnote 3 -->
+            <div class = "footnote-ref footnote-ref-3">
+              <sup>3</sup>
+              <a href="google.com">Content of footnote three</a>
+            </div>
+
+          </div>
+        </div>
       </div>
-    </div>
-
-<!--Note: We suggest dividing your case study ito many different components. Think of this as chapters of your paper. 
-In this example, we have 7 sections. Below we set up a list for adding to the menu on left. 
-You could use chapter 1, chapter 2 or give text titles. --> 
-
-<div class="row">
-  <div class="col-md-3 scrollspy">
-    <div id="sticky-menu ">
-      <ul id="nav" class="nav c4sr-nav" data-spy="affix">
-        <!-- <li><a href="#section_id"><img src="img/dot-1.png" />Chapter_Name</a></li>-->
-        <li><a href="#Text1"><img src="img/dot-1.png" />Introduction</a></li>
-        <li><a href="#Text2"><img src="img/dot-1.png" />Text with Annotation</a></li>
-        <li><a href="#Text3"><img src="img/dot-1.png" />Text with PDF</a></li>
-        <li><a href="#Text4"><img src="img/dot-1.png" />Text with Image</a></li>
-        <li><a href="#Text5"><img src="img/dot-1.png" />Text with Video</a></li>
-        <li><a href="#Text6"><img src="img/dot-1.png" />Text with Interactive</a></li>
-        <li><a href="#Text7"><img src="img/dot-1.png" />Text with Map</a><li>
-      </ul>
+      <footer class="footer c4sr-footer">
+        <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-3 c4sr-footer-id"><a href="http://c4sr.columbia.edu/" target="_blank">Center for Spatial Research<br/>Columbia University<br/></a><div class="cu-crown">
+                  <img src="img/cu-crown.jpg" />
+              </div></div>
+              <div class="col-md-3">Graduate School of Architecture,<br/>Planning and Preservation<br/>Schermerhorn Hall Extension #654<br/>1172 Amsterdam Avenue<br/>New York, NY 10027<br/>
+              </div>
+              <div class="col-md-3"><a class="active" href="mailto:info@c4sr.columbia.edu">info@c4sr.columbia.edu</a><br/>Tel +1 212 555 1212<br/>Fax +1 212 555 1213</div>
+              <div class="col-md-3"><a href="https://twitter.com/c4sr_columbia" target="_blank">Follow us on Twitter</a><br/><a href="mailto:c4sr-updates-join@lists.columbia.edu" target="_blank">Sign up for our Mailing List</a><br/></div>
+          </div>
+        </div>
+      </footer>
     </div>
   </div>
 
-<!--Note: You can start with the first few paragraphs and keep adding. Each <item> above has a referenced paragraph below. 
-You can think of the above being a table of contents and below being the chapters, with actual text. 
-If you add a chapter, go back to the Table of Contents and add a tab for it. --> 
-
-  <!-- main -->
-  <div class="col-md-6 body-text">
-
-<!--Add: Text Paragraph -->
-     <!-- <h5 id="section_id">Section Title</h5> -->
-     <h5 id="Text1">Introduction to the cthese</h5>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br/><br/>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br/><br/>
-
-<!--Add: Text Paragraph with Annotation. 
-
-We have designed annotations, so that they are responsive to where you are on the case study. 
-These appear on the right column next to the footnote. To add a footnote, insert the following line of code. 
-Please change numbers in order. Everytime, you add a footnote, you will be required to go to the footnote section of the code, 
-to add in the text and link.
-
-To add a footnote, insert: <div class="footnote footnote-1">1</div> 
-Starting from #1, change as you proceed-->
-
-    <h5 id="Text2">Text with Annotation</h5>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <div class="footnote footnote-1">1</div> Add Text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<div class="footnote footnote-2">2</div> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br/><br/>
-
-<!--Add: Text Paragraph with PDF report. 
-To add a link to a PDF, save the file in the same folder and update link text 
-Insert the following code: <a href='filename.pdf'>Download Report</a> -->
-    <h5 id="Text3">Text with PDF</h5><br/>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</br>
-<a href='sample_report.pdf'>Download Report</a><br/><br/>
-
-<!--Add: Text Paragraph with Image. 
-To add an Image, save the file in the <img> folder 
-Insert the following code: <img src="img/filename.png" class="img-responsive"/> -->
-    <h5 id="Text4">Text with Image</h5><br/>
-<img src="img/Sample_Image.png" class="img-responsive"/><br/>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <br/><br/>
-
-<!--Add: Text Paragraph with Video. 
-To add a Video, either upload to vimeo or use Youtube link 
-Insert the following code: 
-<div class="embed-responsive embed-responsive-4by3">
-  <<iframe class="embed-responsive-item" src="weblink_of_video"></iframe>
-</div>
--->
-<h5 id="Text5">Text with Video</h5><br/>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br/></br>
-<!-- Example: Vimeo -->
-<div class="embed-responsive embed-responsive-4by3">
-  <<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/152612971"></iframe>
-</div>
-</br>
-
-<!--Add: Text with Interactive. 
-As part of the project, you might design an interactive website. If you would like to include that in the case study, 
-the easiest way might be linking that to an image. We suggest this as oppose to integrating them into your case study. 
-Interactives might be heavier files and be difficult to load, instantly. Below, there are 3 examples.
--->
-
-<h5 id="Text6">Text with Interactive</h5><br/>
-<a href="Interactive.html" target='_blank' ><img src="img/Sample_Image_Interactive.png" class="img-responsive"/></a>
-
-<br/>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br/><br/> 
-
-<iframe width='100%' height='500px' frameBorder='0' src='interactive.html'></iframe>
-
-<br/><br/> 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br/><br/> 
-
-<iframe width='100%' height='500px' frameBorder='0' src= "http://c4sr.columbia.edu/conflict-urbanism-aleppo/index.html" name="iframe_x"></iframe> 
-<p><a href="http://c4sr.columbia.edu/conflict-urbanism-aleppo/index.html" target="iframe_x">InfraPolitics Site</a></p>
-
-<br/>
-
-<!--Add: Text with Interactive Map. 
-You can bring any project from mapbox editor, using the iframe method. 
-In tutorial 4, we go over Mapbox basics, to make such an interactive map in mapbox editor.
-
-Note: You can bring in any project, with the above code as long as you have your mapbox API key and map id
--->
-
-<h5 id="Text7">Text with Map</h5><br/>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br/><br/>
-</br>
-
-<!-- Copy iframe tab from Carto  -->
-</br>
-You can bring any project from Carto using the Embed (iFrame) method Just copy and paste the code from the Publish >> Embed option. 
-
-
-Following is an example of the code that you copy/paste from Carto editor: 
-<iframe width="100%" height="520" frameborder="0" src="https://michellejm.carto.com/viz/f07c01f8-85b7-11e6-96f9-0e05a8b3e3d7/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-</br>
-
-<!--Add: your name and description as follows -->
-</br>
-<hr>
-your Name: <br/><br/>Description (Program, Year, Expertise)
-<hr>
-<br/><br/>
-</div>
-
-<!-- Add: footnotes with definitions
-This is the code:
-<div class="footnote-ref footnote-ref-1"><sup>1</sup>Title <a href= "www.c4sr.columbia.edu"> “Descriptive text”</a> Date </div> 
--->
-<div class="col-md-3">
-  <div class="footnotes">
-    <div class="footnote-ref footnote-ref-1"><sup>1</sup>Title <a href= "www.c4sr.columbia.edu"> “Descriptive text”</a> Date </div>
-    <div class="footnote-ref footnote-ref-2"><sup>2</sup>Test2 <a href= "www.c4sr.columbia.edu"> “Description ”</a> Date </div>
-  </div>
-</div>
-</div>
-
-<!-- Do not change -->        
-  <div class="row red bottom-line">
-    <div class="col-sm-12">
-      <h5><center> Center for Spatial Research, Columbia University</center></h5>
-    </div>
-  </div>
-
-</div>
-
-<!-- Do not change -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" crossorigin="anonymous"></script>
-    
-<!-- Do not change !!! -->
-<script>
-$(document).ready(function() {
-
-  // bootstrap affix menu
-  $('#nav').affix({
-    offset: {
-      top: $('#nav').offset().top
-    }
-  });
-
-  // footnote logic
-  $('.footnote').each(function() {
-    var f = $(this).attr('class').split(" ")[1];
-    var num = f.split("-")[1];
-    var top = $('.' + f).position().top;
-    var num_c = num - 1;
-    var offset = num_c * 32;
-    var top_n = top - offset;
-    
-    // align footnote to position
-    $('.footnote-ref-' + num).css({
-      top: top_n
-    });
-
-    var final_p = $('.footnote-ref-' + num).position().top;
-  });
-
-  if ($("ul.c4sr-nav").css("display") == "none" ){
-        $('.footnote-ref').each(function() {
-          $(this).css({
-            'top': 0,
-            'margin-bottom': '10px'});
-        });
-  }
-
-});
-</script>
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>
 </html>
+
 ```
+
 
 ### Code Explained
 
-* Add Title
-```html
-<!--Add: Case Study Title -->
-<h5>Case Study | Type Title Here </h5>
+* Add Title and establish dependencies. We will specify the characterset, and specify that it is responsive. Then add the Bootstrap, CSS, and Webfont CSS files
+
+```
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Change to your project's title -->
+    <title>Project Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- Site specific CSS -->
+    <link rel="stylesheet" href="css/csr-casestudy.css">
+    <link rel="stylesheet" href="css/footnotes.css">
+    <!-- Webfont CSS -->
+    <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/c28915cb-7a1f-477c-9084-e9e755ede452.css">
+
+  </head>
+  ```
+
+* Leave the Navigation Bar Alone
+
+```
+  <body>
+    <!-- Top navbar (do not change)-->
+    <nav class = "navbar fixed-top c4sr-navbar" role="navigation" id="c4sr-navbar">
+      <div class="container-fluid" id="c4sr-titlemobile">
+          <div class="c4sr-menu-left">
+              <a class = "navbar-link" href="http://c4sr.columbia.edu/conflict-urbanism-infrapolitics/seminar/index.html">Conflict Urbanism: InfraPolitics</a>
+          </div>
+          <div class ="c4sr-menu-right">
+              <a class = "navbar-link" href="http://c4sr.columbia.edu/conflict-urbanism-infrapolitics/seminar/index.html">About</a>
+              <a class = "navbar-link" href="http://c4sr.columbia.edu/conflict-urbanism-infrapolitics/seminar/index.html#projects">Projects</a>
+              <a class = "navbar-link" href="http://c4sr.columbia.edu/conflict-urbanism-infrapolitics/seminar/index.html#people">People</a>
+          </div>
+	</div>
+    </nav>
 ```
 
-*  Add Header Image
-Save your file as 'Header_image_1800x450.png in the <img> folder. Use the Illustrator Template in the Case Studies folder, if you require size setup.
-```html
-<div class="img-padding">
-<img src="img/Header_image_1800x450.png" class="img-responsive" />
-</div>
+	  
+* Open the main containers for the content and identify the Title & Group Members
+
 ```
-* Add Chapter Titles
-Add structure to your case study by dividing it into components, akin to chapters or sections in a paper. In this example, we have 7 sections. Below is a list for adding to the menu on the left. These titles are linked to positions in the text using the href attribute (href="#Text1" refers to id="Text1" in the remainder of the template)
-```html
-<div class="row">
-  <div class="col-md-3 scrollspy">
-    <div id="sticky-menu ">
-      <ul id="nav" class="nav c4sr-nav" data-spy="affix">
-        <!-- <li><a href="#section_id"><img src="img/dot-1.png" />Chapter_Name</a></li>-->
-        <li><a href="#Text1"><img src="img/dot-1.png" />Introduction</a></li>
-        <li><a href="#Text2"><img src="img/dot-1.png" />Text with Annotation</a></li>
-        <li><a href="#Text3"><img src="img/dot-1.png" />Text with PDF</a></li>
-        <li><a href="#Text4"><img src="img/dot-1.png" />Text with Image</a></li>
-        <li><a href="#Text5"><img src="img/dot-1.png" />Text with Video</a></li>
-        <li><a href="#Text6"><img src="img/dot-1.png" />Text with Interactive</a></li>
-        <li><a href="#Text7"><img src="img/dot-1.png" />Text with Map</a><li>
-      </ul>
-    </div>
-  </div>
+    <!-- Main content -->
+    <div class="container-fluid">
+    <div class="c4sr-contentwrapper">
+      <div class ="row" id="top-row">
+        <div class ="col-md-12" >
+          <!-- Your project title -->
+          <h2>Project Title: Subtitle that is standard for long academic titles</h4>
+          <!-- Your name, degree program and school -->
+          <div class="caption">Student Name, Second Student Name, Third Student Name</div>
+          </div>
+        </div>
+```
+
+* Add structure to your case study by dividing it into components, akin to chapters or sections in a paper. In this example, we have 3 sections. Below is a list for adding to the menu on the left. These titles are linked to positions in the text using the href attribute (href="#intro" refers to id="intro" in the remainder of the template)
+```
+    <!-- Side navigation menu -->
+      <div class = "row">
+        <div class = "col-md-3">
+          <div class ="nav" id="sticky-menu">
+            <ul class = "c4sr-sidenav">
+              <!-- Make as many sections as fit your project  -->
+              <!-- Change the href to match the associated h5 id tag -->
+              <li><a href="#intro">Introduction</a></li>
+              <li><a href="#first">Section One</a></li>
+              <li><a href="#second">Section Two</a></li>
+            </ul>
+          </div>
+        </div>
 ```
 
 * Add Chapter Text
-Add text paragraphs for each chapter. The title of your chapter can be different (longer) than the one you use for the Table of Contents. 
-```html
-     <!-- <h5 id="section_id">Section Title</h5> -->
-     <h5 id="Text1">Introduction to the course</h5>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br/><br/>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br/><br/>
+Add text or image paragraphs for each chapter. The title of your chapter can be different (longer) than the one you use for the Table of Contents. 
+
+```
+      <!-- Section for the text and images for your project -->
+        <div class = "col-md-6 body-text">
+          <!-- create your own id tag that matches the href you create in the sidenav section-->
+          <h5 id ="intro">Introduction</h5><br/>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel nibh condimentum, imperdiet nisi at, accumsan lectus. Vestibulum suscipit varius urna et tempus. Donec quam lorem, fermentum ut augue id, pretium lacinia sapien. Sed aliquam turpis placerat lectus condimentum, sit amet consequat mi rhoncus. Donec sit amet libero varius eros molestie vehicula. Nullam mollis arcu quis leo ullamcorper, eu sodales magna cursus. <a href="c4sr.columbia.edu">Vestibulum ante</a> ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis condimentum rutrum elit, id sagittis neque mollis nec.<div class="footnote">1</div> Nam ornare sit amet dui vel bibendum.<br/><br/> Aliquam at nunc quis erat faucibus laoreet. Nulla at lectus vehicula, ornare mi id, fringilla turpis. Maecenas sodales, lorem eu tincidunt laoreet, augue sapien blandit massa, in malesuada metus nibh tempus urna. Sed laoreet purus nisi, vel sodales lorem pulvinar vitae.
 ```
 
-* Add Text with Annotations
-We have designed annotations so that they are responsive to where you are on the case study. These appear on the right column next to the footnote. To add a footnote, insert the following line of code. Please change numbers in order. Everytime, you add a footnote, you will be required to go to the footnote section of the code, to add in the text and link. To add a footnote, insert the following code next to where you want the foot note. Start from #1, and change as you proceed.
+* Annotations & Citations
+You will use footnotes for citation. They are responsive to where you are on the case study, and appear on the right side of the page. To add a footnote, insert the following line of code. Please change numbers in order. Everytime you add a footnote, you will be required to go to the footnote section of the code, to add in the text and link. To add a footnote, insert the following code next to where you want the foot note. Start from #1, and change as you proceed.
 ```html
 <div class="footnote footnote-1">1</div> 
 ```
 Here's how it looks in the paragraph:
 ```
-<h5 id="Text2">Text with Annotation</h5>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <div class="footnote footnote-1">1</div> Add Text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<div class="footnote footnote-2">2</div> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br/><br/>
-```
-Then add details to `Footnotes Section` at *end* of the code. 
-```html
-<div class="col-md-3">
-  <div class="footnotes">
-    <div class="footnote-ref footnote-ref-1"><sup>1</sup>Title <a href= "www.c4sr.columbia.edu"> “Descriptive text”</a> Date </div>
-    <div class="footnote-ref footnote-ref-2"><sup>2</sup>Test2 <a href= "www.c4sr.columbia.edu"> “Description ”</a> Date </div>
-  </div>
-</div>
-</div>
+<h5 id ="intro">Introduction</h5><br/>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel nibh condimentum, imperdiet nisi at, accumsan lectus. Vestibulum suscipit varius urna et tempus. Donec quam lorem, fermentum ut augue id, pretium lacinia sapien. Sed aliquam turpis placerat lectus condimentum, sit amet consequat mi rhoncus. Donec sit amet libero varius eros molestie vehicula. Nullam mollis arcu quis leo ullamcorper, eu sodales magna cursus. <a href="c4sr.columbia.edu">Vestibulum ante</a> ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis condimentum rutrum elit, id sagittis neque mollis nec.<div class="footnote">1</div> Nam ornare sit amet dui vel bibendum.<br/><br/> Aliquam at nunc quis erat faucibus laoreet. Nulla at lectus vehicula, ornare mi id, fringilla turpis. Maecenas sodales, lorem eu tincidunt laoreet, augue sapien blandit massa, in malesuada metus nibh tempus urna. Sed laoreet purus nisi, vel sodales lorem pulvinar vitae.
 ```
 
-* Add PDFs
+Then add the details to `Footnotes Section` at *end* of the code (initially at line 96)
+``` 
+<!-- Footnotes -->
+        <div class = "col-md-3">
+          <div class = "footnotes">
+            <!-- Footnote  1 -->
+            <div class = "footnote-ref footnote-ref-1">
+              <sup>1</sup>
+              <a href="google.com">Content of footnote one</a>
+            </div>
+            <!-- Footnote 2 -->
+            <div class = "footnote-ref footnote-ref-2">
+              <sup>2</sup>
+              <a href="google.com">Content of footnote two</a>
+            </div>
+            <!-- Footnote 3 -->
+            <div class = "footnote-ref footnote-ref-3">
+              <sup>3</sup>
+              <a href="google.com">Content of footnote three</a>
+            </div>
 
-To add a link to a PDF, save the file in the same folder and update link text. Insert the following code: 
-```html
-<a href='sample_report.pdf'>Download Report</a><br/><br/>
+          </div>
+        </div>
+      </div>
 ```
 
 * Add Images
 
 To add an Image, save the file in the <img> folder. Insert the following code:
-```html
-<img src="img/Sample_Image.png" class="img-responsive"/><br/>
-```
-* Add Video
 
-To add a Video, either upload to vimeo or use Youtube link. Insert the following code: 
-```html
-<div class="embed-responsive embed-responsive-4by3">
-  <<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/152612971"></iframe>
-</div>
 ```
+          <!-- embeded image -->
+          <img src="img/testimage.png" class="img-fluid" id="c4sr-embed">
+          <!-- image caption -->
+          <div class="caption">This is a caption for your image</div>
+```
+
+
 * Add Interactive Features
 
-If you would like to include interactive features in the case study, the easiest way might be linking your built object to an image. We suggest this as oppose to integrating them into your case study. Interactives might be heavier files and be difficult to load, instantly. Below, there are 3 examples.
+If you would like to include interactive features in the case study, the easiest way might be linking your built object to an image. We suggest this as oppose to integrating them into your case study. Interactives might be heavier files and be difficult to load.
 
-1. Linking Image to an Interactive html:
-```html 
+1. Embed a map you made in a folder within your larger project's folder. If you map is in a folder called 'mymap', your src will be "mymap/mymapindex.html" or something similar
+
+```
+         <!-- Embedded map or other item -->
+          <!-- the src value could be to an html file you write -->
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item" id="c4sr-embed" height="700px"
+            src="http://maps.stamen.com/toner/embed#10/40.7476/-73.9810" allowfullscreen>
+            </iframe>
+          </div>
+
+```
+
+1. Linking Image to an Interactive html with an image as a placeholder:
+```
 <a href="filename.html"><img src="img/filename_interactive.png" class="img-responsive"/></a>
 ```
 
-2. Embedding an Interactive html
 
-```html
-<iframe width='100%' height='500px' frameBorder='0' src='interactive.html'></iframe>
+* Embed a map from another service using an iframe
+
+```
+<iframe width="100%" height="520" frameborder="0" src="YOUR_LINK"></iframe>
 ```
 
-3. Embedding an entire website (test this!)
-
-```html
-<iframe width='100%' height='500px' frameBorder='0' src= "http://c4sr.columbia.edu/conflict-urbanism-aleppo/index.html" name="iframe_x"></iframe> 
-<p><a href="http://c4sr.columbia.edu/conflict-urbanism-aleppo/index.html" target="iframe_x">Aleppo Site</a></p>
-```
-* Add a Map
-<br>You can bring any project from carto, using the embed method. In Tutorial 3, we go over how to use Carto to embed maps.
-
-Following is the code that you copy/paste from carto
-```html
-<iframe width="100%" height="520" frameborder="0" src="https://michellejm.carto.com/viz/f07c01f8-85b7-11e6-96f9-0e05a8b3e3d7/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-```
+If you have questions about how to do things not covered in this tutorial, please do not hesitate to ask. 
 
 
-* Add your Name
-```html
-<hr>
-your Name: <br/><br/>Description (Program, Year, Expertise)
-<hr>
-```
+To complete this tutorial, please 
+* Change project title (39)
+* Make another Section (55)
+* Add an image (66)
+* Embed a map you made (81)
+* Update a Footnote (63 & 96)
 
-To complete this tutorial, please send the template as an .html file to Michelle at mam2518@columbia.edu. Fill in:
-
-* your name,
-* a tentative project title, and 
-* a tentative project description. 
-
-You can leave the Lorem Ipsum in the template until you are creating the final product. 
+Send the entire folder to Michelle.
 
 _____________________
 This tutorial was prepared by Michelle McSweeney for the Conflict Urbanism: InfraPolitics Course offered as part of the Mellon Grant for Architecture in the Humanities in the Center for Spatial Research. It is based on a tutorial written by Medeeha Merchant, for Conflict Urbanism: Aleppo taught in Spring 2016 also by the Center for Spatial Research.
+The Template was created by Dare Brawley, based on a template from Medeeha Merchant.
